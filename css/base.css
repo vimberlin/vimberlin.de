@@ -45,3 +45,8 @@ ul {
 .right {
   text-align: right;
 }
+
+.clearer {
+  clear: both;
+}
+
