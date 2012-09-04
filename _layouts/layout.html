@@ -28,25 +28,25 @@
   </script>
   <script type="text/javascript">
 
-   	$(document).ready(function(){
-	        $(".tweet").tweet({
-	            username: "{{ site.twitter }}",
-	            join_text: "auto",
-	            avatar_size: 16,
-	            count: 4,
-	            auto_join_text_default: "", 
-	            auto_join_text_ed: "",
-	            auto_join_text_ing: "",
-	            auto_join_text_reply: "",
-	            auto_join_text_url: "",
-	            loading_text: "Loading Tweets...",
-				refresh_interval: 60
-	        });
-	    });
+    $(document).ready(function(){
+          $(".tweet").tweet({
+              username: "{{ site.twitter }}",
+              join_text: "auto",
+              avatar_size: 16,
+              count: 4,
+              auto_join_text_default: "",
+              auto_join_text_ed: "",
+              auto_join_text_ing: "",
+              auto_join_text_reply: "",
+              auto_join_text_url: "",
+              loading_text: "Loading Tweets...",
+        refresh_interval: 60
+          });
+      });
   </script>
 </head>
 <body>
-	
+
 <div id="header">
   <a href="/">
     <img src="https://en.gravatar.com/userimage/39328862/96798fa79067df3fadbe7233f13b02a3?size=100" class="avatar" />
