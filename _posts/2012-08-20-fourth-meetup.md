@@ -37,4 +37,23 @@ If you have any questions, please contact <mailto:vimberlin@gmail.com>.
 
 {% include launch_co.html %}
 
-**Matthias**
+{% include matthias.html %}
+
+
+## Recap - 04/09/2012
+
+Thousands thanks to all the attendees, our coaches ([@lucapette](https://twitter.com/lucapette), [@guckes](https://twitter.com/guckes),
+and [@wikimatze](https://twitter.com/wikimatze), and {% include launch_co_link.html %} to make this event happen. We got a
+huge amount of positive feedback to keep up with this event - we will go on with and would like to enhance your Vim abilities.
+
+Later on the evening we talked about the timeframe of the next meeting. This would normally be in October but some of you
+suggested to do this kind of workshop every two weeks to keep the learning and memorizing of commands. I'm not able to be a coach
+this often.
+
+The one who want a morte frequently meetup can discuss things on {% include mailing_list.html %} and on {% include twitter-link.html %}
+- if you have found a date, I will help you to find a location where you can have the session.
+
+If you have any further ideas please write us directly a mail {% include mailto.html %} - we would like to hear your ideas.
+
+{% include matthias.html %}
+
