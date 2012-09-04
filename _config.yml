@@ -5,6 +5,7 @@ permalink: /:title
 auto: true
 rdiscount:
   extensions: [smart]
+feedburner: vimberlin
 disqus: vimberlin
 twitter: vimberlin
 title: vimberlin
