@@ -222,11 +222,14 @@ h3{
 .center {
   display:block;
   margin-left:auto;
+  margin-top: 1.5em;
   margin-right:auto;
+  margin-bottom: 1.5em;
 }
 
 #index-text {
   font-size: 15px;
+  line-height: 1.7em;
 }
 
 .tweet .tweet_list li, .query .tweet_list li {
