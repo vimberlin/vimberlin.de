@@ -147,13 +147,13 @@ h3{
 #post{
   padding-bottom: 30px;
   margin-bottom: 30px;
-  /* This will set default size (for gists for example) */ 
+  /* This will set default size (for gists for example) */
   font-size: 13px;
 
 }
 
 #post ul{
-  font-size: 13px;
+  font-size: 15px;
   margin: 20px 20px 20px 0;
 }
 #post li{
@@ -243,7 +243,7 @@ h3{
 }
 
 /*
- 
+
  TALKS
 
  */
@@ -297,7 +297,7 @@ h3{
 }
 
 /*
- 
+
  SCREENCASTS
 
  */
@@ -312,7 +312,7 @@ h3{
 }
 
 /*
- 
+
  HACKER NEWS MAD KARMA
 
  */
@@ -322,7 +322,7 @@ h3{
 
 
 /*
- 
+
  BOASTFUL
 
  */
