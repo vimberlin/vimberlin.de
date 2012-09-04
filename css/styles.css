@@ -219,6 +219,12 @@ h3{
   font-style: normal;
 }
 
+.center {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
 .tweet .tweet_list li, .query .tweet_list li {
     padding-left: 0;
 }
