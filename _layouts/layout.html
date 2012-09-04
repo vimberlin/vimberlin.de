@@ -4,11 +4,13 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>{{ page.title }}</title>
   <meta name="author" content="Gregor Schmidt and Matthias Günther" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="alternate" type="application/rss+xml" href="http://feeds.feedburner.com/{{ site.feedburner }}" />
-  <link rel="stylesheet" href="/css/styles.css" type="text/css" media="screen, projection" />
   <link rel="stylesheet" href="/css/bootstrap.css" type="text/css" />
+  <link rel="stylesheet" href="/css/responsive.css" type="text/css" />
   <link rel="stylesheet" href="/css/jquery.tweet.css" type="text/css" />
+  <link rel="stylesheet" href="/css/styles.css" type="text/css" media="screen, projection" />
 
   <!-- Title font -->
   <link href='http://fonts.googleapis.com/css?family=Voltaire' rel='stylesheet' type='text/css'>
@@ -47,42 +49,45 @@
 </head>
 <body>
 
-<div id="header">
-  <a href="/">
-    <img src="https://en.gravatar.com/userimage/39328862/96798fa79067df3fadbe7233f13b02a3?size=100" class="avatar" />
-  </a>
-  <div id="me">
-    <strong>Mailing: <a href="https://groups.google.com/group/vimberlin/">vimberlin</a></strong>
-    <strong>IRC: <a href="irc://chat.freenode.net/#vimberlin">#vimberlin</a></strong>
-    <strong>Twitter: </strong> <a href="https://twitter.com/vimberlin">@vimberlin</a>
-    <strong>Calendar: </strong> <a href="http://www.google.com/calendar/ical/nach-vorne.eu_p02r7rposnfv4s53v6s9v117q4%40group.calendar.google.com/public/basic.ics">iCal</a>
-    <strong>Imprint: </strong><a href="/legal.html">imprint</a>
-    <strong>RSS:</strong> <a href="/atom.xml">RSS</a>
-    <a href="&#109;&#97;&#x69;&#x6c;&#116;&#x6f;&#x3a;&#x76;&#105;&#109;&#x62;&#x65;&#x72;&#x6c;&#105;&#x6e;&#x40;&#x67;&#109;&#97;&#x69;&#x6c;&#46;&#x63;&#x6f;&#x6d;">&#x76;&#x69;&#x6d;&#98;&#x65;&#x72;&#108;&#105;&#x6e;&#64;&#x67;&#109;&#x61;&#x69;&#x6c;&#46;&#99;&#111;&#109;</a>
-  </div>
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div id="header" class="span3">
+                <a class="avatar" href="/">
+                    <img src="https://en.gravatar.com/userimage/39328862/96798fa79067df3fadbe7233f13b02a3?size=100" class="avatar" />
+                </a>
+                <ul id="me">
+                    <li><strong>Mailing: <a href="https://groups.google.com/group/vimberlin/">vimberlin</a></strong></li>
+                    <li><strong>IRC: <a href="irc://chat.freenode.net/#vimberlin">#vimberlin</a></strong></li>
+                    <li><strong>Twitter: </strong> <a href="https://twitter.com/vimberlin">@vimberlin</a></li>
+                    <li><strong>Calendar: </strong> <a href="http://www.google.com/calendar/ical/nach-vorne.eu_p02r7rposnfv4s53v6s9v117q4%40group.calendar.google.com/public/basic.ics">iCal</a></li>
+                    <li><strong>Imprint: </strong><a href="/legal.html">imprint</a></li>
+                    <li><strong>RSS:</strong> <a href="/atom.xml">RSS</a></li>
+                    <li><a href="&#109;&#97;&#x69;&#x6c;&#116;&#x6f;&#x3a;&#x76;&#105;&#109;&#x62;&#x65;&#x72;&#x6c;&#105;&#x6e;&#x40;&#x67;&#109;&#97;&#x69;&#x6c;&#46;&#x63;&#x6f;&#x6d;">&#x76;&#x69;&#x6d;&#98;&#x65;&#x72;&#108;&#105;&#x6e;&#64;&#x67;&#109;&#x61;&#x69;&#x6c;&#46;&#99;&#111;&#109;</a></li>
+                </ul>
 
-  <div id="tweets">
-  <div class='tweet query'></div>
-  </div>
-</div>
+                <div id="tweets">
+                    <div class='tweet query'></div>
+                </div>
+            </div>
+            <div class="span9 content">
+                {{ content }}
+            </div>    
+        </div>
 
-<div class="content">
-{{ content }}
-</div>
+        <a href="https://github.com/vimberlin/vimberlin.de"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
 
-<a href="https://github.com/vimberlin/vimberlin.de"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-34551627-1']);
+            _gaq.push(['_trackPageview']);
 
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-34551627-1']);
-  _gaq.push(['_trackPageview']);
+            (function() {
+             var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+             })();
+         </script>
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
-
+     </div>
 </body>
 </html>

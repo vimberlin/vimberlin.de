@@ -3,6 +3,11 @@ body{
   margin: 0;
   -webkit-font-smoothing: antialiased;
 }
+.container-fluid {
+    max-width: 900px;
+    margin: auto;
+    padding-top: 20px;
+}
 a{
   color: #1b8be0;
 }
@@ -22,11 +27,6 @@ hr{
   height: 1px;
   background-color: #ccc;
   margin: 2em 1em;
-}
-.content{
-  margin-left: 220px;
-  width: 650px;
-  margin-bottom: 50px;
 }
 .related{
   margin-top: 10px;
@@ -79,20 +79,13 @@ h3{
 }
 
 #tweets{
-  position: relative;
-  left: 0;
-  top: 0;
-  width: 175px;
   font-family: Helvetica, sans-serif;
 }
 
 #header{
-  position: fixed;
-  left: 20px;
-  top: 20px;
-  width: 120px;
   font-family: Helvetica, sans-serif;
 }
+
 #header .avatar{
   border: 0px solid #fff;
   -webkit-border-radius: 5px;
@@ -102,9 +95,11 @@ h3{
 #header a{
   text-decoration: none;
 }
+
 #header #me{
-  /*text-transform: uppercase;*/
-  margin: 10px 0 20px 0;
+    list-style: none;
+    margin-left: 0;
+    margin-top: 20px;
 }
 #header #christophe{
   font-family: 'Voltaire', sans-serif;
@@ -381,4 +376,13 @@ h3{
 .boastful .boastful_handle{
   font-size: 13px;
   font-weight: bold;
+}
+.tweet .tweet_list li, .query .tweet_list li {
+    padding-left: 0;
+}
+/* Change container padding for smaller devices */
+@media (max-width: 767px) {
+    .container-fluid {
+        padding-top: 20px;
+    }
 }
