@@ -4,10 +4,12 @@ title: First Meetup
 ---
 
 The first vimberlin user group meetup will take place on Thursday, 26th January, at 8:00 p.m at the
-[LAUNCH/CO coworking space](https://launchco.com/etc/#coworking "LAUNCH/CO coworking space") [(map)](https://plus.google.com/115820795011326627918/about?gl=US&hl=en "Map").
+[LAUNCH/CO coworking space](https://launchco.com/etc/#coworking "LAUNCH/CO coworking space")
+[(map)](https://plus.google.com/115820795011326627918/about?gl=US&hl=en "Map").
 
-Topics for our first meetup will be:
-[Drew Neil](http://drewneil.com/ "Drew Neil") (aka [@nelstrom](https://twitter.com/nelstrom "@nelstrom"), the creator of the awesome [vimcasts](http://vimcasts.org/ "vimcasts"), agreed to give a talk. 
+[Drew Neil](http://drewneil.com/ "Drew Neil") (aka [@nelstrom](https://twitter.com/nelstrom "@nelstrom"), the creator of the
+awesome [vimcasts](http://vimcasts.org/ "vimcasts"), agreed to give a talk.
+
 We are very proud to have him at our very first meetup. The topic is yet to be announced.
 Further topics will be kind of organizational. We should briefly talk about:
 
@@ -15,7 +17,8 @@ Further topics will be kind of organizational. We should briefly talk about:
 - Future schedule for regular meetups
 - Future topics of meetups
 
-We will have some time at the end for small talk and socializing. Also, in Friedrichshain, it should be rather easy to move on to a bar after the meetup. 
+We will have some time at the end for small talk and socializing. Also, in Friedrichshain, it should be rather easy to move on to
+a bar after the meetup.
 
 <pre>
  1. Find the Warschauer Str. 70A
@@ -39,23 +42,28 @@ We will have some time at the end for small talk and socializing. Also, in Fried
 
 Hope to see you there,
 
-**Gregor**
+{% include gregor.html %}
 
 
 # Recap
 
-Thank you all for coming. It was a great evening and I had a lot of fun. I'm especially proud, that so many of you guys showed up. I think we were about 20 people. I think, that's pretty impressive for a first meeting.
+Thank you all for coming. It was a great evening and I had a lot of fun. I'm especially proud, that so many of you guys showed up.
+I think we were about 20 people. I think, that's pretty impressive for a first meeting.
 
-I would like to thank [Drew](http://drewneil.com/ "Drew") for his thoughts on plugins and how they fit into the Vim universe. Also, playing some [vimgolf](http://vimgolf.com/ "vimgolf") was both entertaining and illuminating.
+I would like to thank [Drew](http://drewneil.com/ "Drew") for his thoughts on plugins and how they fit into the Vim universe.
+Also, playing some [vimgolf](http://vimgolf.com/ "vimgolf") was both entertaining and illuminating.
 
-Finally we talked about vimberlin itself. We've settled to meet on the 4th Thursday of every odd month. So the next meetup will be on **March 22nd 2012 - 8 p.m. again at LAUNCH/CO**.
+Finally we talked about vimberlin itself. We've settled to meet on the 4th Thursday of every odd month. So the next meetup will be
+on **March 22nd 2012 - 8 p.m. again at LAUNCH/CO**.
 
-We are starting to using a mailing list to discuss talk proposals and other stuff. (There is a link at the top of the page.) I've also added a link to an iCal feed containing the schedule for the next meetups.
+We are starting to using a mailing list to discuss talk proposals and other stuff. (There is a link at the top of the page.) I've
+also added a link to an iCal feed containing the schedule for the next meetups.
 
-I'll continue to use the Twitter account [@vimberlin](http://twitter.com/vimberlin "@vimberlin") for announcements and things of (potentially) general interest.
+I'll continue to use the Twitter account [@vimberlin](http://twitter.com/vimberlin "@vimberlin") for announcements and things of
+(potentially) general interest.
 
-Thanks Jan and LAUNCH/CO for hosting the event and providing us with chairs, beers and beamer and thank you all for making vimberlin happen.
+Thanks Jan and LAUNCH/CO for hosting the event and providing us with chairs, beers and beamer and thank you all for making
+vimberlin happen.
 
-**Gregor**
-
+{% include gregor.html %}
 
