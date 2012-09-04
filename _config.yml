@@ -1,0 +1,12 @@
+markdown: rdiscount
+pygments: true
+permalink: /:title
+
+auto: true
+rdiscount:
+  extensions: [smart]
+disqus: vimberlin
+twitter: vimberlin
+title: vimberlin
+gravatar: vimberlin
+subtitle: Vim User Group Berlin

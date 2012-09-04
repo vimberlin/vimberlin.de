@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>{{ page.title }}</title>
+  <meta name="author" content="Gregor Schmidt and Matthias Günther" />
+
+  <link rel="alternate" type="application/rss+xml" href="http://feeds.feedburner.com/{{ site.feedburner }}" />
+  <link rel="stylesheet" href="/css/styles.css" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="/css/bootstrap.css" type="text/css" />
+  <link rel="stylesheet" href="/css/jquery.tweet.css" type="text/css" />
+
+  <!-- Title font -->
+  <link href='http://fonts.googleapis.com/css?family=Voltaire' rel='stylesheet' type='text/css'>
+  <!-- post content font -->
+  <!--<link href='http://fonts.googleapis.com/css?family=Rosario' rel='stylesheet' type='text/css'>-->
+  <!--<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>-->
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+  <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+  <script type="text/javascript" src="/js/jquery.tweet.js"></script>
+  <script type="text/javascript" src="/js/application.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      {{ page.script }}
+    });
+  </script>
+  <script type="text/javascript">
+
+   	$(document).ready(function(){
+	        $(".tweet").tweet({
+	            username: "{{ site.twitter }}",
+	            join_text: "auto",
+	            avatar_size: 16,
+	            count: 4,
+	            auto_join_text_default: "", 
+	            auto_join_text_ed: "",
+	            auto_join_text_ing: "",
+	            auto_join_text_reply: "",
+	            auto_join_text_url: "",
+	            loading_text: "Loading Tweets...",
+				refresh_interval: 60
+	        });
+	    });
+  </script>
+</head>
+<body>
+	
+<div id="header">
+  <a href="/">
+    <img src="https://en.gravatar.com/userimage/39328862/96798fa79067df3fadbe7233f13b02a3" class="avatar" />
+  </a>
+  <div id="me">
+    <strong>Mailing: <a href="https://groups.google.com/group/vimberlin/">vimberlin</a></strong>
+    <strong>Twitter:</strong>
+    <a href="https://twitter.com/vimberlin">@vimberlin</a>
+    <strong>Calendar:</strong>
+    <a href="http://www.google.com/calendar/ical/nach-vorne.eu_p02r7rposnfv4s53v6s9v117q4%40group.calendar.google.com/public/basic.ics">iCal</a>
+    <strong>Imprint:</strong>
+    <a href="/legal.html">imprint</a>
+  </div>
+
+  <div id="tweets">
+  <div class='tweet query'></div>
+  </div>
+</div>
+
+<div class="content">
+{{ content }}
+</div>
+
+<a href="https://github.com/vimberlin/vimberlin.de"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+
+</body>
+</html>
