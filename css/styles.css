@@ -225,6 +225,10 @@ h3{
   margin-right:auto;
 }
 
+#index-text {
+  font-size: 15px;
+}
+
 .tweet .tweet_list li, .query .tweet_list li {
     padding-left: 0;
 }
