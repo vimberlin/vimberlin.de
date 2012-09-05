@@ -1,6 +1,6 @@
 ---
 layout: post
-title: First Meetup
+title: January 2012 - First Meetup
 ---
 
 The first vimberlin user group meetup will take place on Thursday, 26th January, at 8:00 p.m at the

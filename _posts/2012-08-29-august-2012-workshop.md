@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Fourth Meetup
+title: August 2012 - VIM NOVICE - a beginners workshop for people new to Vim
 ---
 
 ## Next meetup is something special: "VIM NOVICE - a beginners workshop for people new to Vim" 2012-08-29, 7 p.m. at LAUNCH/CO
