@@ -50,8 +50,7 @@ Later on the evening we talked about the timeframe of the next meeting. This wou
 suggested to do this kind of workshop every two weeks to keep the learning and memorizing of commands. I'm not able to be a coach
 this often.
 
-The ones who want more frequent meetups may discuss things on the {% include mailing_list.html %} and on {% include twitter_link.html %}
-- if you have found a date, I will help you to find a location where you can have the session.
+The ones who want more frequent meetups may discuss things on the {% include mailing_list.html %} and on {% include twitter_link.html %} - if you have found a date, I will help you to find a location where you can have the session.
 
 If you have any further ideas please start a discussion on the {% include mailing_list.html %} - we would like to hear your ideas.
 
