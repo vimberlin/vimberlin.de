@@ -53,7 +53,7 @@ this often.
 The ones who want more frequent meetups may discuss things on the {% include mailing_list.html %} and on {% include twitter_link.html %}
 - if you have found a date, I will help you to find a location where you can have the session.
 
-If you have any further ideas please write us directly a mail {% include mailto.html %} - we would like to hear your ideas.
+If you have any further ideas please start a discussion on the {% include mailing_list.html %} - we would like to hear your ideas.
 
 {% include matthias.html %}
 
