@@ -40,7 +40,7 @@ short message to the {% include mailing_list.html %}.
 {% include gregor.html %}
 
 
-# Recap
+## Recap
 
 Thanks for the 20 people coming, thanks for [LAUNCH/CO](https://launchco.com/etc/#coworking) for giving us space, and thanks for
 the speakers Gregor Schmidt, Matthias Vieweger, and Matthias Günther their talks.
