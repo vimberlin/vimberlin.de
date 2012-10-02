@@ -44,7 +44,7 @@ short message to the {% include mailing_list.html %}.
 
 First of all: Thanks to the about 20 Vim enthusiasts for coming, thanks to
 [LAUNCH/CO](https://launchco.com/etc/#coworking) for providing the space, and
-last but not least, thanks to the speakers Gregor Schmidt, Matthias Vieweger,
+last but not least, thanks to the speakers Gregor Schmidt, Matthias Viehweger,
 and Matthias Günther for preparing and giving the talks.
 
 Gregor ([@schmidtwisser](https://twitter.com/schmidtwisser)) explained how
