@@ -11,18 +11,8 @@ modal editor like Vim before.
 
 
 We will have three coaches:
-<pre>
-     <img src="https://si0.twimg.com/profile_images/2025658674/io_reasonably_small.png" alt="@lucapette" title="@lucapette"/>
-     <a href="https://twitter.com/lucapette">@lucapette</a> - more than over 5 years of Vim experience, has written a bunch plugins
-      for Vim, and using editor heavenly on hacking on different Rails projects.
 
-     <img width="128" height="128" src="https://si0.twimg.com/profile_images/1084424199/sven_guckes.silhouette.red_border.200x200.jpg" alt="@guckes" title="@guckes" />
-    <a href="https://twitter.com/guckes">@guckes</a> - countless years of experience in using Vim and he can convince you in two
-     minutes to use another shell then <i>bash</i>.
-
-    <img src="https://si0.twimg.com/profile_images/2202486572/twitter_reasonably_small.png" alt="@wikimatze" title="@wikimatze"/>
-    <a href="https://twitter.com/wikimatze">@wikimatze</a> - using Vim for two years now and using it to write a book about <a href="https://padrinorb.com">Padrino</a>.
-</pre>
+{% include three_coaches.html %}
 
 
 ### Schedule:
