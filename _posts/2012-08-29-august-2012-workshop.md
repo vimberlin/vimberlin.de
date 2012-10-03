@@ -1,6 +1,6 @@
 ---
 layout: post
-title: August 2012 - VIM NOVICE - a beginners workshop for people new to Vim
+title: August 2012 - First Vim Novice workshop
 ---
 
 ## Next meetup is something special: "VIM NOVICE - a beginners workshop for people new to Vim" 2012-08-29, 7 p.m. at LAUNCH/CO
@@ -8,7 +8,6 @@ title: August 2012 - VIM NOVICE - a beginners workshop for people new to Vim
 After discussing with [@lucapette](https://twitter.com/lucapette) and [@guckes](https://twitter.com/guckes) on our last meetup, we
 brainstormed the ideas how we can teach Vim not only to basic users of the editor but as well to beginners who has never used a
 modal editor like Vim before.
-
 
 We will have three coaches:
 
@@ -45,4 +44,3 @@ The ones who want more frequent meetups may discuss things on the {% include mai
 If you have any further ideas please start a discussion on the {% include mailing_list.html %} - we would like to hear your ideas.
 
 {% include matthias.html %}
-
