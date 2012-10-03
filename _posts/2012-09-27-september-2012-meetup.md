@@ -44,15 +44,17 @@ short message to the {% include mailing_list.html %}.
 
 First of all: Thanks to the about 20 Vim enthusiasts for coming, thanks to
 [LAUNCH/CO](https://launchco.com/etc/#coworking) for providing the space, and
-last but not least, thanks to the speakers Gregor Schmidt, Matthias Vieweger,
+last but not least, thanks to the speakers Gregor Schmidt, Matthias Viehweger,
 and Matthias Günther for preparing and giving the talks.
 
-You may find Gregor's ([@schmidtwisser](https://twitter.com/schmidtwisser)) talk
-on [vimeo](https://vimeo.com/50492237). He explained how Vimgolfs work and what
-he learned during solving the [Vertical
-Limit](http://vimgolf.com/challenges/50048db8cdc4060002000004) challenge.
+Gregor ([@schmidtwisser](https://twitter.com/schmidtwisser)) explained how
+Vimgolfs work and what he learned during solving the [Vertical
+Limit](http://vimgolf.com/challenges/50048db8cdc4060002000004) challenge. You
+may find his slides on [GitHub](http://schmidt.github.com/talks/2012-09-27/) and
+a video of the talk on [vimeo](https://vimeo.com/50492237).
 
 <iframe class="center" src="http://player.vimeo.com/video/50492237" width="700" height="430" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://vimeo.com/50492237">Vimgolf by example</a> from <a href="http://vimeo.com/wikimatze">wikimatze</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+
 
 Matthias Viehweger ([@der_kronn](https://twitter.com/der_kronn)) talked in
 "Mission Vimpossible - Some things you cannot do in Vim and how to do them there
