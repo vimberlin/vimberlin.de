@@ -150,7 +150,6 @@ h3{
   margin-bottom: 30px;
   /* This will set default size (for gists for example) */
   font-size: 13px;
-
 }
 
 #post ul{
@@ -231,6 +230,16 @@ h3{
 #index-text {
   font-size: 15px;
   line-height: 1.7em;
+}
+
+.left-float {
+  float: left;
+  margin: 10px 15px 10px 65px;
+  display: block;
+}
+
+.clearer {
+  clear: both;
 }
 
 .tweet .tweet_list li, .query .tweet_list li {
