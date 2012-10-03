@@ -1,19 +1,18 @@
-require 'rubygems'
 require 'rake'
 require 'fileutils'
 require 'stringex'
 
 posts_dir = "_posts"    # directory for blog files
-new_post_ext = "markdown"  # default new post file extension when using the new_post task
+new_post_ext = "md"  # default new post file extension when using the new_post task
 
 # usage rake new
 desc "Begin a new post in #{posts_dir}"
 task :new do
   require './_plugins/titlecase.rb'
-  
+
   puts "What should we call this post for now?"
   name = STDIN.gets.chomp
-  
+
   mkdir_p "#{posts_dir}"
   title = name
   filename = "#{posts_dir}/#{Time.now.strftime('%Y-%m-%d')}-#{title.to_url}.#{new_post_ext}"
@@ -36,3 +35,4 @@ task :start do
 end
 
 task :default => :start
+
