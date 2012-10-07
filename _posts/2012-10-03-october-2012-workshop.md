@@ -4,6 +4,8 @@ title: "October 2012 - Second Vim Novice Workshop"
 date: 2012-10-03 13:40
 ---
 
+![/images/workshop.png](/images/workshop.png "workshop")
+
 Our first beginners workshop in [August 2012](/august-2012-workshop) was a huge success. Around twenty people were learning
 something new: Some of them learned the usage of the `vimrc`, others went through [vimtutor](http://linuxcommand.org/man_pages/vimtutor1.html), and some of them asked specific questions.
 
