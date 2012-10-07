@@ -242,6 +242,10 @@ h3{
   clear: both;
 }
 
+#counter {
+  margin: 15px 0 15px 100px;
+}
+
 .tweet .tweet_list li, .query .tweet_list li {
     padding-left: 0;
 }

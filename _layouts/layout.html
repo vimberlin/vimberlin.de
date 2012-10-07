@@ -23,15 +23,11 @@
   <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
   <script type="text/javascript" src="/js/jquery.tweet.js"></script>
   <script type="text/javascript" src="/js/application.js"></script>
+  <script type="text/javascript" src="/js/jquery.countdown.min.js"></script>
+  <script type="text/javascript" src="/js/countdown.js"></script>
 
   <script type="text/javascript">
-    $(document).ready(function() {
-      {{ page.script }}
-    });
-  </script>
-  <script type="text/javascript">
-
-    $(document).ready(function(){
+    $(function(){
           $(".tweet").tweet({
               username: "{{ site.twitter }}",
               join_text: "auto",
@@ -45,6 +41,8 @@
               loading_text: "Loading Tweets...",
         refresh_interval: 60
           });
+
+      do_counter();
       });
   </script>
 </head>
