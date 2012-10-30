@@ -40,4 +40,16 @@ In case some of you want to play [vimgolf](http://vimgolf.com/), please have rub
 
 Please be on-time, we won't want to waste time.
 
+
+## Recap - 30/10/2012
+
+This time we had fewer people at out workshop since last time: 5 males, 1 female, and three coaches. We changed the format of this
+workshop a little bit more and make it more like a talk about the main concepts and features of Vim with interactive questions of
+the audience. Other coaches trained new people to Vim individually as we went together through the **vimtutor**. Again, we got
+huge positive feedback for our workshop and will try newer things in the feature to make it better.
+
+You can discuss things on our {% include mailing_list.html %} and on {% include twitter_link.html %}. Our coach [Sven](https://twitter.com/guckes) was so nice to put a resume of the last meetup [online](http://www.guckes.net/vimberlin/2012-10-25.notes.txt).
+
+If you have any further ideas please start a discussion on our {% include mailing_list.html %} or drop us a line on [twitter](https://twitter.com/vimberlin) - we would like to hear your ideas.
+
 {% include matthias.html %}
