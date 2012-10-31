@@ -46,7 +46,7 @@ Please be on-time, we won't want to waste time.
 This time we had fewer people at out workshop since last time: 5 males, 1 female, and three coaches. We changed the format of this
 workshop a little bit more and make it more like a talk about the main concepts and features of Vim with interactive questions of
 the audience. Other coaches trained new people to Vim individually as we went together through the **vimtutor**. Again, we got
-huge positive feedback for our workshop and will try newer things in the feature to make it better.
+huge positive feedback for our workshop and will try newer things in the future to make it better.
 
 You can discuss things on our {% include mailing_list.html %} and on {% include twitter_link.html %}. Our coach [Sven](https://twitter.com/guckes) was so nice to put a resume of the last meetup [online](http://www.guckes.net/vimberlin/2012-10-25.notes.txt).
 
