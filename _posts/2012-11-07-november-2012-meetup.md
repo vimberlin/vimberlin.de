@@ -6,7 +6,7 @@ title: November 2012 - Sixth Meetup
 We will meet on:
 
 <pre>
-  November, 29th
+  November, 22th
   8:00 pm
   at <a href="https://launchco.com/etc/#coworking">LAUNCH/CO</a> (<a href="http://g.co/maps/k62eb">map</a>)
 </pre>
