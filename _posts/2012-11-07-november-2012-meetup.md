@@ -11,13 +11,25 @@ We will meet on:
   at <a href="https://launchco.com/etc/#coworking">LAUNCH/CO</a> (<a href="http://g.co/maps/k62eb">map</a>)
 </pre>
 
-We currently have the following talk on the agenda:
+We currently have the three talks on the agenda:
 
 <ul>
     <li>
-        <strong>Vimify your life - How to use your desktop as if it would be vim</strong>
-        <br/>
-        Johannes Kulick
+      <strong>"Creating a color scheme for Vim"</strong>
+      <br />
+      Niels Madan will talk about his experiences in creating <a href="git://github.com/nielsmadan/harlequin.git">harlequin</a>
+    </li>
+    <li>
+      <strong>"Small Commands"</strong>
+      <br />
+      Sven Guckes (one of our coaches) number prefix, command combinations, filtering, visual
+      commands, mappings - some commands you may want to use in everyday editing
+    </li>
+    <li>
+      <strong>"Lessons learned from building splitjoin.vim"</strong>
+      <br />
+      Andrew Radov will share his knowledge about his <a
+      href="https://github.com/AndrewRadev/splitjoin.vim">splitjoin</a> plugin.
     </li>
 </ul>
 
