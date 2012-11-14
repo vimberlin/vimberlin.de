@@ -28,7 +28,7 @@ We currently have the three talks on the agenda:
     <li>
       <strong>"Lessons learned from building splitjoin.vim"</strong>
       <br />
-      Andrew Radov will share his knowledge about his <a
+      Andrew Radev will share his knowledge about his <a
       href="https://github.com/AndrewRadev/splitjoin.vim">splitjoin</a> plugin.
     </li>
 </ul>
