@@ -17,7 +17,7 @@ We currently have the three talks on the agenda:
     <li>
       <strong>"Creating a color scheme for Vim"</strong>
       <br />
-      Niels Madan will talk about his experiences in creating <a href="git://github.com/nielsmadan/harlequin.git">harlequin</a>
+      Niels Madan will talk about his experiences in creating <a href="https://github.com/nielsmadan/harlequin">harlequin</a>
     </li>
     <li>
       <strong>"Small Commands"</strong>
