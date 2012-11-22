@@ -7,7 +7,7 @@ We will meet on:
 
 <pre>
   November, 22th
-  8:00 pm
+  7:30 pm
   at <a href="https://launchco.com/etc/#coworking">LAUNCH/CO</a> (<a href="http://g.co/maps/k62eb">map</a>)
 </pre>
 
