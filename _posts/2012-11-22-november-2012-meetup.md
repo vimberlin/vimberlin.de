@@ -42,3 +42,21 @@ short message to the {% include mailing_list.html %}.
 
 {% include matthias.html %}
 
+
+## Recap - 07/12/2012
+
+I loved this meetup today: We had new people giving talks and they did an awesome job. I recored only one talk but next
+time I will try to get them all.
+
+
+Niels Madan ([@nielsmada](https://twitter.com/nielsmada)) explained his experiences with creating his own colorscheme:
+
+<iframe class="center" src="http://player.vimeo.com/video/54885966" width="700" height="430" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://vimeo.com/50492237">Vimgolf by example</a> from <a href="http://vimeo.com/wikimatze">wikimatze</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+
+This month we will not have an beginners workshop and no official meetup in december.
+
+If you have any further ideas please start a discussion on our {% include mailing_list.html %} or drop us a line on
+[twitter](https://twitter.com/vimberlin) - we would like to hear your ideas.
+
+{% include matthias.html %}
+
