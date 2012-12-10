@@ -22,7 +22,6 @@ task :new do
     post.puts "---"
     post.puts "layout: post"
     post.puts "title: \"#{title.gsub(/&/,'&amp;').titlecase}\""
-    post.puts "date: #{Time.now.strftime('%Y-%m-%d %H:%M')}"
     post.puts "---"
   end
 end
@@ -33,4 +32,3 @@ task :start do
 end
 
 task :default => :start
-
