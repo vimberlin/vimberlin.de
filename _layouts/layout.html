@@ -15,93 +15,86 @@
 
   <!-- Title font -->
   <link href='http://fonts.googleapis.com/css?family=Voltaire' rel='stylesheet' type='text/css'>
-  <!-- post content font -->
-  <!--<link href='http://fonts.googleapis.com/css?family=Rosario' rel='stylesheet' type='text/css'>-->
-  <!--<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>-->
 
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
   <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
   <script type="text/javascript" src="/js/jquery.tweet.js"></script>
   <script type="text/javascript" src="/js/application.js"></script>
-  <script type="text/javascript" src="/js/jquery.countdown.min.js"></script>
-  <script type="text/javascript" src="/js/countdown.js"></script>
 
   <script type="text/javascript">
     $(function(){
-          $(".tweet").tweet({
-              username: "{{ site.twitter }}",
-              join_text: "auto",
-              avatar_size: 16,
-              count: 3,
-              auto_join_text_default: "",
-              auto_join_text_ed: "",
-              auto_join_text_ing: "",
-              auto_join_text_reply: "",
-              auto_join_text_url: "",
-              loading_text: "Loading Tweets...",
+      $(".tweet").tweet({
+        username: "{{ site.twitter }}",
+        join_text: "auto",
+        avatar_size: 16,
+        count: 3,
+        auto_join_text_default: "",
+        auto_join_text_ed: "",
+        auto_join_text_ing: "",
+        auto_join_text_reply: "",
+        auto_join_text_url: "",
+        loading_text: "Loading Tweets...",
         refresh_interval: 60
-          });
-
+      });
       do_counter();
       });
   </script>
 </head>
 <body>
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div id="header" class="span3">
+        <a class="avatar" href="/">
+          <img
+          src="https://en.gravatar.com/userimage/39328862/96798fa79067df3fadbe7233f13b02a3?size=100"
+          class="avatar" alt='Home' />
+        </a>
+        <ul id="me">
+          <li><strong>Mailing: <a href="https://groups.google.com/group/vimberlin/">vimberlin</a></strong></li>
+          <li><strong>IRC: <a href="irc://chat.freenode.net/#vimberlin">#vimberlin</a></strong></li>
+          <li><strong>Twitter: </strong> <a href="https://twitter.com/vimberlin">@vimberlin</a></li>
+          <li><strong>xing: </strong> <a href="https://www.xing.com/net/vimberlin">xing</a></li>
+          <li><strong>Calendar: </strong> <a href="http://www.google.com/calendar/ical/nach-vorne.eu_p02r7rposnfv4s53v6s9v117q4%40group.calendar.google.com/public/basic.ics">iCal</a></li>
+          <li><strong>RSS:</strong> <a href="http://feeds.feedburner.com/{{ site.feedburner }}">RSS</a></li>
+          <li><a href="/legal.html">Legal notice</a></li>
+        </ul>
 
-    <div class="container-fluid">
-        <div class="row-fluid">
-            <div id="header" class="span3">
-                <a class="avatar" href="/">
-                    <img
-                    src="https://en.gravatar.com/userimage/39328862/96798fa79067df3fadbe7233f13b02a3?size=100"
-                    class="avatar" alt='Home' />
-                </a>
-                <ul id="me">
-                  <li><strong>Mailing: <a href="https://groups.google.com/group/vimberlin/">vimberlin</a></strong></li>
-                    <li><strong>IRC: <a href="irc://chat.freenode.net/#vimberlin">#vimberlin</a></strong></li>
-                    <li><strong>Twitter: </strong> <a href="https://twitter.com/vimberlin">@vimberlin</a></li>
-                    <li><strong>xing: </strong> <a href="https://www.xing.com/net/vimberlin">xing</a></li>
-                    <li><strong>Calendar: </strong> <a href="http://www.google.com/calendar/ical/nach-vorne.eu_p02r7rposnfv4s53v6s9v117q4%40group.calendar.google.com/public/basic.ics">iCal</a></li>
-                    <li><strong>RSS:</strong> <a href="http://feeds.feedburner.com/{{ site.feedburner }}">RSS</a></li>
-                    <li><a href="/legal.html">Legal notice</a></li>
-                </ul>
+        <h3>Twitter</h3>
+        <div id="tweets">
+          <div class='tweet query'></div>
 
-                <h3>Twitter</h3>
-                <div id="tweets">
-                    <div class='tweet query'></div>
-
-  <a href="http://twitter.com/{{ site.twitter }}" class="twitter-follow-button" data-show-count="false">Follow @{{ site.twitter }}</a>
-  <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
-                </div>
-
-                <h3>Photos</h3>
-<style type="text/css">
-.flickr_badge_image {margin:0px;display:inline;}
-.flickr_badge_image img {border: 1px solid #666666 !important; padding:1px; margin:2px;}
-#flickr_badge_wrapper {width:200px;text-align:left}
-</style><div id="flickr_badge_wrapper" class="center"><script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=6&display=latest&size=s&layout=x&source=all_tag&tag=vimberlin"></script>
-<div class="clearer"></div>
-<a class="left" href="http://www.flickr.com/search/?q=wikimatze%20vimberlin">More photos</a></div>
-            </div>
-            <div class="span9 content">
-                {{ content }}
-            </div>
+          <a href="http://twitter.com/{{ site.twitter }}" class="twitter-follow-button" data-show-count="false">Follow @{{ site.twitter }}</a>
+          <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
         </div>
 
-        <a href="https://github.com/vimberlin/vimberlin.de"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+        <h3>Photos</h3>
+        <style type="text/css">
+          .flickr_badge_image {margin:0px;display:inline;}
+          .flickr_badge_image img {border: 1px solid #666666 !important; padding:1px; margin:2px;}
+          #flickr_badge_wrapper {width:200px;text-align:left}
+          </style><div id="flickr_badge_wrapper" class="center"><script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=6&display=latest&size=s&layout=x&source=all_tag&tag=vimberlin"></script>
+          <div class="clearer"></div>
+          <a class="left" href="http://www.flickr.com/search/?q=wikimatze%20vimberlin">More photos</a></div>
+      </div>
+      <div class="span9 content">
+        {{ content }}
+      </div>
+    </div>
 
-        <script type="text/javascript">
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-34551627-1']);
-            _gaq.push(['_trackPageview']);
+    <a href="https://github.com/vimberlin/vimberlin.de"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
 
-            (function() {
-             var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-             })();
-         </script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-34551627-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+       })();
+</script>
 
      </div>
-</body>
-</html>
+   </body>
+ </html>
