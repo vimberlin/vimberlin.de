@@ -4,17 +4,20 @@ body{
   -webkit-font-smoothing: antialiased;
 }
 .container-fluid {
-    max-width: 900px;
-    margin: auto;
-    padding-top: 20px;
+  max-width: 900px;
+  margin: auto;
+  padding-top: 20px;
 }
-a{
+
+a {
   color: #1b8be0;
 }
-a:hover{
+
+a:hover {
   text-decoration: none;
 }
-p code, li code{
+
+p code, li code {
   background-color: #F9F9F9;
   border: 1px solid #eee;
   font-size: 12px;
@@ -22,20 +25,24 @@ p code, li code{
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
 }
-hr{
+
+hr {
   border: 0;
   height: 1px;
   background-color: #ccc;
   margin: 2em 1em;
 }
-.related{
+
+.related {
   margin-top: 10px;
 }
-.related ul{
+
+.related ul {
   margin: 0;
   padding: 0;
 }
-.related li{
+
+.related li {
   font-size: 14px;
   list-style: none;
   padding: 5px 0px;
@@ -43,136 +50,156 @@ hr{
   color: #777;
   border-bottom: 1px solid #eee;
 }
-.related li span{
+
+.related li span {
   float: right;
 }
-.related a{
+.related a {
   text-decoration: none;
 }
-.related a:hover{
+
+.related a:hover {
   text-decoration: underline;
 }
-h1,h2,h3,h4{
+
+h1, h2, h3, h4 {
   color: #333;
   font-family: 'Voltaire', sans-serif;
   font-weight: 400;
   border-bottom: 1px solid #ccc;
 }
-h1 a, h2 a, h3 a, h4 a{
+
+h1 a, h2 a, h3 a, h4 a {
   color: #111;
   text-decoration: none;
 }
-h1{
+
+h1 {
   font-size: 36px;
   margin-top: 18px;
   margin-bottom: .15em;
 }
-h2{
+
+h2 {
   font-size: 30px;
   margin-bottom: 15px;
   margin-top: 20px;
 }
-h3{
+
+h3 {
   color: #777;
   font-size: 25px;
   padding-bottom: 5px;
   margin-bottom: 10px;
 }
 
-#tweets{
+#tweets {
   font-family: Helvetica, sans-serif;
 }
 
-#header{
+#header {
   font-family: Helvetica, sans-serif;
 }
 
-#header .avatar{
+#header .avatar {
   border: 0px solid #fff;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-box-shadow: 0px 0px 4px #555;
 }
-#header a{
+
+#header a {
   text-decoration: none;
 }
 
-#header #me{
-    list-style: none;
-    margin-left: 0;
-    margin-top: 20px;
+#header #me {
+  list-style: none;
+  margin-left: 0;
+  margin-top: 20px;
 }
-#header #christophe{
+
+#header #christophe {
   font-family: 'Voltaire', sans-serif;
   padding-left: 1px;
   font-size: 32px;
   color: #000;
 }
+
 #header #christophe:hover {
   color: #000;
 }
-#header #hamerling{
+#header #hamerling {
   font-family: 'Voltaire', sans-serif;
   font-size: 34px;
   color: #000;
 }
-#header .site{
-}
-#header .site img{
+
+#header .site{}
+
+#header .site img {
   padding: 0 3px;
   border: 0;
 }
-#header #mousing{
+
+#header #mousing {
   font-size: 12px;
   color: #999;
   padding-left: 2px;
   letter-spacing: 1px;
 }
-#header #sections{
+
+#header #sections {
   margin: 25px 0 0 -15px;
 }
-#header #sections div{
+
+#header #sections div {
   margin-bottom: 7px;
 }
-#header #sections a{
+
+#header #sections a {
   background-color: #000;
   padding: 3px 5px;
   color: #fff;
   font-weight: bold;
   font-size: 12px;
 }
-#header #sections a:hover{
+
+#header #sections a:hover {
   color: #ccc;
 }
 
-#post{
+#post {
   padding-bottom: 30px;
   margin-bottom: 30px;
   /* This will set default size (for gists for example) */
   font-size: 13px;
 }
 
-#post ul{
+#post ul {
   font-size: 15px;
   margin: 20px 20px 20px 0;
 }
-#post li{
+
+#post li {
   line-height: 1.4em;
   margin-left: 3em;
   margin-bottom: 1em;
   color: #222;
   list-style-type: square;
 }
-#post li code{
+
+#post li code {
   border: 1px solid #ccc;
 }
-#post p{
+
+#post p {
   font-size: 15px;
   margin-top: 0;
   margin-bottom: 1.2em;
   line-height: 1.7em;
 }
-#post img{
+
+#post img {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -180,11 +207,13 @@ h3{
   -webkit-border-radius: 8px;
   -webkit-box-shadow: 0px 0px 5px #555;
 }
-#post img.noclip{
+
+#post img.noclip {
   max-width: 650px !important;
   -webkit-box-shadow: none;
 }
-#post .aside{
+
+#post .aside {
   background-color: #eee;
   padding: 14px;
   font-size: 14px;
@@ -192,26 +221,30 @@ h3{
   font-family: Helvetica, sans-serif;
   line-height: 1.6em;
 }
-#post .aside strong{
-}
-#post .authoring{
+
+#post .aside strong{}
+
+#post .authoring {
   margin-bottom: 17px;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   padding-left: 0px;
   font-size: 17px;
   color: #777;
 }
-#post blockquote{
+
+#post blockquote {
   font-style: italic;
   font-size: 14px;
   padding: .25em 1em;
   margin: 1em 1em 0 1em;
   color: #444;
 }
-#post blockquote cite:before{
+
+#post blockquote cite:before {
   content: '— ';
 }
-#post blockquote cite{
+
+#post blockquote cite {
   display: block;
   margin-top: .5em;
   text-align: right;
@@ -247,7 +280,7 @@ h3{
 }
 
 .tweet .tweet_list li, .query .tweet_list li {
-    padding-left: 0;
+  padding-left: 0;
 }
 
 /* 404 page styling */
@@ -259,8 +292,8 @@ h3{
 
 /* Change container padding for smaller devices */
 @media (max-width: 767px) {
-    .container-fluid {
-        padding-top: 20px;
-    }
+  .container-fluid {
+    padding-top: 20px;
+  }
 }
 
