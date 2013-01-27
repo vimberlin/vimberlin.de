@@ -2,6 +2,8 @@
   padding-top: 20px;
 }
 
+#header,
+#tweets,
 #header {
   display: none;
 }
