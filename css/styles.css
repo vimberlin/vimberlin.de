@@ -290,10 +290,3 @@ h3 {
   text-shadow: 2px 2px 2px rgba(200, 200, 200, 0.5);
 }
 
-/* Change container padding for smaller devices */
-@media (max-width: 767px) {
-  .container-fluid {
-    padding-top: 20px;
-  }
-}
-
