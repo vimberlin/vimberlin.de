@@ -4,6 +4,7 @@
 
 #header,
 #tweets,
-#header {
+#header,
+.github {
   display: none;
 }

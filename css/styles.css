@@ -283,6 +283,13 @@ h3 {
   padding-left: 0;
 }
 
+.github img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+}
+
 /* 404 page styling */
 #error {
   font: 20px Constantia, "Hoefler Text", "Adobe Caslon Pro", Baskerville, Georgia, Times, serif;
