@@ -283,12 +283,39 @@ h3 {
   padding-left: 0;
 }
 
-.github img {
+
+#ribbon {
+  background-color: #336699;
+  overflow: hidden;
+  /* top left corner */
   position: absolute;
-  top: 0;
-  right: 0;
-  border: 0;
+  left: -3em;
+  top: 2.5em;
+  /* 45 deg ccw rotation */
+  -moz-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  /* shadow */
+  -moz-box-shadow: 0 0 1em #888888;
+  -webkit-box-shadow: 0 0 1em #888888;
 }
+
+#ribbon a, #ribbon a:hover {
+  border: 1px solid #99bbdd;
+  color: white;
+  display: block;
+  font: bold 81.25% "Helvetiva Neue", Helvetica, Arial, sans-serif;
+  margin: 0.05em 0 0.075em 0;
+  padding: 0.5em 3.5em;
+  text-align: center;
+  text-decoration: none;
+  /* shadow */
+  text-shadow: 0 0 0.5em #444444;
+}
+
+#ribbon a:hover {
+  font: bold 83.25% "Helvetiva Neue", Helvetica, Arial, sans-serif;
+}
+
 
 /* 404 page styling */
 #error {
