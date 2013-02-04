@@ -20,25 +20,6 @@
   <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
   <script type="text/javascript" src="/js/jquery.tweet.js"></script>
   <script type="text/javascript" src="/js/application.js"></script>
-
-  <script type="text/javascript">
-    $(function(){
-      $(".tweet").tweet({
-        username: "{{ site.twitter }}",
-        join_text: "auto",
-        avatar_size: 16,
-        count: 3,
-        auto_join_text_default: "",
-        auto_join_text_ed: "",
-        auto_join_text_ing: "",
-        auto_join_text_reply: "",
-        auto_join_text_url: "",
-        loading_text: "Loading Tweets...",
-        refresh_interval: 60
-      });
-      do_counter();
-      });
-  </script>
 </head>
 <body>
   <div class="container-fluid">
@@ -93,8 +74,26 @@
        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
        })();
-</script>
+    </script>
 
-     </div>
-   </body>
- </html>
+    <script type="text/javascript">
+      $(function(){
+        $(".tweet").tweet({
+          username: "{{ site.twitter }}",
+          join_text: "auto",
+          avatar_size: 16,
+          count: 3,
+          auto_join_text_default: "",
+          auto_join_text_ed: "",
+          auto_join_text_ing: "",
+          auto_join_text_reply: "",
+          auto_join_text_url: "",
+          loading_text: "Loading Tweets...",
+          refresh_interval: 60
+        });
+        do_counter();
+        });
+    </script>
+  </div><!-- container fluid -->
+</body>
+</html>
