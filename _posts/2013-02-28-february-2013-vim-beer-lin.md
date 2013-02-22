@@ -19,4 +19,4 @@ I hope to see you there.
 {% include gregor.html %}
 
 
-P.S: We will continue with our regualar meetup schedule on March, 28th.
+P.S: We will continue with our regular meetup schedule on March, 28th.
