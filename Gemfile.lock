@@ -44,6 +44,7 @@ DEPENDENCIES
   fileutils (= 0.7)
   jekyll (= 1.0.1)
   liquid (= 2.5.0)
+  pygments.rb (= 0.4.2)
   rake (= 10.0.4)
   rdiscount (= 2.0.7.3)
   stringex (= 1.5.1)
