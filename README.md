@@ -13,7 +13,7 @@ If you're enjoying the vimberlin user group or you want to support Vim developme
 [helping needy children in Uganda](http://iccf-holland.org/) tell everybody about it.
 
 
-# Licence
+# License
 
 All files are MIT Licensed. Feel free to use the HTML and CSS as you please. If you do use them, a link back to
 [vimberlin.de](https://github.com/vimberlin/vimberlin.de "vimberlin.de"), but is not required.
