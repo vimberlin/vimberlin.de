@@ -4,16 +4,25 @@ require 'stringex'
 
 posts_dir = '_posts'
 
+def say(text, color=:magenta)
+  n = { :bold => 1, :red => 31, :green => 32, :yellow => 33, :blue => 34, :magenta => 35 }.fetch(color, 0)
+  puts "\e[%dm%s\e[0m" % [n, text]
+end
+
 desc "Begin a new post in #{posts_dir}"
-task :new do
+task :p do
   require './_plugins/titlecase.rb'
 
-  puts "What should we call this post for now?"
+  say "What should we call this post for now?"
   name = STDIN.gets.chomp
 
+  say "What is the publish date of the article? (format %Y-%m-%d)"
+  date =  STDIN.gets.chomp
+
   mkdir_p "#{posts_dir}"
-  title = name
-  filename = "#{posts_dir}/#{Time.now.strftime('%Y-%m-%d')}-#{title.to_url}.md"
+  title = "#{name.gsub(/&/,'&amp;').titlecase}"
+  filename = "_posts/#{date}-#{name.to_url}.md"
+
   puts "Creating new post: #{filename}"
   open(filename, 'w') do |post|
     system "mkdir -p #{posts_dir}/";
