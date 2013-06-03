@@ -31,10 +31,12 @@ task :p do
     post.puts "title: #{title.gsub(/&/,'&amp;').titlecase}"
     post.puts "---"
   end
+
+  system "vim #{filename}"
 end
 
 desc "Startup Jekyll"
-task :start do
+task :s do
   system "jekyll serve --watch"
 end
 
