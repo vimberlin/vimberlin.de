@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+
+  <title>{{ page.title }}</title>
+
+  <meta name="author" content="Gregor Schmidt and Matthias Günther">
+  <meta name="description" content="Vimberlin is gathering for Vim-enthusiasts in Berlin.">
+  <meta name="viewport" content="width=device-width">
+
+  <!-- Included CSS Files (Compressed) -->
+  <link rel="stylesheet" href="/stylesheets/foundation.min.css">
+  <!-- <link rel="stylesheet" href="/css/styles.css" media="screen, projection" /> -->
+  <link rel="stylesheet" href="/stylesheets/app.css">
+
+  <script src="javascripts/modernizr.foundation.js"></script>
+</head>
+<body>
+  <br>
+  <br>
+  <div class="row">
+    <div class="two columns">
+      <a class="avatar" href="/">
+        <img src="https://en.gravatar.com/userimage/39328862/96798fa79067df3fadbe7233f13b02a3?size=100" class="avatar" alt="Home">
+      </a>
+    </div>
+
+    <div class="ten columns">
+      <h1>Vimberlin<small> a gathering for Vim-enthusiasts in Berlin.</small>
+    </div>
+    <hr/>
+  </div>
+
+  <div class="row">
+    <div class="nine columns" role="content">
+      {{ content }}
+    </div>
+
+    <aside class="three columns">
+      <div class="panel">
+        <ul>
+          <li><a href="#">blog</a></li>
+          <li><a href="https://groups.google.com/group/vimberlin/">mailing</a></li>
+          <li><a href="irc://chat.freenode.net/#vimberlin">irc</a></li>
+        </ul>
+
+        <h5>Next meetup</h5>
+        <p>...</p>
+      </div>
+    </aside>
+
+  </div>
+
+  <footer class="row">
+    <div class="twelve columns">
+      <hr />
+      <div class="row">
+        <div class="six columns">
+          <p>&copy 2013 Copyright no one at all - Vim is free.</p>
+        </div>
+        <div class="six columns">
+          <ul class="link-list right">
+            <li><a href="/legal.html">Legal notice</a></li>
+            <li><a href="http://feeds.feedburner.com/vimberlin">RSS</a></li>
+            <li><a href="https://www.xing.com/net/vimberlin#">xing</a></li>
+            <li><a href="https://twitter.com/vimberlin">twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Included JS Files (Compressed) -->
+  <script src="javascripts/foundation.min.js"></script>
+
+  <!-- Initialize JS Plugins -->
+  <script src="javascripts/app.js"></script>
+
+
+    <script>
+    $(window).load(function(){
+      $("#featured").orbit();
+    });
+
+    $(document).foundation('orbit', {
+      animation: 'fade',
+      timer_speed: 10000,
+      pause_on_hover: true,
+      resume_on_mouseout: false,
+      animation_speed: 500,
+      stack_on_small: true,
+      navigation_arrows: true,
+      slide_number: true,
+      container_class: 'orbit-container',
+      stack_on_small_class: 'orbit-stack-on-small',
+      next_class: 'orbit-next',
+      prev_class: 'orbit-prev',
+      timer_container_class: 'orbit-timer',
+      timer_paused_class: 'paused',
+      timer_progress_class: 'orbit-progress',
+      slides_container_class: 'orbit-slides-container',
+      bullets_container_class: 'orbit-bullets',
+      bullets_active_class: 'active',
+      slide_number_class: 'orbit-slide-number',
+      caption_class: 'orbit-caption',
+      active_slide_class: 'active',
+      orbit_transition_class: 'orbit-transitioning',
+      bullets: true,
+      timer: true,
+      variable_height: false,
+      before_slide_change: function(){},
+      after_slide_change: function(){}
+    });
+    </script>
+
+</body>
+</html>
