@@ -4,9 +4,3 @@ permalink: /:title
 
 rdiscount:
   extensions: [smart]
-feedburner: vimberlin
-disqus: vimberlin
-twitter: vimberlin
-title: vimberlin
-gravatar: vimberlin
-subtitle: Vim User Group Berlin
