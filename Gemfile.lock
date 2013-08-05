@@ -50,6 +50,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  colorator (= 0.1)
   fileutils (= 0.7)
   highline (= 1.6.19)
   jekyll (= 1.1.2)

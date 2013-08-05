@@ -1,29 +1,25 @@
-require 'rake'
 require 'fileutils'
+require 'colorator'
+require 'rake'
 require 'stringex'
 
 posts_dir = '_posts'
-
-def say(text, color=:magenta)
-  n = { :bold => 1, :red => 31, :green => 32, :yellow => 33, :blue => 34, :magenta => 35 }.fetch(color, 0)
-  puts "\e[%dm%s\e[0m" % [n, text]
-end
 
 desc "Begin a new post in #{posts_dir}"
 task :p do
   require './_plugins/titlecase.rb'
 
-  say "What should we call this post for now?"
+  puts "What should we call this post for now?".bold.yellow
   name = STDIN.gets.chomp
 
-  say "What is the publish date of the article? (format %Y-%m-%d)"
+  puts "What is the publish date of the article? (format %Y-%m-%d)".bold.yellow
   date =  STDIN.gets.chomp
 
   mkdir_p "#{posts_dir}"
   title = "#{name.gsub(/&/,'&amp;').titlecase}"
   filename = "_posts/#{date}-#{name.to_url}.md"
 
-  puts "Creating new post: #{filename}"
+  puts "Creating new post: #{filename}".bold.green
   open(filename, 'w') do |post|
     system "mkdir -p #{posts_dir}/";
     post.puts "---"
