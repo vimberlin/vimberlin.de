@@ -1,0 +1,12 @@
+/* TEAM */
+
+Persons: Gregor Schmidt and Matthias Günther
+Site: http://nach-vorne.eu and http://wikimatze.de
+
+
+/* SITE */
+
+Standards: HTML5, CSS3,
+Components: Foundation, jQuery, Orbit, Reveal
+Software: jekyll, Git
+

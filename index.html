@@ -1,26 +1,31 @@
 ---
-layout: layout
-title: Vimberlin is a Vim user meetup in Berlin
+layout: base
+title: Vimberlin
 ---
 
-<h1>Vimberlin - Vim User Group Berlin</h1>
-
-<span id="index-text">Vimberlin is gathering for Vim-enthusiasts in Berlin. Every odd month we are giving a meeting
-for advanced users and every even month there is a workshop for absolute beginners to Vim - welcome!</span>
-
-<img src="http://farm9.staticflickr.com/8325/8419758340_e0d68d133d_c.jpg" class="center" alt="Vim community in Berlin" title="Vim community in Berlin">
-
-(Thanks <a href="http://t.co/vNl8sfjx">wikimatze</a> for the picture).
+<p>Vimberlin is gathering for Vim-enthusiasts in Berlin. Our goal is to bring new and trained people using Vim together to talk about their practises, tool, and their habits working with Vim. If you want to give a talk (either a short5 5 minute presentation or a longer one), please post your proposal on our <a href="https://groups.google.com/group/vimberlin/">mailing list</a> or ping us on <a href="https://twitter.com/vimberlin">twitter</a>.
+</p>
 
 
-<h2>Latests posts</h2>
+<div id="featured">
+  <img src="http://farm9.staticflickr.com/8325/8419758340_e0d68d133d_c.jpg" alt="slide image">
+  <img src="http://farm8.staticflickr.com/7237/7265668758_959f632d36_c.jpg" alt="slide image">
+  <img src="http://farm9.staticflickr.com/8015/7265657296_85a82d31eb_c.jpg" alt="slide image">
+  <img src="http://farm8.staticflickr.com/7094/7265641350_167bbed626_c.jpg" alt="bla bla">
+  <img src="http://farm9.staticflickr.com/8081/8418657901_51bceb84c7_c.jpg" alt="slide image">
+  <img src="http://farm9.staticflickr.com/8049/8418659759_7c8b7c82d3_c.jpg" alt="slide image">
+  <img src="http://farm8.staticflickr.com/7074/7265661210_a8bbf550e8_c.jpg" alt="slide image">
+  <img src="http://farm8.staticflickr.com/7099/7265665182_93b597fdcb_c.jpg" alt="slide image">
+</div>
 
+<h3>Latest posts</h3>
 <div class="related">
   <ul>
     {% for post in site.posts %}
-      <li>
-      <span>{{ post.date | date: "%B %e, %Y" }}</span> <a href="{{ post.url }}">{{ post.title }}</a>
-      </li>
+    <li>
+    <span>{{ post.date | date: "%B %e, %Y" }}</span> <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
     {% endfor %}
   </ul>
 </div>
+

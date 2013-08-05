@@ -1,11 +1,11 @@
 ---
-layout: layout
+layout: base
 ---
 
 <div id="post">
   {% include post_header.html %}
   {{ content }}
-  <a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-via="{{ site.twitter }}" data-lang="fr">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-via="vimberlin" data-lang="fr">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
   <g:plusone size="medium"></g:plusone>
 </div>
 
@@ -15,7 +15,7 @@ layout: layout
   <div id="disqus_thread"></div>
   <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-  var disqus_shortname = '{{ site.disqus }}'; // required: replace example with your forum shortname
+  var disqus_shortname = 'vimberlin'; // required: replace example with your forum shortname
   /*var disqus_developer = 1;*/
   /*var disqus_url = 'http://christophehamerling.com{{ page.url }}';*/
   var disqus_identifier = '{{ page.title }}';
