@@ -4,3 +4,17 @@ permalink: /:title
 
 rdiscount:
   extensions: [smart]
+
+baseurl: http://vimberlin.de
+
+locations:
+  launchco:
+    street: Warschauer Str. 70A
+    city: Berlin
+    postalcode: 10243
+    country: Germany
+    url: https://launchco.com/etc/#coworking
+    map: http://g.co/maps/k62eb
+    name: LAUNCH/CO
+    addition: 3rd floor
+
