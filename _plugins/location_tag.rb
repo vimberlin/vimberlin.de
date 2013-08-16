@@ -14,9 +14,11 @@ module Jekyll
       addition = if @addition_overwrite != "" then @addition_overwrite else loc["addition"] end
 <<DOC
   <div itemprop="location" itemscope itemtype="http://schema.org/PostalAddress">
-    <a itemprop="url" href="#{loc["url"]}">
-      <div itemprop="name">#{loc["name"]}</div>
-    </a> #{addition}
+    <div>
+      <a itemprop="url" href="#{loc["url"]}">
+        <span itemprop="name">#{loc["name"]}</span>
+      </a> #{addition}
+    </div>
     <div itemprop="streetAddress">#{loc["street"]}</div>
     <div>
       <span itemprop="postalCode">#{loc["postalcode"]}</span>

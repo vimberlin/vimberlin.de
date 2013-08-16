@@ -19,7 +19,7 @@ module Jekyll
       result = ""
       result += "<a href='#{next_event.url}'>#{next_event.title}</a>:"
       result += " #{time}"
-      result += "at <a href='#{loc["url"]}'>#{loc["name"]}</a>"
+      result += " at <a href='#{loc["url"]}'>#{loc["name"]}</a>"
     end
   end
 end
