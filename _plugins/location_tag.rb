@@ -12,6 +12,8 @@ module Jekyll
       # is there no pretty way to access the config?
       loc = context.registers[:site].config['locations'][page['where']]
       addition = if @addition_overwrite != "" then @addition_overwrite else loc["addition"] end
+
+      # TODO: refactor to remove ugly strings
       where = if loc["url"].nil? then
                 "<span itemprop='name'>#{loc["name"]}</span> #{addition}"
               else
