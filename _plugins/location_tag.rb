@@ -12,13 +12,17 @@ module Jekyll
       # is there no pretty way to access the config?
       loc = context.registers[:site].config['locations'][page['where']]
       addition = if @addition_overwrite != "" then @addition_overwrite else loc["addition"] end
+      where = if loc["url"].nil? then
+                "<span itemprop='name'>#{loc["name"]}</span> #{addition}"
+              else
+                "<a itemprop='url' href='#{loc["url"]}'>
+                <span itemprop='name'>#{loc["name"]}</span>
+                </a> #{addition}"
+              end
+
 <<DOC
   <div itemprop="location" itemscope itemtype="http://schema.org/PostalAddress">
-    <div>
-      <a itemprop="url" href="#{loc["url"]}">
-        <span itemprop="name">#{loc["name"]}</span>
-      </a> #{addition}
-    </div>
+    <div>#{where}</div>
     <div itemprop="streetAddress">#{loc["street"]}</div>
     <div>
       <span itemprop="postalCode">#{loc["postalcode"]}</span>
