@@ -17,4 +17,22 @@ locations:
     map: http://g.co/maps/k62eb
     name: LAUNCH/CO
     addition: 3rd floor
+  matthias:
+    street: Neue Straße 6
+    city: Berlin Tempelhof
+    postalcode: 12103
+    country: Germany
+    url:
+    map: http://bit.ly/To0yMf
+    name: Matthias@Home
+    addition:
+  intimes:
+    street: Boxhagener Str. 107
+    city: Berlin
+    postalcode: 10245
+    country: Germany
+    url:
+    map: http://goo.gl/maps/a4oqk
+    name: the bar Intimes
+    addition:
 
