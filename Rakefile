@@ -31,6 +31,19 @@ task :p do
   system "vim #{filename}"
 end
 
+desc 'Deploy'
+task :d do
+  require 'sweetie'
+
+  puts "1. Building jekyll ..".bold.green
+  system 'jekyll build'
+
+  puts "2. Deploying site with lovely rsync ..".bold.green
+  system "rsync -vru -e \"ssh\" --del ?site/* xa6195@xa6.serverdomain.org:/home/www/vimberlin/"
+
+  puts "3. Done!".bold.green
+end
+
 desc "Startup Jekyll"
 task :s do
   system "jekyll serve --watch"
