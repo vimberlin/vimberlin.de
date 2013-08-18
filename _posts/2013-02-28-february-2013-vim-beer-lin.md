@@ -1,13 +1,12 @@
 ---
-layout: post
+layout: event
 title: February 2013 Vim-beer-lin
+when: 2013-02-28T20:00
+ends: 2013-02-28T22:00
+where: intimes
 ---
 
-This month we'll skip the workshop part and move directly to the after-show party part. Berlin's Vim users and everybody interested is invited to join us on
-
-
-<code>February, 28th 2013 8:00 pm at the bar Intimes, Boxhagener Str. 107, 10245 Berlin (<a href="http://goo.gl/maps/a4oqk">map</a>)</code>
-
+This month we'll skip the workshop part and move directly to the after-show party part. Berlin's Vim users and everybody interested is invited to join us on.
 
 We'll have some beer and vim chit-chat.
 
