@@ -42,7 +42,7 @@ module Jekyll
               event.dtstart     = Time.parse post.data['when']
               event.dtend       = Time.parse post.data['ends']
               event.location    = location
-              event.url         = site.config['baseurl'] + post.url
+              event.url         = site.config['siteurl'] + post.url
             end
           end
         end
