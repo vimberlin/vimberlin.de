@@ -37,6 +37,7 @@ GEM
     rake (10.1.0)
     rdiscount (2.1.6)
     redcarpet (2.2.2)
+    ri_cal (0.8.8)
     rmagick (2.13.2)
     safe_yaml (0.7.1)
     stringex (2.0.8)
@@ -44,6 +45,7 @@ GEM
       json (>= 1.6.1)
       nokogiri (>= 1.4.6)
     syntax (1.0.0)
+    tzinfo (1.0.1)
     yajl-ruby (1.1.0)
 
 PLATFORMS
@@ -55,8 +57,11 @@ DEPENDENCIES
   highline (= 1.6.19)
   jekyll (= 1.1.2)
   liquid (= 2.5.1)
+  nokogiri (= 1.6.0)
   pygments.rb (= 0.5.2)
   rake (= 10.1.0)
   rdiscount (= 2.1.6)
+  ri_cal (= 0.8.8)
   stringex (= 2.0.8)
   sweetie (= 1.0.1)
+  tzinfo (= 1.0.1)
