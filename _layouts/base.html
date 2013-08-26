@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="/stylesheets/app.css">
 
   <script src="/javascripts/modernizr.foundation.js"></script>
+  <script src="/javascripts/flowtype.js"></script>
 </head>
 <body>
   <div class="row" id="header">
@@ -105,5 +106,15 @@
   });
   </script>
 
+  <script>
+  $('body').flowtype({
+    minimum   : 500,
+    maximum   : 1200,
+    minFont   : 12,
+    maxFont   : 40,
+    fontRatio : 30,
+    lineRatio : 1.45
+  });
+  </script>
 </body>
 </html>

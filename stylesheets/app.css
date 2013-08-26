@@ -1,7 +1,11 @@
-h1, h2, h3, h4 {
-  color: #333;
-  font-family: 'Voltaire', sans-serif;
-  font-weight: 400;
+body {
+ font-size: 18px;
+ line-height: 26px;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+ font-family: inherit;
+ font-size: inherit;
 }
 
 h1 {
@@ -23,6 +27,12 @@ h3 {
   margin-bottom: 10px;
 }
 
+h1, h2, h3, h4 {
+  color: #333;
+  line-height: 1em;
+  font-family: 'Voltaire', sans-serif;
+  font-weight: 400;
+}
 
 .related {
   margin-top: 10px;
