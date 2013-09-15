@@ -8,7 +8,6 @@ module Jekyll
 
     def render(context)
       next_event = context.registers[:site].posts
-                .select  do |page| page.data['layout'] == 'event' end
                 .select  do |page| Time.parse(page.data['when']) >= Time.now end
                 .sort_by do |page| page.data['when'] end
                 .first
