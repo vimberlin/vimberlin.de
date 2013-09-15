@@ -3,7 +3,7 @@ body {
  line-height: 26px;
 }
 
-h1,h2,h3,h4,h5,h6,p {
+h1, h2, h3, h4, h5, h6, p {
  font-family: inherit;
  font-size: inherit;
 }
@@ -21,7 +21,6 @@ h2 {
 }
 
 h3 {
-  color: #777;
   font-size: 25px;
   padding-bottom: 5px;
   margin-bottom: 10px;
