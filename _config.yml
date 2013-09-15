@@ -17,6 +17,15 @@ locations:
     map: http://g.co/maps/k62eb
     name: LAUNCH/CO
     addition: 3rd floor
+  wooga:
+    street: Saarbrücker Straße 38
+    city: Berlin
+    postalcode: 10405
+    country: Germany
+    url: http://www.wooga.com/
+    map: http://g.co/maps/g7tx6
+    name: Wooga GmbH
+    addition:
   matthias:
     street: Neue Straße 6
     city: Berlin Tempelhof
