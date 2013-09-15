@@ -23,8 +23,11 @@ task :p do
   open(filename, 'w') do |post|
     system "mkdir -p #{posts_dir}/";
     post.puts "---"
-    post.puts "layout: post"
+    post.puts "layout: event"
     post.puts "title: #{title.gsub(/&/,'&amp;').titlecase}"
+    post.puts "when: #{date}T19:30"
+    post.puts "ends: #{date}T22:30"
+    post.puts "where: launcho|wooga"
     post.puts "---"
   end
 
