@@ -34,6 +34,8 @@ where: wooga
   * [the silver searcher](https://github.com/ggreer/the_silver_searcher) is even faster than [ACK](https://github.com/petdance/ack2)
   * [different cursor in insert mode](http://vim.wikia.com/wiki/Change_cursor_shape_in_different_modes)
   * [dash](http://kapeli.com/dash) allows you to browse various documentation locally
+  * [Ctags combined with git hooks](http://tbaggery.com/2011/08/08/effortless-ctags-with-git.html)
+  * [Esc-Ctrl on Capslock on Macs](http://stevelosh.com/blog/2012/10/a-modern-space-cadet/#controlescape)
 
 
 You can find this event under [Lanyrd](http://lanyrd.com/crdqc).
