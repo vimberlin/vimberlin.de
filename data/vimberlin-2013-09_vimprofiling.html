@@ -1,0 +1,157 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>vimprofiling</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<h1 id="toc_1">Profiling Vim</h1>
+
+<h2 id="toc_1.1">what is vim doing? - start in verbose mode</h2>
+
+<p>
+<code>vim -V filename</code>
+</p>
+
+<p>
+run vim with verbose 10 as default and write to messages
+</p>
+
+<p>
+show with <code>:messages</code>
+</p>
+
+<h3 id="toc_1.1.1">verbosity level</h3>
+
+<p>
+<code>vim -V20/tmp/log filename</code>
+</p>
+
+<p>
+save verbose 20 to filename <code>/tmp/log</code>
+</p>
+
+<p>
+When bigger than zero, Vim will give messages about what it is doing.
+Currently, these messages are given:
+&gt;= 1  When the viminfo file is read or written.
+&gt;= 2  When a file is ":source"'ed.
+&gt;= 5  Every searched tags file and include file.
+&gt;= 8  Files for which a group of autocommands is executed.
+&gt;= 9  Every executed autocommand.
+&gt;= 12 Every executed function.
+&gt;= 13 When an exception is thrown, caught, finished, or discarded.
+&gt;= 14 Anything pending in a ":finally" clause.
+&gt;= 15 Every executed Ex command (truncated at 200 characters).
+</p>
+
+
+<p>
+-&gt; but no timestamps
+</p>
+
+<h3 id="toc_1.1.2">change it on runtime</h3>
+
+<pre vim>
+set verbosefile=/tmp/verbose.log
+set verbose=15
+</pre>
+
+<h2 id="toc_1.2">vim startup</h2>
+
+<p>
+only on 7.2.269 or later
+</p>
+
+<p>
+<code>vim --startuptime /tmp/profile.log filename</code>
+</p>
+
+
+<h2 id="toc_1.3">vim has profile mode</h2>
+
+<p>
+<span class="todo">XXX:</span> needs vim to be compiled with <code>+profile</code> flag
+</p>
+
+<pre vim>
+profile start /tmp/log
+profile func *
+profile file *
+</pre>
+
+<p>
+-&gt; written on vim close
+</p>
+
+<p>
+<code>vim --cmd 'profile start profile.log' --cmd 'profile func *' --cmd 'profile file *'</code>
+</p>
+
+<p>
+notes from <code>help profile</code>:
+</p>
+
+<ul>
+<li>
+Profiling may give weird results on multi-processor systems, when sleep
+  mode kicks in or the processor frequency is reduced to save power.
+
+</ul>
+
+<ul>
+<li>
+The "self" time is wrong when a function is used recursively.
+
+</ul>
+
+<h2 id="toc_1.4">profile your syntax</h2>
+
+<p>
+only on 7.4
+</p>
+
+<p>
+<span class="todo">XXX:</span> needs vim to be compiled with <code>+profile</code> flag
+</p>
+
+<p>
+<code>:syntime on</code>
+<code>:syntime report</code>
+</p>
+
+<h2 id="toc_1.5">insert timestamps</h2>
+
+<p>
+see: <a href="http://stackoverflow.com/questions/1687799/profiling-vim-startup-time">http://stackoverflow.com/questions/1687799/profiling-vim-startup-time</a>
+</p>
+
+<p>
+<code>vim -V 2&gt; &gt;( ruby -n  -e 'puts "#{Time.now.to_f}: #{$_}"' &gt; /tmp/profile.log )</code>
+</p>
+
+<p>
+-&gt; only working at the beginning
+tip is very old (2009) - maybe vim changed since then
+</p>
+
+
+<h3 id="toc_1.5.1">fifo</h3>
+
+<p>
+-&gt; work around: use fifo
+-&gt; but vim closes the file
+-&gt; use while loop
+</p>
+
+<pre sh>
+mkfifo ./startuptime
+vim -V./startuptime
+
+while true;  do cat startuptime | ruby -n  -e 'puts "#{Time.now.to_f}: #{$_}"' &gt;&gt; /tmp/vilog2; done
+</pre>
+
+</body>
+</html>
