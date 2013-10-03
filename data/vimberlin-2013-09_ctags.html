@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>~/Dropbox/bitbucket/presentations/slides.markdown.html</title>
+<meta name="Generator" content="Vim/7.4">
+<meta name="plugin-version" content="vim7.4_v1">
+<meta name="syntax" content="mkd">
+<meta name="settings" content="use_css,pre_wrap,no_foldcolumn,expand_tabs,prevent_copy=">
+<meta name="colorscheme" content="detailed">
+<style type="text/css">
+<!--
+pre { white-space: pre-wrap; font-family: monospace; color: #e4e4e4; background-color: #080808; }
+body { font-family: monospace; color: #e4e4e4; background-color: #080808; }
+* { font-size: 1em; }
+.detailedString { color: #af005f; background-color: #121212; padding-bottom: 1px; }
+.Title { color: #ffd7ff; }
+.Underlined { color: #5fd7ff; text-decoration: underline; }
+.Identifier { color: #00ffff; font-weight: bold; }
+.lv8c { color: #626262; }
+-->
+</style>
+
+<script type='text/javascript'>
+<!--
+
+-->
+</script>
+</head>
+<body>
+<pre id='vimCodeElement'>
+<span class="Title"># Installation</span>
+
+<span class="detailedString">    # Linux</span>
+<span class="detailedString">    sudo apt-get install exuberant-ctags</span>
+<span class="detailedString">    # Mac</span>
+<span class="detailedString">    brew install ctags</span>
+
+
+<span class="Title"># Creating tags</span>
+
+<span class="detailedString">    $ git clone <a href="https://github.com/padrino/padrino-framework">https://github.com/padrino/padrino-framework</a></span>
+<span class="detailedString">    $ cd padrino-framework</span>
+<span class="detailedString">    $ ctags -R .</span>
+
+
+<span class="Title"># Excluding certain files</span>
+
+<span class="detailedString">    $ ctags -R --exclude=&quot;*.js&quot; .</span>
+
+even exclude more than one file:
+
+<span class="detailedString">    $ ctags -R --exclude=&quot;*.js&quot; --exclude=&quot;*.git&quot;.</span>
+
+
+<span class="Title"># Understanding the tag format header</span>
+
+
+The header:
+
+<span class="detailedString">    !_TAG_FILE_FORMAT  2   /extended format; --format=1 will not append ;&quot; to lines/</span>
+<span class="detailedString">    !_TAG_FILE_SORTED  1   /0=unsorted, 1=sorted, 2=foldcase/</span>
+<span class="detailedString">    !_TAG_PROGRAM_AUTHOR   Darren Hiebert  /dhiebert@users.sourceforge.net/</span>
+<span class="detailedString">    !_TAG_PROGRAM_NAME Exuberant Ctags //</span>
+<span class="detailedString">    !_TAG_PROGRAM_URL  <a href="http://ctags.sourceforge.net">http://ctags.sourceforge.net</a>    /official site/</span>
+<span class="detailedString">    !_TAG_PROGRAM_VERSION  5.9~svn20110310 //</span>
+
+
+<span class="Title"># Understanding a single entry in the in the tag file</span>
+
+<span class="detailedString">    &lt;&lt;  padrino-core/lib/padrino-core/logger.rb /^    def &lt;&lt;(message = nil)$/;&quot; f</span>
+
+
+<span class="Title"># Tag navigation commands</span>
+
+<span class="Identifier">- </span><span class="detailedString">`&lt;C-]&gt;`</span> ... jump to a file
+<span class="Identifier">- </span><span class="detailedString">`&lt;C-i/C-o&gt;`</span> ... move forward/back
+<span class="Identifier">- </span><span class="detailedString">`:tag &lt;tagname&gt;`</span> ... search after the tagname
+<span class="Identifier">- </span><span class="detailedString">`:tselect`</span> ... select the tag you want if matches are unambiguous
+<span class="Identifier">- </span><span class="detailedString">`:tnext, :tprevious, :tfirst, :tlast`</span> ... left for you as an exercise
+
+
+<span class="Title"># Comfort</span>
+
+<span class="Identifier">- </span>use Autotags.vim <span class="Underlined"><a href="http://www.vim.org/scripts/script.php?script_id=1343">http://www.vim.org/scripts/script.php?script_id=1343</a></span> for tag update
+<span class="Identifier">- </span>Ctrlp.vim <span class="Underlined"><a href="http://kien.github.io/ctrlp.vim/">http://kien.github.io/ctrlp.vim/</a></span> for fuzzy like tag search <span class="lv8c">(</span>better then <span class="detailedString">`:tselect`</span><span class="lv8c">)</span>
+
+
+<span class="Title"># The End</span>
+
+<span class="Identifier">- </span>Contact: Matthias Günther <span class="lv8c">(</span>@wikimatze<span class="lv8c">)</span>
+<span class="Identifier">- </span>Homepage: <span class="Underlined"><a href="http://wikimatze.de">http://wikimatze.de</a></span>
+<span class="Identifier">- </span>Book: <span class="Underlined"><a href="http://padrinobook.com">http://padrinobook.com</a></span>
+
+</pre>
+</body>
+</html>
+<!-- vim: set foldmethod=manual : -->
