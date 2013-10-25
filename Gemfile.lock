@@ -42,6 +42,8 @@ GEM
       json (>= 1.6.1)
       nokogiri (>= 1.4.6)
     tzinfo (1.0.1)
+    tzinfo-data (1.2013.7)
+      tzinfo (>= 1.0.0)
     yajl-ruby (1.1.0)
 
 PLATFORMS
@@ -60,4 +62,4 @@ DEPENDENCIES
   ri_cal (= 0.8.8)
   stringex (= 2.0.8)
   sweetie (= 1.0.1)
-  tzinfo (= 1.0.1)
+  tzinfo-data (= 1.2013.7)
