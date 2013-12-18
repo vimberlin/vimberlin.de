@@ -4,7 +4,7 @@ gem 'colorator'   , '0.1'
 
 gem 'fileutils'   , '0.7'
 gem 'highline'    , '1.6.20'
-gem 'jekyll'      , '1.3.0'
+gem 'jekyll'      , '1.4.2'
 gem 'liquid'      , '2.5.3'
 gem 'pygments.rb' , '0.5.4'
 gem 'rake'        , '10.1.0'
