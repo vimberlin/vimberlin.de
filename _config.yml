@@ -10,6 +10,8 @@ rdiscount:
 
 url: http://vimberlin.de
 
+copyright: 2014 Copyright no one at all - Vim is free.
+
 locations:
   buero20:
     street: Weigandufer 45
