@@ -5,7 +5,7 @@ permalink: /:title
 rdiscount:
   extensions: [smart]
 
-siteurl: http://vimberlin.de
+url: http://vimberlin.de
 
 locations:
   buero20:
