@@ -2,6 +2,9 @@ markdown: rdiscount
 pygments: true
 permalink: /:title
 
+author: Matthias Günther
+email: matthias@wikimatze.de
+
 rdiscount:
   extensions: [smart]
 
@@ -17,33 +20,6 @@ locations:
     map: http://www.openstreetmap.org/?lat=52.4794285&lon=13.4542985&zoom=17&layers=T&mlat=52.47952&mlon=13.45428
     name:  Büro 2.0
     addition: Conference room
-  launchco:
-    street: Warschauer Str. 70A
-    city: Berlin
-    postalcode: 10243
-    country: Germany
-    url: https://launchco.com/etc/#coworking
-    map: http://g.co/maps/k62eb
-    name: LAUNCH/CO
-    addition: 3rd floor
-  wooga:
-    street: Saarbrücker Straße 38
-    city: Berlin
-    postalcode: 10405
-    country: Germany
-    url: http://www.wooga.com/
-    map: http://g.co/maps/g7tx6
-    name: Wooga GmbH
-    addition:
-  matthias:
-    street: Neue Straße 6
-    city: Berlin Tempelhof
-    postalcode: 12103
-    country: Germany
-    url:
-    map: http://bit.ly/To0yMf
-    name: Matthias@Home
-    addition:
   intimes:
     street: Boxhagener Str. 107
     city: Berlin
@@ -53,4 +29,39 @@ locations:
     map: http://goo.gl/maps/a4oqk
     name: the bar Intimes
     addition:
-
+  launchco:
+    street: Warschauer Str. 70A
+    city: Berlin
+    postalcode: 10243
+    country: Germany
+    url: https://launchco.com/etc/#coworking
+    map: http://g.co/maps/k62eb
+    name: LAUNCH/CO
+    addition: 3rd floor
+  matthias:
+    street: Neue Straße 6
+    city: Berlin Tempelhof
+    postalcode: 12103
+    country: Germany
+    url:
+    map: http://bit.ly/To0yMf
+    name: Matthias@Home
+    addition:
+  travis:
+    street: Prinzessinnenstr. 20
+    city: Berlin, Kreuzberg
+    postalcode: 10969
+    country: Germany
+    url: https://travis-ci.org/
+    map: http://bit.ly/1dqOIZk
+    name: Travis CI GmbH
+    addition:
+  wooga:
+    street: Saarbrücker Straße 38
+    city: Berlin
+    postalcode: 10405
+    country: Germany
+    url: http://www.wooga.com/
+    map: http://g.co/maps/g7tx6
+    name: Wooga GmbH
+    addition:
