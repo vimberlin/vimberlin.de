@@ -9,7 +9,7 @@ desc "Begin a new post in #{posts_dir}"
 task :p do
   require './_plugins/titlecase.rb'
 
-  puts "What should we call this post for now?".bold.yellow
+  puts "What should we call this post for now? (e.g.: January 2014 Meetup)".bold.yellow
   name = STDIN.gets.chomp
 
   puts "What is the publish date of the article? (format %Y-%m-%d)".bold.yellow
@@ -52,4 +52,4 @@ task :s do
   system "jekyll serve --watch"
 end
 
-task :default => :start
+task :default => :s
