@@ -20,6 +20,9 @@ Happy new year and we start again with our monthly meetups in 2014.
     I'll talk about some clever ways I use autocommands. I'll also show my unfinished experiments with a recently-added autocommand called `TextChanged`. This allows you to hook into any kind of change in both normal and insert mode, with some gotchas...
 
     I'm hoping that many other attendees will pitch in for ideas about interesting autocommands they use, opening up some discussion after the talk.
+* **"Writing text in Vim"** by [Florian Eitel](http://feitel.indeedgeek.de/)
+
+    I like to show some tricks and snippets I use for working with text. This include using the spell checker in multiple languages, break long lines, full text search using vimgrep and maybe more.
 
 
 ## Vim News
