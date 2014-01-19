@@ -5,7 +5,6 @@ when: 2014-01-23T19:30
 ends: 2014-01-23T22:30
 where: travis
 ---
-
 Happy new year and we start again with our monthly meetups in 2014.
 
 ## Talks
@@ -23,11 +22,14 @@ Happy new year and we start again with our monthly meetups in 2014.
     I'm hoping that many other attendees will pitch in for ideas about interesting autocommands they use, opening up some discussion after the talk.
 
 
+## Vim News
+
+This is a new part in our meetup. Andrew will talk about the latest things happening in our Vim community like stuff posted in reddit, discussions on the mailing list, some new plugin or new mapping that someone tweeted. If we get positive feedback about this idea, we make will make this a daily habbit to every following meetup.
+
+
 If you want to give a talk too, just send us a tweet or a mail.
 
 {% include travis_ci.html %}
 
 {% include matthias.html %}
-
-
 
