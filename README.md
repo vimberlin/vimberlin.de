@@ -17,3 +17,7 @@ If you're enjoying the vimberlin user group or you want to support Vim developme
 
 All files are MIT Licensed. Feel free to use the HTML and CSS as you please. If you do use them, a link back to
 [vimberlin.de](https://github.com/vimberlin/vimberlin.de "vimberlin.de"), but is not required.
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/vimberlin/vimberlin.de/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
