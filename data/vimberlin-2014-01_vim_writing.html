@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+<h1 id="writing-text-in-vim">Writing Text in Vim</h1>
+<p>If you write useless texts in Vim which no one wants to read the lines are going longer and longer until they aren’t fit at the display again and the vim editor needs to scroll this long long lines in order to display it completely.</p>
+<h2 id="obvious-solutions">Obvious solutions</h2>
+<p><code>set textwidth=80</code> - breaks automatically long lines after 80 chars</p>
+<p>BUT: do you really want to break long lines only for your tool chain?</p>
+<p><code>set wrap</code> - Wraps long lines at the end of the “window”</p>
+<p>BUT: makes navigation in the long line difficult</p>
+<h2 id="improve-line-wrap">Improve line wrap</h2>
+<p>Use <code>gj</code>, <code>gk</code>, <code>g0</code>, `g^``, …</p>
+<pre class="vim"><code>let g:remappings = [&quot;$&quot;, &quot;j&quot;, &quot;k&quot;, &quot;0&quot;, &quot;^&quot;, &quot;&lt;end&gt;&quot;, &quot;&lt;home&gt;&quot;, &quot;&lt;up&gt;&quot;, &quot;&lt;down&gt;&quot;]
+function ToggleLineHandling()
+  if !exists(&quot;b:LineHandling&quot;) | let b:LineHandling = &quot;normal&quot; | endif
+  if b:LineHandling == &quot;normal&quot;
+    let b:LineHandling = &quot;continuous&quot;
+    setlocal wrap
+    setlocal nolist
+    for i in g:remappings | exe &quot;noremap &lt;buffer&gt; &quot; . i . &quot; g&quot; . i | endfor
+  else
+    let b:LineHandling = &quot;normal&quot;
+    setlocal nowrap
+    setlocal list
+    for i in g:remappings | exe &quot;unmap &lt;buffer&gt; &quot; . i | endfor
+  endif
+endfunction</code></pre>
+<p>-&gt; <code>nolist</code> disables linebreak in a word</p>
+<h2 id="spellthesaurus">spell/thesaurus</h2>
+<pre class="vim"><code>let g:myLangList = [ &quot;de_20&quot;, &quot;en_us&quot; ]
+let g:myThesaurusList = [ &quot;thesaurus-de.txt&quot;, &quot;&quot; ]
+let g:startLang   = 0
+
+function! ChangeSpellLang()
+  if exists(&quot;b:myLang&quot;)
+    let b:myLang = b:myLang + 1
+  else
+    let b:myLang = g:startLang
+  endif
+
+  if b:myLang &gt;= len(g:myLangList)
+    let b:myLang = -1
+    setlocal nospell
+  else
+    exe &quot;setlocal spell&quot;
+    exe &quot;setlocal spelllang=&quot; . g:myLangList[b:myLang]
+    exe &quot;setlocal thesaurus=$HOME/.vim/&quot; . g:myThesaurusList[b:myLang]
+  endif
+endfunction
+
+map &lt;F7&gt; :call ChangeSpellLang()&lt;CR&gt;</code></pre>
+<p>use both: <code>:set spelllang=de_20,en_us</code></p>
+<p>Complete using thesaurus <code>i_CTRL-X_CTRL-T</code> Complete using spell <code>i_CTRL-X_CTRL-S</code></p>
+<p>Vim-online-thesaurus: http://www.vim.org/scripts/script.php?script_id=4588</p>
+<h2 id="misc-suggestions">misc suggestions</h2>
+<ul>
+<li>Folding!</li>
+<li>Pandoc - http://johnmacfarlane.net/pandoc/</li>
+<li>marker</li>
+<li>count words: <code>g CTRL-g</code> // <code>w !wc -w</code></li>
+</ul>
+</body>
+</html>
