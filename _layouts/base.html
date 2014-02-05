@@ -66,13 +66,11 @@
     </div>
   </footer>
 
-  <script src="/javascript/foundation.min.js"></script>
-  <script src="/javascript/app.js"></script>
+  <script src="/javascript/jquery.js"></script>
+  <script src="/javascript/foundation.js"></script>
+  <script src="/javascript/foundation.orbit.js"></script>
 
   <script>
-  $(window).load(function(){
-    $("#featured").orbit();
-  });
 
   $(document).foundation('orbit', {
     animation: 'fade',
@@ -84,8 +82,7 @@
     navigation_arrows: true,
     slide_number: true,
     container_class: 'orbit-container',
-    stack_on_small_class: 'orbit-stack-on-small',
-    next_class: 'orbit-next',
+    stack_on_small_class: 'orbit-stack-on-small', next_class: 'orbit-next',
     prev_class: 'orbit-prev',
     timer_container_class: 'orbit-timer',
     timer_paused_class: 'paused',
