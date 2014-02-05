@@ -13,5 +13,6 @@ gem 'stringex'    , '2.1.0'
 
 gem 'nokogiri'    , '1.6.0'
 gem 'ri_cal'      , '0.8.8'
-gem 'tzinfo-data' , '1.2013.8'
+#gem 'tzinfo-data' , '1.2013.8'
+gem 'tzinfo' , '1.1.0'
 
