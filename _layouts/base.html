@@ -13,6 +13,8 @@
   <meta name="description" content="Vimberlin is gathering for Vim-enthusiasts in Berlin.">
   <meta name="viewport" content="width=device-width">
 
+
+  <link rel="stylesheet" href="/stylesheets/normalize.css">
   <link rel="stylesheet" href="/stylesheets/foundation.min.css">
   <link rel="stylesheet" href="/stylesheets/app.css">
 
@@ -20,42 +22,40 @@
   <script src="/javascript/flowtype.js"></script>
 </head>
 <body>
-  <div class="row" id="header">
-    <div class="two columns">
-      <a class="avatar" href="/">
-        <img src="https://en.gravatar.com/userimage/39328862/96798fa79067df3fadbe7233f13b02a3?size=100" class="avatar" alt="Home">
-      </a>
+  <div class="row header">
+    <div class="large-2 columns">
+        <a class="avatar" href="/">
+          <img src="https://en.gravatar.com/userimage/39328862/96798fa79067df3fadbe7233f13b02a3?size=100" class="avatar" alt="Home">
+        </a>
     </div>
-
-    <div class="ten columns">
-      <h1>Vimberlin<small> a gathering for Vim-enthusiasts in Berlin.</small>
+    <div class="large-9 columns">
+      <h1>Vimberlin<small> a gathering for Vim-enthusiasts in Berlin.</small></h1>
     </div>
-    <hr/>
+    <hr />
   </div>
 
   <div class="row">
-    <div class="nine columns" role="content">
+    <div class="large-9 columns" role="content">
       {{ content }}
     </div>
 
-    <aside class="three columns">
+    <aside class="large-3 columns">
       <div class="panel">
         <h5>Next meetup:</h5>
         <p>{% next_meetup %}</p>
       </div>
     </aside>
-
   </div>
 
   <footer class="row">
-    <div class="twelve columns">
+    <div class="large-12 columns">
       <hr />
       <div class="row">
-        <div class="six columns">
+        <div class="large-6 columns">
           <p>{{ site.copyright }}</p>
         </div>
-        <div class="six columns">
-          <ul class="link-list right">
+        <div class="large-6 columns">
+          <ul class="inline-list right">
             <li><a href="https://groups.google.com/group/vimberlin/">mailing</a></li>
             <li><a href="/legal.html">Legal notice</a></li>
             <li><a href="http://feeds.feedburner.com/vimberlin">RSS</a></li>
