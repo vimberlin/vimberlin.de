@@ -1,10 +1,9 @@
 # Data from vimberlin.de site
 
-This site is automatically transformed by [Jekyll](http://github.com/mojombo/jekyll "Jekyll") into a static site whenever we push
-this repository to GitHub.
-
 This repository is mainly maintained by [Gregor Schmidt](http://nach-vorne.eu "Gregor Schmidt") and
 [Matthias Günther](http://wikimatze.de/ "Matthias Günther").
+
+The site is manually deployed with SSH on a German hoster called [Webhostone](https://www.webhostone.de/) by Matthias
 
 
 # Vim is charityware
@@ -17,7 +16,4 @@ If you're enjoying the vimberlin user group or you want to support Vim developme
 
 All files are MIT Licensed. Feel free to use the HTML and CSS as you please. If you do use them, a link back to
 [vimberlin.de](https://github.com/vimberlin/vimberlin.de "vimberlin.de"), but is not required.
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/vimberlin/vimberlin.de/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
