@@ -8,10 +8,15 @@ layout: base
     <h3 itemprop="name">{{page.title}}</h3>
   </header>
 
-  <div itemprop="startDate" content="{{page.when}}">Starts: {{page.when | date: "%B, %eth %Y %l:%M %P"}}</div>
-  <div itemprop="endDate" content="{{page.ends}}">Ends: {{page.ends | date: "%B, %eth %Y %l:%M %P"}}</div>
+  <div class="panel">
+    <strong class="show-for-medium-up">Time:</strong>
+    <div itemprop="startDate" content="{{page.when}}">Starts: {{page.when | date: "%B, %eth %Y %l:%M %P"}}</div>
+    <div itemprop="endDate" content="{{page.ends}}">Ends: {{page.ends | date: "%B, %eth %Y %l:%M %P"}}</div>
+    <br />
 
-  at {% location %}
+    <strong class="show-for-medium-up">Location:</strong>
+    {% location %}
+  </div>
 
   <div itemprop="description">
     {{ content }}
