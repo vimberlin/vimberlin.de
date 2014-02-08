@@ -56,8 +56,8 @@ locations:
     country: Germany
     url: https://travis-ci.org/
     map: http://bit.ly/1dqOIZk
-    name: Travis CI GmbH
-    addition:
+    name: GanzOben Office at Betahaus (Travis CI office, 5Apps, Avarteq, Cileos)
+    addition: 5th floor (<a href="https://gist.github.com/svenfuchs/5364262">detailed information how to get there</a>)
   wooga:
     street: Saarbrücker Straße 38
     city: Berlin
