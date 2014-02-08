@@ -1,11 +1,5 @@
 body {
- font-size: 18px;
  line-height: 26px;
-}
-
-h1, h2, h3, h4, h5, h6, p {
- font-family: inherit;
- font-size: inherit;
 }
 
 h1 {
@@ -43,7 +37,6 @@ h1, h2, h3, h4 {
 }
 
 .related li {
-  font-size: 14px;
   list-style: none;
   padding: 5px 0px;
   margin: 0;
@@ -54,101 +47,13 @@ h1, h2, h3, h4 {
 .related li span {
   float: right;
 }
+
 .related a {
   text-decoration: none;
 }
 
 .related a:hover {
   text-decoration: underline;
-}
-
-#post {
-  padding-bottom: 30px;
-  margin-bottom: 30px;
-  /* This will set default size (for gists for example) */
-  font-size: 13px;
-}
-
-#post ul, {
-  font-size: 15px;
-  margin: 20px 20px 20px 0;
-}
-
-#post li {
-  line-height: 1.4em;
-  margin-left: 3em;
-  margin-bottom: 1em;
-  color: #222;
-  list-style-type: square;
-}
-
-#post li code {
-  border: 1px solid #ccc;
-}
-
-#post p {
-  font-size: 15px;
-  margin-top: 0;
-  margin-bottom: 1.2em;
-  line-height: 1.7em;
-}
-
-#post img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 610px;
-  -webkit-border-radius: 8px;
-  -webkit-box-shadow: 0px 0px 5px #555;
-}
-
-#post img.noclip {
-  max-width: 650px !important;
-  -webkit-box-shadow: none;
-}
-
-#post .aside {
-  background-color: #eee;
-  padding: 14px;
-  font-size: 14px;
-  margin: 5px 0 15px 0;
-  font-family: Helvetica, sans-serif;
-  line-height: 1.6em;
-}
-
-#post .aside strong{}
-
-#post .authoring {
-  margin-bottom: 17px;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  padding-left: 0px;
-  font-size: 17px;
-  color: #777;
-}
-
-#post blockquote {
-  font-style: italic;
-  font-size: 14px;
-  padding: .25em 1em;
-  margin: 1em 1em 0 1em;
-  color: #444;
-}
-
-#post blockquote cite:before {
-  content: '— ';
-}
-
-#post blockquote cite {
-  display: block;
-  margin-top: .5em;
-  text-align: right;
-  color: #111;
-  font-style: normal;
-}
-
-#header {
-  margin-top: 30px;
-
 }
 
 #legal {
