@@ -27,6 +27,18 @@ h1, h2, h3, h4 {
   font-weight: 400;
 }
 
+ul {
+  margin-left: 2.1rem;
+}
+
+a:hover, .related a:hover {
+  text-decoration: underline;
+}
+
+.separater {
+  margin-top: 30px;
+}
+
 .related {
   margin-top: 10px;
 }
@@ -50,10 +62,6 @@ h1, h2, h3, h4 {
 
 .related a {
   text-decoration: none;
-}
-
-.related a:hover {
-  text-decoration: underline;
 }
 
 #legal {
