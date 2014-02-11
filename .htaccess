@@ -291,6 +291,10 @@ FileETag None
 # BrowserMatch "Opera" !brokenvary
 # SetEnvIf brokenvary 1 force-no-vary
 
+# Gumby related stuff, check https://github.com/h5bp/html5-boilerplate/issues/378
+BrowserMatch MSIE ie
+Header set X-UA-Compatible "IE=Edge,chrome=1" env=ie
+
 
 # ----------------------------------------------------------------------
 # Set Keep-Alive Header
