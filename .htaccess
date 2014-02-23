@@ -369,7 +369,7 @@ Header set X-UA-Compatible "IE=Edge,chrome=1" env=ie
 <IfModule mod_rewrite.c>
   RewriteCond %{HTTPS} !=on
   RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
-  RewriteRule ^ http://%1%{REQUEST_URI} [R=301,L]
+  RewriteRule ^(.*)\.html$ $1 [R=301,L]
 </IfModule>
 
 # ----------------------------------------------------------------------
