@@ -49,6 +49,15 @@ locations:
     map: http://bit.ly/To0yMf
     name: Matthias@Home
     addition:
+  absolventa:
+    street: Greifswalder Str. 212,
+    city: Berlin
+    postalcode: 10405
+    country: Germany
+    url: http://www.absolventa.de/
+    map: http://www.openstreetmap.org/search?query=Greifswalder%20Str.%20212#map=19/52.53200/13.42776
+    name: kitchen/leisure zone
+    addition: ABSOLVENTA Office
   travis:
     street: Prinzessinnenstr. 20
     city: Berlin, Kreuzberg
