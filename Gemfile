@@ -15,3 +15,4 @@ gem 'nokogiri'    , '1.6.0'
 gem 'ri_cal'      , '0.8.8'
 gem 'tzinfo'      , '1.1.0'
 
+gem 'jemoji'

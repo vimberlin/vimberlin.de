@@ -10,6 +10,9 @@ rdiscount:
 
 url: http://vimberlin.de
 
+gems:
+  - jemoji
+
 copyright: 2014 Copyright no one at all - Vim is free.
 
 locations:
