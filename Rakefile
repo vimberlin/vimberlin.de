@@ -3,7 +3,7 @@ require 'colorator'
 require 'rake'
 require 'stringex'
 
-posts_dir = '_posts'
+posts_dir = '_drafts'
 
 desc "Begin a new post in #{posts_dir}"
 task :p do
@@ -17,7 +17,7 @@ task :p do
 
   mkdir_p "#{posts_dir}"
   title = "#{name.gsub(/&/,'&amp;').titlecase}"
-  filename = "_posts/#{date}-#{name.to_url}.md"
+  filename = "#{posts_dir}/#{date}-#{name.to_url}.md"
 
   puts "Creating new post: #{filename}".bold.green
   open(filename, 'w') do |post|
