@@ -36,8 +36,6 @@ end
 
 desc 'Deploy'
 task :d do
-  require 'sweetie'
-
   puts "1. Building jekyll ..".bold.green
   system 'jekyll build'
 
