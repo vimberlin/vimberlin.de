@@ -153,40 +153,21 @@ AddType text/x-vcard                        vcf
 # Gzip compression
 # ----------------------------------------------------------------------
 
-<IfModule mod_deflate.c>
+# compress text, html, javascript, css, xml:
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
 
-  # Force deflate for mangled headers developer.yahoo.com/blogs/ydn/posts/2010/12/pushing-beyond-gzipping/
-  <IfModule mod_setenvif.c>
-    <IfModule mod_headers.c>
-      SetEnvIfNoCase ^(Accept-EncodXng|X-cept-Encoding|X{15}|~{15}|-{15})$ ^((gzip|deflate)\s*,?\s*)+|[X~-]{4,13}$ HAVE_Accept-Encoding
-      RequestHeader append Accept-Encoding "gzip,deflate" env=HAVE_Accept-Encoding
-    </IfModule>
-  </IfModule>
-
-  # Compress all output labeled with one of the following MIME-types
-  # (for Apache versions below 2.3.7, you don't need to enable `mod_filter`
-  # and can remove the `<IfModule mod_filter.c>` and `</IfModule>` lines as
-  # `AddOutputFilterByType` is still in the core directives)
-  <IfModule mod_filter.c>
-    AddOutputFilterByType DEFLATE application/atom+xml \
-                                  application/javascript \
-                                  application/json \
-                                  application/rss+xml \
-                                  application/vnd.ms-fontobject \
-                                  application/x-font-ttf \
-                                  application/xhtml+xml \
-                                  application/xml \
-                                  font/opentype \
-                                  image/svg+xml \
-                                  image/x-icon \
-                                  text/css \
-                                  text/html \
-                                  text/plain \
-                                  text/x-component \
-                                  text/xml
-  </IfModule>
-
-</IfModule>
+# Or, compress certain file types by extension:
+<files *.html>
+SetOutputFilter DEFLATE
+</files>
 
 
 # ----------------------------------------------------------------------
@@ -263,6 +244,9 @@ AddType text/x-vcard                        vcf
 # Header set Cache-Control "no-transform"
 # </IfModule>
 
+<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf|woff)$">
+  Header set Cache-Control "max-age=290304000, public"
+</FilesMatch>
 
 # ----------------------------------------------------------------------
 # ETag removal
@@ -367,9 +351,22 @@ Header set X-UA-Compatible "IE=Edge,chrome=1" env=ie
 # Rewrite "www.example.com -> example.com".
 
 <IfModule mod_rewrite.c>
-  RewriteCond %{HTTPS} !=on
-  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
-  RewriteRule ^(.*)\.html$ $1 [R=301,L]
+  RewriteEngine On
+
+  # www.vimberlin.de -> vimberlin.de => prevent duplicate content
+  RewriteCond %{HTTP_HOST} ^www.vimberlin\.de$ [NC]
+  RewriteRule ^(.*)$ http://vimberlin.de/$1 [R=301,L]
+
+  # Remove all *.html ending to have a better URL structure
+  RewriteCond %{SCRIPT_FILENAME}/ -d
+  RewriteCond %{SCRIPT_FILENAME}.html !-f
+  RewriteRule [^/]$ %{REQUEST_URI}/ [R=301,L]
+
+  RewriteCond %{ENV:REDIRECT_STATUS} ^$
+  RewriteRule ^(.+)\.html$ /$1 [R=301,L]
+
+  RewriteCond %{SCRIPT_FILENAME}.html -f
+  RewriteRule [^/]$ %{REQUEST_URI}.html [QSA,L]
 </IfModule>
 
 # ----------------------------------------------------------------------
