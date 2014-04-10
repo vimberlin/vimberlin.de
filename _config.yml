@@ -16,6 +16,24 @@ gems:
 copyright: 2014 Copyright no one at all - Vim is free.
 
 locations:
+  absolventa:
+    street: Greifswalder Str. 212,
+    city: Berlin
+    postalcode: 10405
+    country: Germany
+    url: http://www.absolventa.de/
+    map: http://www.openstreetmap.org/search?query=Greifswalder%20Str.%20212#map=19/52.53200/13.42776
+    name: kitchen/leisure zone
+    addition: ABSOLVENTA Office
+  berlinonline:
+    street: Karl-Liebkecht-Str. 29
+    city: Berlin
+    postalcode: 10178
+    country: Germany
+    url: http://www.berlinonline.de/
+    map: http://www.openstreetmap.org/?lat=52.4794285&lon=13.4542985&zoom=17&layers=T&mlat=52.47952&mlon=13.45428
+    name:  BerlinOnline
+    addition: 16th floor
   buero20:
     street: Weigandufer 45
     city: Berlin
@@ -52,15 +70,6 @@ locations:
     map: http://bit.ly/To0yMf
     name: Matthias@Home
     addition:
-  absolventa:
-    street: Greifswalder Str. 212,
-    city: Berlin
-    postalcode: 10405
-    country: Germany
-    url: http://www.absolventa.de/
-    map: http://www.openstreetmap.org/search?query=Greifswalder%20Str.%20212#map=19/52.53200/13.42776
-    name: kitchen/leisure zone
-    addition: ABSOLVENTA Office
   travis:
     street: Prinzessinnenstr. 20
     city: Berlin, Kreuzberg
