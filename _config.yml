@@ -1,19 +1,37 @@
-markdown: rdiscount
-pygments: true
+markdown: redcarpet
+
+highlighter: pygments
 permalink: /:title
+rdiscount:
+  extensions: [smart]
+timezone: DE
 
 author: Matthias Günther
 email: matthias@wikimatze.de
 
-rdiscount:
-  extensions: [smart]
-
+destination: _site
 url: http://vimberlin.de
 
 gems:
   - jemoji
 
 copyright: 2014 Copyright no one at all - Vim is free.
+
+
+# yaml default setup
+defaults:
+  -
+    scope:
+      path: "" # empty string for all files
+    values:
+      layout: "base"
+  -
+    scope:
+      path: "" # empty string for all files
+      type: "post"
+    values:
+      layout: "event"
+
 
 locations:
   absolventa:
@@ -25,14 +43,22 @@ locations:
     map: http://www.openstreetmap.org/search?query=Greifswalder%20Str.%20212#map=19/52.53200/13.42776
     name: kitchen/leisure zone
     addition: ABSOLVENTA Office
+  bitcrowd:
+    street: Sanderstrasse 28
+    city: Berlin
+    postalcode: 12047
+    country: Germany
+    url: http://bitcrowd.net/en
+    map: https://maps.google.de/maps?client=ubuntu&channel=fs&q=google+maps+Sanderstr+28+12047+Berlin&ie=UTF-8&hq=&hnear=0x47a84fb5f8582b01:0xb2381828bd8f3a12,Sanderstra%C3%9Fe+28,+12047+Berlin&gl=de&ei=VSxfU7yXDcGBPfjngPAL&ved=0CC0Q8gEwAA
+    name: bitcrowd GmbH
   berlinonline:
     street: Karl-Liebkecht-Str. 29
     city: Berlin
     postalcode: 10178
     country: Germany
-    url: http://www.berlinonline.de/
-    map: http://www.openstreetmap.org/?lat=52.4794285&lon=13.4542985&zoom=17&layers=T&mlat=52.47952&mlon=13.45428
-    name:  BerlinOnline
+    url: http://www.berlinonline.net/
+    map: https://maps.google.de/maps?client=ubuntu&channel=fs&q=Karl-Liebknecht-Str.+29+10178+Berlin&ie=UTF-8&hq=&hnear=0x47a84e1e5db65933:0xc167fbd0f56722bf,Karl-Liebknecht-Stra%C3%9Fe+29,+10178+Berlin&gl=de&ei=-6ZYU9O6EcTTPIGlgZAP&ved=0CCsQ8gEwAA
+    name: BerlinOnline
     addition: 16th floor
   buero20:
     street: Weigandufer 45
