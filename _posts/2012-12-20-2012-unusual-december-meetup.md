@@ -1,5 +1,5 @@
 ---
-layout: event
+
 title: Unusual December 2012 Meetup
 when: 2012-12-20T19:30
 ends: 2012-12-20T22:00

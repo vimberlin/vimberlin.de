@@ -1,5 +1,5 @@
 ---
-layout: event
+
 title: February 2013 Vim-beer-lin
 when: 2013-02-28T20:00
 ends: 2013-02-28T22:00
