@@ -1,5 +1,4 @@
 ---
-
 title: September 2013 Meetup
 when: 2013-09-26T19:00
 ends: 2013-09-26T22:30

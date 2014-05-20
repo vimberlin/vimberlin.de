@@ -1,5 +1,4 @@
 ---
-
 title: January 2014 Meetup
 when: 2014-01-23T19:30
 ends: 2014-01-23T22:30

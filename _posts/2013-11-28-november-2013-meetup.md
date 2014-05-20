@@ -1,5 +1,4 @@
 ---
-
 title: November 2013 Meetup
 when: 2013-11-28T19:30
 ends: 2013-11-28T22:30

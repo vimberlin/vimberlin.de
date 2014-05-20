@@ -1,5 +1,4 @@
 ---
-
 title: October 2013 Meetup
 when: 2013-10-24T19:00
 ends: 2013-10-24T22:30
