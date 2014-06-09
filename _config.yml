@@ -12,10 +12,21 @@ email: matthias@wikimatze.de
 destination: _site
 url: http://vimberlin.de
 
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - plugins
+  - Rakefile
+  - bin
+  - README.md
+
+
 gems:
   - jemoji
 
 copyright: 2014 Copyright no one at all - Vim is free.
+
 
 
 # yaml default setup
