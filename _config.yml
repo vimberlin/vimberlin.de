@@ -107,6 +107,15 @@ locations:
     map: http://bit.ly/To0yMf
     name: Matthias@Home
     addition:
+  thoughtworks:
+    street: Mülhauser Str. 6
+    city: Berlin, Kreuzberg
+    postalcode: 10969
+    country: Germany
+    url: http://www.thoughtworks.com/locations/berlin
+    map: http://bit.ly/1nPCRdt
+    name: ThoughtWorks Werkstatt Berlin
+    addition: Just walk through the garden and find the door at the end
   travis:
     street: Prinzessinnenstr. 20
     city: Berlin, Kreuzberg
