@@ -4,25 +4,19 @@ require 'tzinfo'
 require 'nokogiri'
 
 module Jekyll
-  class StaticICalFile < StaticFile
-    def write(dest)
-      super(dest) rescue ArgumentError
-      true
-    end
-  end
+  class ICalPage < Jekyll::Page
+    def initialize(site)
+      @site = site
+      @base = site.source
+      @dir = ""
+      @name = "vimberlin.ics"
 
-  class ICalGenerator < Generator
-    safe true
-    priority :low
+      self.process(@name)
+      self.data = {}
+      self.content = generate(site)
+    end
 
     def generate(site)
-      # Create the destination folder if necessary.
-      site_folder = site.config['destination']
-      unless File.directory?(site_folder)
-        p = Pathname.new(site_folder)
-        p.mkdir
-      end
-
       calendar = RiCal.Calendar do |cal|
         cal.default_tzid = "Europe/Berlin"
         #cal.x_wr_calname = "VimBerlin"
@@ -47,14 +41,23 @@ module Jekyll
           end
         end
       end
+      calendar.to_s
+    end
+  end
 
-      File.open(File.join(site_folder, 'vimberlin.ics'), 'w') do |f|
-        f.puts calendar.to_s
+  class ICalGenerator < Generator
+    safe true
+    priority :low
+
+    def generate(site)
+      # Create the destination folder if necessary.
+      site_folder = site.config["destination"]
+      unless File.directory?(site_folder)
+        p = Pathname.new(site_folder)
+        p.mkdir
       end
 
-      # Add a static file entry for the zip file, otherwise Site::cleanup will remove it.
-      site.static_files << Jekyll::StaticICalFile.new(site, site.dest, '/', 'vimberlin.ics')
+      site.pages <<  ICalPage.new(site)
     end
   end
 end
-
