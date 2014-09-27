@@ -17,3 +17,16 @@ The [NERDTree](https://github.com/scrooloose/nerdtree) is one of the most powerf
 {% include thoughtworks.html %}
 
 {% include matthias.html %}
+
+
+## Recap
+
+Here are the notes from the talk **"Plugins for writing a book with Vim"** by [Matthias Günther](https://twitter.com/wikimatze)
+
+<script src="https://gist.github.com/wikimatze/1e45ca7ecd60e10cf725.js"></script>
+
+as well as the notes from the talks **"Andrew's guide to the NERDTree"** by [Andrew Radev](https://twitter.com/andrewradev)
+
+<script src="https://gist.github.com/AndrewRadev/00e352c8bb58be4d51c0.js"></script>
+
+{% include matthias.html %}
