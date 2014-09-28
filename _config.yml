@@ -24,6 +24,7 @@ exclude:
 
 gems:
   - jemoji
+  - jekyll-sitemap
 
 copyright: 2014 Copyright no one at all - Vim is free.
 
