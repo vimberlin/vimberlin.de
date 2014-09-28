@@ -11,4 +11,5 @@ gem 'sweetie'     , '1.0.1'
 gem 'ri_cal'   , '0.8.8'
 gem 'tzinfo'   , '1.2.2'
 gem 'jemoji'   , '0.3.0'
+gem 'jekyll-sitemap', '0.6.0'
 
