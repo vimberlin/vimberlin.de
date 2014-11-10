@@ -99,6 +99,15 @@ locations:
     map: http://g.co/maps/k62eb
     name: LAUNCH/CO
     addition: 3rd floor
+  launchco_new:
+    street: Rudolfstraße 14
+    city: Berlin
+    postalcode: 10245
+    country: Germany
+    url: https://launchco.com/etc/#coworking
+    map: http://bit.ly/1wbCYmD
+    name: LAUNCH/CO
+    addition:
   matthias:
     street: Neue Straße 6
     city: Berlin Tempelhof
