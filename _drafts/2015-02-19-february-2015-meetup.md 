@@ -1,0 +1,16 @@
+---
+layout: event
+title: February 2015 Meetup
+when: 2015-02-19T19:00
+ends: 2015-02-19T23:30
+where: launchco_new
+---
+
+## Talks
+
+
+## Sponsor
+
+{% include launch_co.html %}
+
+{% include matthias.html %}
