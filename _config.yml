@@ -26,11 +26,9 @@ gems:
   - jemoji
   - jekyll-sitemap
 
-copyright: 2014 Copyright no one at all - Vim is free.
+copyright: 2015 Copyright no one at all - Vim is free.
 
 
-
-# yaml default setup
 defaults:
   -
     scope:
