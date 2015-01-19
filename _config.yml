@@ -118,12 +118,12 @@ locations:
   thoughtworks:
     street: Mülhauser Str. 6
     city: Berlin, Kreuzberg
-    postalcode: 10969
+    postalcode: 10405
     country: Germany
     url: http://www.thoughtworks.com/locations/berlin
     map: http://bit.ly/1nPCRdt
     name: ThoughtWorks Werkstatt Berlin
-    addition: Just walk through the garden and find the door at the end
+    addition: U2 Senefelder Platz / M2 Knaackstr. HH (Remise) 1. OG
   travis:
     street: Prinzessinnenstr. 20
     city: Berlin, Kreuzberg
