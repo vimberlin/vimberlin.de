@@ -12,13 +12,14 @@ where: launchco_new
 In our [January 2015 Meetup](/january-2015-meetup/ "January 2015 Meetup") we talked about the way to use
 plugin managers for Vim. I will go through [vim-plug](https://github.com/junegunn/vim-plug "vim-plug")
 and tell you why it's the best plugin manager for vim in the world.
+- **"Configure Vim with Nix"** by [Rok Garbas](https://twitter.com/garbas "Rok Garbas")
 
 
 ## Open Topics
 
 We are going to take time to answer questions related to vim - feel free to prepare them.
 
-Beside we will have an open discussions about Tools for [Ruby](https://www.ruby-lang.org/en/ "Ruby") and
+Beside we will have an open discussions about tools for [Ruby](https://www.ruby-lang.org/en/ "Ruby") and
 [Rails development](http://rubyonrails.org/ "Rails development").
 
 
