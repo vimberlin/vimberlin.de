@@ -1,5 +1,4 @@
 ---
-layout: event
 title: January 2015 Meetup
 when: 2015-01-22T19:00
 ends: 2015-01-22T23:30
