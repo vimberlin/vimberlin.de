@@ -40,7 +40,7 @@ defaults:
       path: "" # empty string for all files
       type: "posts"
     values:
-      layout: "event"
+      layout: "meetup"
 
 
 locations:
