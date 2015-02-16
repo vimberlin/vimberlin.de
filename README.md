@@ -1,5 +1,7 @@
 # Data from vimberlin.de site
 
+[![Join the chat at https://gitter.im/vimberlin/vimberlin.de](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/vimberlin/vimberlin.de?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 This repository is mainly maintained by [Gregor Schmidt](http://nach-vorne.eu "Gregor Schmidt") and
 [Matthias Günther](http://wikimatze.de/ "Matthias Günther").
 
