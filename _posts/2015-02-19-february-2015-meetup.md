@@ -22,6 +22,39 @@ Beside we will have an open discussions about tools for [Ruby](https://www.ruby-
 [Rails development](http://rubyonrails.org/ "Rails development").
 
 
+## Recap
+
+### Vim Plug - my favorite plugin manager
+
+The slides of the talk:
+
+<script async class="speakerdeck-embed" data-id="67dd407073d948f09b34918aafc24c3d" data-ratio="1.33159947984395" src="//speakerdeck.com/assets/embed.js"></script>
+
+
+### Highlighting SQL in heredoc parts in Ruby
+
+
+All credit for this goes to [AndrewRadev](https://github.com/AndrewRadev/Vimfiles/blob/master/after/syntax/ruby.vim "AndrewRadev"):
+
+
+```vim
+let s:bcs = b:current_syntax
+unlet b:current_syntax
+syntax include @SQL syntax/sql.vim
+let b:current_syntax = s:bcs
+
+" match optional, surrounding single or double quote and any whitespace in the heredoc name
+syntax region rubyHereDocSQL matchgroup=rubyOperator start=+<<-\?\(['"]\?\)\z(\s*SQL\s*\)\1+ end=+^\s*\z1$+ contains=@SQL
+```
+
+It's the best to put this in `after/syntax/ruby.vim`
+
+
+### smapclear
+
+This removes all mapping when you are in `Select` mode (used for) - very handy for snippet completion. Put this option in `after/plugin/smapclear.vim`. Thanks [AndrewRadev](https://github.com/AndrewRadev/ "AndrewRadev") for this tip.
+
+
 ## Sponsor
 
 {% include launch_co.html %}
