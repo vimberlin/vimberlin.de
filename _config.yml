@@ -142,3 +142,12 @@ locations:
     map: http://g.co/maps/g7tx6
     name: Wooga GmbH
     addition:
+  wunderlist:
+    street: Karl-Liebknecht-Straße 32
+    city: Berlin
+    postalcode: 10178
+    country: Germany
+    url: https://www.wunderlist.com/
+    map: http://www.openstreetmap.org/node/2840695202#map=18/52.52515/13.41411&layers=T
+    name: Wunderlist
+    addition:
