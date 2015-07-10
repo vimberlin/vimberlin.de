@@ -23,11 +23,11 @@ task :p do
   open(filename, 'w') do |post|
     system "mkdir -p #{posts_dir}/";
     post.puts "---"
-    post.puts "layout: event"
+    post.puts "layout: meetup"
     post.puts "title: #{title.gsub(/&/,'&amp;').titlecase}"
     post.puts "when: #{date}T19:00"
     post.puts "ends: #{date}T22:30"
-    post.puts "where: absolventa|bitcrowd|berlinonline|buero20|intimes|launcho|launchco_new|matthias|thoughtworks|travis|wooga"
+    post.puts "where: wunderlist|absolventa|bitcrowd|berlinonline|buero20|intimes|launcho|launchco_new|matthias|thoughtworks|travis|wooga"
     post.puts "---"
   end
 
