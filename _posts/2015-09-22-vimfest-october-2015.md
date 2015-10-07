@@ -88,13 +88,11 @@ Ideas for Vim sessions so far:
   their setups
 
 - [@wikimatze](https://twitter.com/wikimatze)
-  - write a [rails-vim](https://github.com/tpope/vim-rails) plugin for
-    [Padrino](http://www.padrinorb.com/)
-
+  - write a [rails-vim](https://github.com/tpope/vim-rails) plugin for [Padrino](http://www.padrinorb.com/)
 - [@tqmz](https://github.com/tqmz)
-  - Tim on [Vim](http://www.vim.org/) w/ [Zim](http://www.zim-wiki.org/) (and
-    more wiki-like stuff)
-
+  - Tim on [Vim](http://www.vim.org/) w/ [Zim](http://www.zim-wiki.org/) (and more wiki-like stuff)
+- [@koehr](https://github.com/nkoehring)
+  - [Vim](http://www.vim.org/) + [todo.txt](http://todotxt.com) + ? = Profit!
 
 ### w/ Vim Keybindings
 
