@@ -6,7 +6,10 @@ ends: 2015-10-11T17:00
 where: thoughtworks
 ---
 
+
 <img src="/images/vimfest.png" >
+
+> Sign up under <http://doodle.com/poll/mpzzamenz5npq3f7> if you want come to the event
 
 Vimfest Berlin 2015 is the first community-driven [Vim] "[Hackathon]", happening
 the weekend of 10 – 11 October at [ThoughtWorks] in Berlin, organized by the
