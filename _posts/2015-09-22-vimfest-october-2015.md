@@ -80,7 +80,7 @@ Ideas for Vim sessions so far:
 
 - Vim for Newbies
 
-- Plugin Showcase: everyone giving a brief description of plugins used
+- Plugin showcase: everyone giving a brief description of plugins used
   and their purpose, experience and value + ad hoc sessions on
   plugins others are especially interested in
 
