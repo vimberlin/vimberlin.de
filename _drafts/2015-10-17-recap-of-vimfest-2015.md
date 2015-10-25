@@ -3,6 +3,28 @@ layout: post
 title: Recap of Vimfest 2015
 ---
 
+
+## Voices
+
+[netznarkose](https://twitter.com/netznarkose):
+
+I had a great time at Vimfest this year. It helped me a lot to discuss my workflow with other
+Vim-Enthusiasts. A big thank-you to the organizers, I'm looking forward to a new edition of Vim-Fest next year.
+
+
+[Richard](https://github.com/oracle2025):
+
+Vimfest was a very nice event, greatly enjoyed the topics and people, and came home with a number of
+inspirations and ideas for my vim life. ;-)
+
+
+[Tim](https://github.com/tqmz):
+
+This was one of the most inspiring hackathons I attended so far – it exceeded my expectations by far, and those were
+high already! There was a warm, friendly atmosphere, full of respect and openness, really great. Looking forward a
+lot to the second Vimfest.
+
+
 ## SvenG
 
 [@guckes](http://www.guckes.net/)
