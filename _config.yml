@@ -1,10 +1,13 @@
 markdown: redcarpet
-
-highlighter: pygments
-permalink: /:title
 rdiscount:
   extensions: [smart]
-timezone: DE
+  timezone: DE
+
+redcarpet:
+  syntax_highlighter: rouge
+
+
+permalink: /:title
 
 author: Matthias Günther
 email: matthias@wikimatze.de
