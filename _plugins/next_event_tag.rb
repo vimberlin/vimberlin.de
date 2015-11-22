@@ -7,7 +7,7 @@ module Jekyll
     end
 
     def render(context)
-      next_event = context.registers[:site].posts
+      next_event = context.registers[:site].posts.docs
                 .select  do |page| page.data['layout'] == 'meetup' end
                 .select  do |page| Time.parse(page.data['when']) >= Time.now end
                 .sort_by do |page| page.data['when'] end
@@ -20,7 +20,7 @@ module Jekyll
         time = Time.parse(next_event.data['when']).strftime("%B, %eth %Y %l:%M %P")
         # it doesn't support templates here :(
         result = ""
-        result += "<a href='#{next_event.url}'>#{next_event.title}</a>:"
+        result += "<a href='#{next_event.url}'>#{next_event.data['title']}</a>:"
         result += " #{time}"
         result += " at <a href='#{loc["url"]}'>#{loc["name"]}</a>"
         return result
