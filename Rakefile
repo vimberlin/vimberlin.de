@@ -36,6 +36,9 @@ end
 
 desc 'Deploy'
 task :d do
+  puts "Clear jekyll ..".bold.green
+  system 'bundle exec jekyll clean'
+
   puts "Building jekyll ..".bold.green
   system 'bundle exec jekyll build --future'
 
