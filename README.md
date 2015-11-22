@@ -17,7 +17,6 @@ If you're enjoying the vimberlin user group or you want to support Vim developme
 # Notes about technologies
 
 - [foundation css](http://foundation.zurb.com/ "foundation css")
-- [normalize.css](https://github.com/necolas/normalize.css/ "normalize.css")
 
 
 # License
