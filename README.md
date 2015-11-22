@@ -14,6 +14,12 @@ If you're enjoying the vimberlin user group or you want to support Vim developme
 [helping needy children in Uganda](http://iccf-holland.org/) tell everybody about it.
 
 
+# Notes about technologies
+
+- [foundation css](http://foundation.zurb.com/ "foundation css")
+- [normalize.css](https://github.com/necolas/normalize.css/ "normalize.css")
+
+
 # License
 
 All files are MIT Licensed. Feel free to use the HTML and CSS as you please. If you do use them, a link back to
