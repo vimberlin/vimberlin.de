@@ -18,7 +18,7 @@ We will talk about using [vim](http://www.vim.org/ "vim") with [screen window ma
 {% include matthias.html %}
 
 
-## Recap
+<h2 id="recap">Recap</h2>
 
 - internet:
   - connect to the local wifi ("LAUNCH/CO");
