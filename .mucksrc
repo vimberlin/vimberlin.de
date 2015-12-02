@@ -1,0 +1,18 @@
+#
+# vimberlin
+#
+mux: tmux
+name: vimberlin
+dir: ~/git/vimberlin.de
+
+
+[main]
+vim
+
+[jekyll]
+bundle && bundle exec jekyll s
+
+[tmp]
+tmux select-window -t main
+tmux kill-window -t tmp
+
