@@ -50,7 +50,7 @@ end
 
 desc "Startup Jekyll"
 task :s do
-  system 'bundle exec jekyll s --future --watch'
+  system 'bundle exec jekyll s --drafts --future --watch'
 end
 
 task :default => :s

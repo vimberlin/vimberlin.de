@@ -82,6 +82,15 @@ locations:
     map: http://www.openstreetmap.org/?lat=52.4794285&lon=13.4542985&zoom=17&layers=T&mlat=52.47952&mlon=13.45428
     name:  Büro 2.0
     addition: Conference room
+  inberlin:
+    street: Lehrter Str. 53
+    city: Berlin
+    postalcode: 10557
+    country: Germany
+    url: https://www.in-berlin.de
+    map: http://www.openstreetmap.org/node/412766878#map=19/52.53428/13.35880
+    name: Individual Network Berlin e.V.
+    addition:
   intimes:
     street: Boxhagener Str. 107
     city: Berlin
