@@ -5,6 +5,16 @@ require 'stringex'
 
 posts_dir = '_drafts'
 
+desc 'Staging'
+task :staging do
+  puts '# building the site ..'.green
+  system "bundle exec jekyll b"
+  puts '# deploying the site ..'.green
+
+  system "rsync -vru -e \"ssh\" --del ?site/* xa6195@xa6.serverdomain.org:/home/www/stagingvimberlin"
+  puts '# Please refer to http://staging.vimberlin.de to visit the staging system'.green
+end
+
 desc "Begin a new post in #{posts_dir}"
 task :p do
   require './_plugins/titlecase.rb'
