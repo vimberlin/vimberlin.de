@@ -9,7 +9,7 @@ where: inberlin
 Happy new vim year, we hope you had a great start in 2016.
 
 
-If you want to come, please put your name on <https://events.titanpad.com/2015-12-vimberlin>.
+If you want to come, please put your name on <https://events.titanpad.com/2016-01-vimberlin>.
 
 
 Tell others about it by retweeting the tweets mentioned below.
@@ -26,7 +26,7 @@ The space has seats+tables for about 15 people.
 - **"Mucks and tmux management"** by [Matthias Günther](https://twitter.com/wikimatze)
 
 
-Your host will be [Sven Guckes](www.guckes.net)
+Your host will be [Sven Guckes](http://www.guckes.net)
 
 See you there!
 
