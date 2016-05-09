@@ -37,7 +37,7 @@ task :p do
     post.puts "title: #{title.gsub(/&/,'&amp;').titlecase}"
     post.puts "when: #{date}T19:00"
     post.puts "ends: #{date}T22:30"
-    post.puts "where: wunderlist|absolventa|bitcrowd|berlinonline|buero20|intimes|launcho|launchco_new|matthias|thoughtworks|travis|wooga"
+    post.puts "where: inberlin|wunderlist|absolventa|bitcrowd|berlinonline|buero20|intimes|launcho|launchco_new|matthias|thoughtworks|travis|wooga"
     post.puts "---"
   end
 
