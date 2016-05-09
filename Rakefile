@@ -8,18 +8,18 @@ posts_dir = '_drafts'
 desc 'Staging'
 task :staging do
   puts '# building the site ..'.green
-  system "bundle exec jekyll b"
+  system "bundle exec jekyll b --future"
   puts '# deploying the site ..'.green
 
   system "rsync -vru -e \"ssh\" --del ?site/* xa6195@xa6.serverdomain.org:/home/www/stagingvimberlin"
-  puts '# Please refer to http://staging.vimberlin.de to visit the staging system'.green
+  puts '# Please refer to http://vimberlin.wikimatze.de to visit the staging system'.green
 end
 
 desc "Begin a new post in #{posts_dir}"
 task :p do
   require './_plugins/titlecase.rb'
 
-  puts "What should we call this post for now? (e.g.: January 2014 Meetup)".bold.yellow
+  puts "What should we call this post for now? (e.g.: January #{Time.now.year} Meetup)".bold.yellow
   name = STDIN.gets.chomp
 
   puts "What is the publish date of the article? (format %Y-%m-%d)".bold.yellow
