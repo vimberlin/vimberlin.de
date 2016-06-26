@@ -1,8 +1,6 @@
 ---
-layout: post
 title: Recap of Vimfest 2015
 ---
-
 
 ## Voices
 
@@ -63,7 +61,7 @@ start multiple profiles (instances) at the same time (open profiles of current t
 
 
 - [FireTitle](https://addons.mozilla.org/De/firefox/addon/firetitle/): to name windows (use Ctrl-; to name session)
-- [Tab-Groups](https://support.mozilla.org/en-US/kb/tab-groups-organize-tabs) + [TabGroup Menu](https://addons.mozilla.org/de/firefox/addon/tabgroups-menu/): Enable it inside preferences and drop it in the address line
+- [Tab-Groups](https://addons.mozilla.org/en-US/firefox/addon/tab-groups) + [TabGroup Menu](https://addons.mozilla.org/de/firefox/addon/tabgroups-menu/): Enable it inside preferences and drop it in the address line
 - [Tile Tabs](https://addons.mozilla.org/de/firefox/addon/tile-tabs/): Split Tab on one screen
 - [Restclient](https://addons.mozilla.org/en-US/firefox/addon/restclient/): Restclient
 - [RSS Icon](https://addons.mozilla.org/en-US/firefox/addon/rss-feed-icon-in-navbar): rss icon the urlbar
@@ -314,4 +312,5 @@ set writebackup                 " make a backup of the original file when writin
 ```vim
 au BufWritePost $MYVIMRC,~/.dotfiles/vimrc,$MYVIMRC.local nested :source $MYVIMRC
 ```
+
 
