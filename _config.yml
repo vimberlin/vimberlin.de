@@ -16,6 +16,8 @@ destination: _site
 url: http://vimberlin.de
 
 
+show_drafts: false
+
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -23,13 +25,14 @@ exclude:
   - Rakefile
   - bin
   - README.md
+  - tags
 
 
 gems:
   - jemoji
   - jekyll-sitemap
 
-copyright: 2015 Copyright no one at all - Vim is free.
+copyright: Copyright no one at all - Vim is free.
 
 
 defaults:
