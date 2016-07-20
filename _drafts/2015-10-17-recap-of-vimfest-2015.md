@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Recap of Vimfest 2015
 ---
 
