@@ -1,0 +1,28 @@
+---
+title: Thank You!
+nav: contact
+---
+
+<% if send_mail("contact-thankyou", subject: "Thank You for Your Submission") %>
+
+  <div class="jumbotron text-center">
+    <div class="container">
+      <h1>Thank You!</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente ab doloribus, sed nisi nemo perspiciatis eveniet laborum amet esse, rem saepe enim sunt quaerat! Perspiciatis maiores rem commodi nostrum expedita.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam ex, animi facilis voluptatum qui veritatis ipsa accusamus magni. Nam esse, animi deserunt unde fugiat quasi maiores! Culpa magnam possimus, voluptate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti maiores doloribus adipisci! Magnam, tenetur animi. Hic placeat sunt impedit, fuga dolore est, consequatur nam neque vel soluta voluptates libero maiores.</p>
+  </div>
+
+<% else %>
+
+  <div class="jumbotron text-center">
+    <div class="container">
+      <h1>Error Sending Email</h1>
+      <p>If you're wanting to send test emails make sure you have mailcatcher installed with <kbd>gem install mailcatcher</kbd> and that it is running. Next make sure you're template is located in /mailers/ and <kbd>/data/config.yml</kbd> has been configured properly.</p>
+    </div>
+  </div>
+
+<% end %>

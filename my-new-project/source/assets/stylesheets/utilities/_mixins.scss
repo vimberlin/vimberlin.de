@@ -1,0 +1,44 @@
+// ==========================================================================
+// Mixins
+// ==========================================================================
+
+/**
+ * Media Query Breakpoint
+ * The breakpoint mixin uses the same attribute names as Bootstrap's responsive classes
+ * to make using the feature as easy to remember as possible. Passing in a responsive class
+ * will add a media query and output the passed in block.
+ *
+ * @param {Map} $map - A map variable that contains an min and max key value pair.
+ *
+ * @example
+ * .foo { @include breakpoint($sm) {...}}
+ *
+ */
+@mixin breakpoint($map) {
+  $query: "";
+  @if map-has-key($map, min) { $query: append($query, "(min-width: #{map-get($map, min)})") }
+  @if map-has-key($map, min) and map-has-key($map, max) { $query: append($query, "and") }
+  @if map-has-key($map, max) { $query: append($query, "(max-width: #{map-get($map, max)})") }
+  @media #{$query} { @content; }
+}
+
+
+/**
+ * Input Placeholder
+ * Styles the placeholder for an input field based on a based in block.
+ *
+ * @example
+ * input.foo {
+ *   @include placeholder {
+ *     color: #ccc;
+ *   }
+ * }
+ */
+@mixin placeholder {
+  $placeholders: ":-webkit-input" ":-moz" "-moz" "-ms-input";
+  @each $placeholder in $placeholders {
+    &:#{$placeholder}-placeholder {
+      @content;
+    }
+  }
+}

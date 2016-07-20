@@ -1,0 +1,27 @@
+---
+title:
+nav: home
+subnav:
+description: This is a page description.
+---
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <h1>Welcome Prototyper</h1>
+    <p><%= greek 250 %></p>
+  </div>
+</div>
+
+<div class="container">
+  <p><%= greek 500 %></p>
+
+  <div class="row">
+    <% 3.times do %>
+      <div class="col-md-4">
+        <h4>Section Title</h4>
+        <p><%= greek 200 %></p>
+        <p><a href="" class="btn btn-default">Read More</a></p>
+      </div>
+    <% end %>
+  </div>
+</div>

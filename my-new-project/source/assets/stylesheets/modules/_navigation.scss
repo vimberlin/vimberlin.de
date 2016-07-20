@@ -1,0 +1,10 @@
+.navbar-primary { margin-top: 8px; }                     // Create space above the navbar for the logo
+.navbar-nav.navbar-right:last-child { margin-right: 0; } // Overwriting BS3's questionable decisions
+
+@include breakpoint($xs) {                                // Remove the float in the top navigation for mobile
+  .nav-header > li {
+    float: none;
+  }
+}
+
+.nav-footer ul { margin-bottom: 0; }

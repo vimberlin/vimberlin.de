@@ -1,0 +1,15 @@
+// General form styling and validation, not form specific.
+label.error {
+  margin-top: 5px;
+  color: #B94A48;
+  font-size: 90%;
+  &.valid { display: none !important; }                 // Remove the margin when the field validates
+}
+
+.controls label   { font-weight: normal; }              // Unbold labels that contain requirement errors
+
+input[type=file] {                                      // Cleans up misalignment created by Bootstrap
+  line-height: 1em;
+  font-size: 80%;
+  margin-top: 6px;
+}

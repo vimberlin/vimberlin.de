@@ -1,0 +1,25 @@
+// ==========================================================================
+// = Global Variables
+// ==========================================================================
+
+/**
+ * Defines whether or not the site should turn on pesticide for debugging.
+ *
+ * @type Bool
+ */
+$pesticide-debug: false;
+
+/**
+ * Shows a line at 768px down on the page to define a potential "fold" goal.
+ *
+ * @type Bool
+ */
+$show-fold: false;
+
+// Default Breakpoints
+$xs: ( max:  767px );
+$sm: ( min:  768px );
+$md: ( min:  992px );
+$lg: ( min: 1200px );
+$sm-only: ( min: map-get($sm, min), max: map-get($md, min) - 1 );
+$md-only: ( min: map-get($md, min), max: map-get($lg, min) - 1 );

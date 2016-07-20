@@ -1,0 +1,15 @@
+@import 'base';
+@import 'footer';
+
+// @todo: This really shouldn't be in this file.
+@if $show-fold == true {
+  html:before {
+    content: ' ';
+    border-bottom: 3px dashed #369;
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 768px;
+    z-index: 100
+  }
+}

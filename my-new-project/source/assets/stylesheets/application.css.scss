@@ -1,0 +1,38 @@
+@charset "utf-8";
+@import "compass";
+
+// Ethos in Middleman by Tim Knight
+// A prototyping starter-kit that helps you rapidly prototype websites and web applications.
+//
+// Currenly utilizing Bootstrap 3, the main focus of this toolkit is in prototyping user workflow
+// regardless of the platform. Taking advantage of modular architecture using Sass, the goal is to
+// provide you with a starting point to work quickly through your concepts, adapt to change quickly
+// and write code that will be easy for you to maintain.
+
+// Content:
+
+// 01. Utilities (Variables, mixin, and functions)
+// 02. Libraries (Third libraries)
+// 03. Layout structure (Primary layout currently just add-ons to Bootstrap)
+// 04. Modules (Forms, Navigation, and growing)
+
+
+// ==========================================================================
+// $Utilities
+// ==========================================================================
+@import 'utilities/index';
+
+// ==========================================================================
+// $Libraries
+// ==========================================================================
+@import 'utilities/lib';
+
+// ==========================================================================
+// $Layout
+// ==========================================================================
+@import 'layout/index';
+
+// ==========================================================================
+// $Modules
+// ==========================================================================
+@import 'modules/index';

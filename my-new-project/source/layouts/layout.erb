@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title><%= page_title %></title>
+  <%= page_description %>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  <%= stylesheet_link_tag 'application' %>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <%= yield_content :head %>
+  <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body class="<%= page_classes %>">
+
+  <header>
+    <div class="container">
+      <%= link_to_if(!current?("home"),image_tag(lorem.image('150x75', :text => ' ')), "/") %>
+      <%= partial "layouts/shared/header-nav" %>
+      <%= partial "layouts/shared/primary-nav" %>
+    </div>
+  </header>
+
+  <main role="main">
+    <%= yield :layout %>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 col-md-offset-2">
+          <h4>Services</h4>
+          <ul class="list-unstyled">
+            <li><a href="#">[Service Link]</a></li>
+            <li><a href="#">[Service Link]</a></li>
+            <li><a href="#">[Service Link]</a></li>
+            <li><a href="#">[Service Link]</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h4>About Us</h4>
+          <ul class="list-unstyled">
+            <li><a href="#">[Nav Link]</a></li>
+            <li><a href="#">[Nav Link]</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="/contact/">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h4>Follow Us</h4>
+          <ul class="list-unstyled">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h4>Contact Us</h4>
+          <address>
+            <strong>Company Name</strong><br>
+            123 Anywhere Avenue<br>
+            Tampa, FL 12345<br>
+            <abbr title="Phone">P:</abbr> (123) 456-7890
+          </address>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="footer--colophon">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <p class="footer--colophon__copyright">&copy;<%= Date.today.year %> All rights reserved.</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <%= project_setting(:title) %>
+        </div>
+        <div class="col-md-4">
+          <p class="footer--colophon__poweredby">Powered by <a href="https://github.com/timknight/middleman-ethos" target="_blank">Ethos</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <%= javascript_include_tag 'application' %>
+  <%= yield_content :bottom %>
+</body>
+</html>

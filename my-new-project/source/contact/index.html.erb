@@ -1,0 +1,64 @@
+---
+title: Contact Us
+nav: contact
+---
+
+<div class="container">
+  <div class="page-header">
+    <h1>Contact Us</h1>
+  </div>
+
+  <p><%= lorem.sentences 3 %></p>
+  <p class="text-danger">* indicates a field that is required</p>
+  <br>
+  <div class="row">
+    <div class="col-md-8">
+      <form action="thankyou.html" method="post" class="form-horizontal mark-required validate" role="form">
+        <div class="form-group">
+          <label class="control-label col-md-3" for="first_name">First Name</label>
+          <div class="controls col-md-6">
+            <input type="text" id="first_name" name="first_name" class="form-control required">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-md-3" for="last_name">Last Name</label>
+          <div class="controls col-md-6">
+            <input type="text" id="last_name" name="last_name" class="form-control required">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-md-3" for="email_address">Email</label>
+          <div class="controls col-md-5">
+            <input type="email" id="email_address" name="email_address" class="form-control required">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-md-3" for="phone">Phone</label>
+          <div class="controls col-md-5">
+            <input type="tel" id="phone" name="phone" class="form-control required">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-md-3" for="comments">Comment</label>
+          <div class="controls col-md-6">
+            <textarea id="comments" name="comments" rows="5" class="form-control"></textarea>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-md-offset-3 col-md-9">
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-4">
+      <%= image_tag lorem.image('290x220', :text => ' '), style: "margin-bottom: 10px;", class: "img-thumbnail" %>
+      <address>
+        <strong>Company Name</strong><br>
+        123 Anywhere Avenue, Suite 123<br>
+        Tampa, FL 12345<br>
+        <abbr title="Phone">P:</abbr> (123) 456-7890
+      </address>
+    </div>
+  </div>
+</div>

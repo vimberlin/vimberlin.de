@@ -1,0 +1,13 @@
+# Project configuration 
+
+development:
+  title:   "[Company Name]"
+  address: "http://localhost:4567/"
+  mail_host: "localhost"
+  mail_port: 1025
+  mail_to: "user@example.com"
+  mail_from: "system@domain.com"
+
+build:
+  title:   "[Company Name]"
+  address: "http://localhost:4567/"
