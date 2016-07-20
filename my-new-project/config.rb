@@ -39,3 +39,9 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
 end
+
+activate :blog do |blog|
+  blog.permalink = "/{title}"
+  blog.layout = "blog_layout"
+  # set options on blog
+end
