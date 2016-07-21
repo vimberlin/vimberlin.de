@@ -1,5 +1,4 @@
 <nav class="navbar navbar-default navbar-primary" role="navigation">
-
   <!-- Brand and toggle get grouped for better mobile display -->
   <div class="navbar-header">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-primary">
@@ -10,27 +9,13 @@
 
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse nav-primary">
-    <ul class="nav navbar-nav">
-      <li class="<%= "active" if current?("home") %>"><a href="/">Home</a></li>
-      <li><a href="#">[Link]</a></li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">[Link] <span class="caret"></span></a>
-        <ul class="dropdown-menu" role="menu">
-          <li><a href="#">[Link]</a></li>
-          <li><a href="#">[Link]</a></li>
-          <li><a href="#">[Link]</a></li>
-          <li class="divider"></li>
-          <li><a href="#">[Link]</a></li>
-        </ul>
-      </li>
-      <li><a href="#">[Link]</a></li>
-      <li class="<%= "active" if current?("contact") %>"><a href="/contact/">Contact</a></li>
-    </ul>
-    
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="#">[Link]</a></li>
-      <li><a href="#">[Link]</a></li>
+      <li class="<%= "active" if current?("home") %>"><a href="/">Home</a></li>
+      <li><a href="https://groups.google.com/group/vimberlin/#">Mailing</a></li>
+      <li class="<%= "active" if current?("legal") %>"><a href="/legal.html">Legal notice</a></li>
+      <li><a href="http://eepurl.com/3M3LH">Newsletter</a></li>
+      <li><a href="http://feeds.feedburner.com/vimberlin">RSS</a></li>
+      <li><a href="https://twitter.com/vimberlin">Twitter</a></li>
     </ul>
   </div><!-- /.navbar-collapse -->
-  
 </nav>
