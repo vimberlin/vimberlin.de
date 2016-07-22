@@ -7,13 +7,26 @@ description: This is a page description.
 
 <div class="jumbotron text-center">
   <div class="container">
-    <h1>Welcome Prototyper</h1>
-    <p><%= greek 250 %></p>
+    <h1>Welcome to Vimberlin</h1>
+    <p>Our goal is to bring new and trained people using Vim together to talk about their practices, tools, and their habits working with Vim. If you want to <strong>give a talk</strong> (either a short 5 minute presentation or a longer one), please post your proposal on our <a href="https://groups.google.com/group/vimberlin/">mailing list</a> or ping us on <a href="https://twitter.com/vimberlin">twitter</a>.
+</p>
   </div>
 </div>
 
 <div class="container">
-  <p><%= greek 500 %></p>
+  <div class="row">
+    <div class="col-md-12">
+      <h2>Latest posts</h2>
+      <% blog.articles[0...5].each do |article| %>
+        <article>
+          <h4>
+            <a href="<%= article.url %>"><%= article.title %></a>
+            <time><%= article.date.strftime('%b %e %Y') %></time>
+          </h4>
+        </article>
+      <% end %>
+    </div>
+  </div>
 
   <div class="row">
     <% 3.times do %>

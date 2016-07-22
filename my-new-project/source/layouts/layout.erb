@@ -20,9 +20,19 @@
 
   <header>
     <div class="container">
-      <%= link_to_if(!current?("home"),image_tag(lorem.image('150x75', :text => ' ')), "/") %>
-      <%= partial "layouts/shared/header-nav" %>
-      <%= partial "layouts/shared/primary-nav" %>
+      <div class="row">
+        <div class="col-md-2">
+          <%= link_to_if(!current?("home"), image_tag("https://pbs.twimg.com/profile_images/1761428936/vim10_200x200.JPG"), "/") %>
+        </div>
+        <div class="col-md-10 hidden-sm">
+          <h1 style="margin-left: 15px">Vimberlin<br><small>the gathering for Vim-enthusiasts in Berlin</small></h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <%= partial "layouts/shared/primary-nav" %>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -33,40 +43,20 @@
   <footer class="footer">
     <div class="container">
       <div class="row">
-        <div class="col-md-2 col-md-offset-2">
-          <h4>Services</h4>
-          <ul class="list-unstyled">
-            <li><a href="#">[Service Link]</a></li>
-            <li><a href="#">[Service Link]</a></li>
-            <li><a href="#">[Service Link]</a></li>
-            <li><a href="#">[Service Link]</a></li>
-          </ul>
-        </div>
-        <div class="col-md-2">
+        <div class="col-md-2 col-md-offset-4">
           <h4>About Us</h4>
           <ul class="list-unstyled">
-            <li><a href="#">[Nav Link]</a></li>
-            <li><a href="#">[Nav Link]</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="/contact/">Contact</a></li>
+            <li><a href="/legal.html">Legal notice</a></li>
+            <li><a href="mailto:&#118;&#105;&#109;&#098;&#101;&#114;&#108;&#105;&#110;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109">Contact</a></li>
           </ul>
         </div>
         <div class="col-md-2">
           <h4>Follow Us</h4>
           <ul class="list-unstyled">
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">LinkedIn</a></li>
+            <li><a href="https://twitter.com/vimberlin">Twitter</a></li>
+            <li><a href="http://eepurl.com/3M3LH">Newsletter</a></li>
+            <li><a href="http://feeds.feedburner.com/vimberlin">RSS</a></li>
           </ul>
-        </div>
-        <div class="col-md-2">
-          <h4>Contact Us</h4>
-          <address>
-            <strong>Company Name</strong><br>
-            123 Anywhere Avenue<br>
-            Tampa, FL 12345<br>
-            <abbr title="Phone">P:</abbr> (123) 456-7890
-          </address>
         </div>
       </div>
     </div>
