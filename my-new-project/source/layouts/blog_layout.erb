@@ -21,16 +21,17 @@
   <header>
     <div class="container">
       <%= link_to_if(!current?("home"),image_tag(lorem.image('150x75', :text => ' ')), "/") %>
-      <%= partial "layouts/shared/header-nav" %>
       <%= partial "layouts/shared/primary-nav" %>
     </div>
   </header>
-
 
   <main role="main">
     <div class="container">
       <div class="row">
           <div class="col-md-12">
+
+            <h2><%= title %></h2>
+
             <%= yield :layout %>
           </div>
       </div>

@@ -11,6 +11,10 @@ module SiteHelpers
     end
   end
 
+  def title
+    data.page.title
+  end
+
   def page_title
     (data.page.title.blank? ? '' : "#{data.page.title} - ") + project_setting(:title)
   end
