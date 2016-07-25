@@ -1,0 +1,91 @@
+---
+title: June 2016 Meetup
+when: 2016-06-16T19:00
+ends: 2016-06-16T22:30
+where: inberlin
+---
+
+Hi vimmers!
+
+The next vimberlin meetup will be on 3rd thursday in June, on June 16th at IN-Berlin in Moabit/Tiergarten/Mitte,
+just north of Hauptbahnhof between the bus stops `"Quitzowstraße"` (Bus 123, M27) and `"Kruppstraße"`   (Bus 123).
+
+
+## Talks so far
+
+The planned topics this time:
+
+
+- **"Get productive with vimtex for LaTeX"** by [Matthias Günther](https://twitter.com/wikimatze)
+- space for your topic ...
+
+
+Interested?  then please tell us that you're coming at the textpad: <https://events.titanpad.com/2016-06-vimberlin>
+a nickname will suffice.
+
+
+## The venue
+
+- internet: yes. cable+wifi
+- projector: 2 projectors. (VGA+HDMI), if you have a Mac, don't forget your adapters and/or install [teamviewer.com/](http://www.teamviewer.com/de/)
+- room: 15 people
+- drinks: fridge with drinks. 1€ each.
+
+
+Bring your laptops - and join the fun! And show us *your* use with Vim!  be brief.. 5min for each presentation. We are
+open to any kind of questions and suggestions.
+
+Your host will be [Sven Guckes (@guckes)](http://www.guckes.net "Sven Guckes") & [Matthias Guenther (@wikimatze)](http://wikimatze.de/ "Matthias Guenther (@wikimatze)")
+
+See you there!
+
+
+<a id="recap">
+
+## Recap
+
+
+### wikimatze
+
+Slides of the talk **"Get productive with vimtex for LaTeX"**:
+
+<script async class="speakerdeck-embed" data-slide="1" data-id="ff777bb521294bab88ef4d60ac6ac3fb" data-ratio="1.33159947984395" src="//speakerdeck.com/assets/embed.js"></script>
+
+
+### Konfekt
+
+Mentioned his `vimtex` configuration file:
+
+```sh
+" enable special tex folding
+let g:vimtex_fold_enabled = 1
+" specify which areas should be detected for folding
+let g:vimtex_fold_sections = [
+\ "chapter", "section",
+\ "subsection", "subsubsection"
+\ ]
+let g:vimtex_fold_comments = 0 " don't fold comments
+
+" no indentation
+let g:vimtex_indent_enabled = 0
+
+" toc: don't show preample and number
+"let g:vimtex_toc_show_preamble = 0
+let g:vimtex_toc_show_numbers = 0
+
+" don't fold \begin ... \end environments
+let g:vimtex_fold_envs = 0
+" use custom section marker
+let g:vimtex_fold_levelmarker = '➜'
+
+" ignore certain warning types
+let g:vimtex_quickfix_ignored_warnings = ['Underfull', 'Overfull' ]
+```
+
+- [quick-scope](https://github.com/unblevable/quick-scope): Lightning fast left-right movement in Vim
+
+
+## Sponsor
+
+<%= partial "layouts/inberlin" %>
+
