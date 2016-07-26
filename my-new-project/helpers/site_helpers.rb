@@ -42,37 +42,4 @@ module SiteHelpers
   def project_setting(key)
     data.config[config[:environment]][key]
   end
-
-  # Send prototyped transactional emails.
-  def send_mail(template, opts={})
-    if development?
-      begin
-        to      = opts[:to] || project_setting(:mail_to)
-        from    = project_setting(:mail_from)
-        subject = opts[:subject] || "(No Subject)"
-        content = File.read(File.join(root, "mailers", "#{template}.html"))
-        host    = project_setting(:mail_host)
-        port    = project_setting(:mail_port)
-        message = build_message(to, from, subject, content)
-
-        # If you need to customize this further you can use the following into the start method
-        # (host, port, domain, username, password :plain)
-        Net::SMTP.start(host, port) do |smtp|
-          smtp.sendmail(message, from, [to])
-        end
-      rescue
-        false
-      end
-    else
-      true
-    end
-  end
-
-  private
-
-  # Returns a string to send as the mail message
-  def build_message(to, from, subject, body)
-    "From: #{from}\nTo: #{to}\nContent-type: text/html\nSubject: #{subject}\n\n#{body}"
-  end
-
 end
