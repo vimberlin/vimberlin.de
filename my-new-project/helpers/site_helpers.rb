@@ -11,6 +11,10 @@ module SiteHelpers
     end
   end
 
+  def location
+    data.page.where
+  end
+
   def title
     data.page.title
   end
@@ -24,11 +28,6 @@ module SiteHelpers
     content_tag :meta, "", {name: "description", value: data.page.description } if data.page.description
   end
 
-  # Generates character length lorem ipsum strings
-  def greek(chars)
-    Lorem::Base.new('chars', chars).output
-  end
-
   # Creates a link only if the condition returns true, otherwise returns only the element.
   def link_to_if(condition, element, link)
     if condition
@@ -36,6 +35,10 @@ module SiteHelpers
     else
       element
     end
+  end
+  # Calls appropriate key in /data/config.yml depending on current environment.
+  def location_setting(place, key)
+    data.config[config[:environment]][:locations][place][key]
   end
 
   # Calls appropriate key in /data/config.yml depending on current environment.
