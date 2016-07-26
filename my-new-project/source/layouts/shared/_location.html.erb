@@ -1,0 +1,44 @@
+<% if location == 'launchco' %>
+  <div class="jumbotron">
+    <strong class="show-for-medium-up">Time:</strong>
+    <div content="<%= data.page.when %>" itemprop="startDate">Starts <%= Time.parse(data.page.when).strftime("%B, %eth %Y %l:%M %P") %></div>
+    <div content="<%= data.page.ends%>" itemprop="startDate">Ends <%= Time.parse(data.page.ends).strftime("%B, %eth %Y %l:%M %P") %></div>
+    <br>
+
+    <strong class="show-for-medium-up">Location:</strong>
+    <div itemtype="http://schema.org/PostalAddress" itemscope="" itemprop="location">
+      <div><a href="https://launchco.com/etc/#coworking" itemprop="url">
+                  <span itemprop="name">LAUNCH/CO</span>
+                  </a> 3rd floor</div>
+      <div itemprop="streetAddress">Warschauer Str. 70A</div>
+      <div>
+        <span itemprop="postalCode">10243</span>
+        <span itemprop="addressLocality">Berlin</span>
+      </div>
+      <meta content="Germany" itemprop="addressCountry">
+      (<a href="http://g.co/maps/k62eb">map</a>)
+    </div>
+  </div>
+<% elsif location == 'intimes' %>
+
+  <%= partial("layouts/location", :locals => {:name => 'Matthias@Home'}) %>
+  <div class="jumbotron">
+    <strong class="show-for-medium-up">Time:</strong>
+    <div content="<%= data.page.when %>" itemprop="startDate">Starts <%= Time.parse(data.page.when).strftime("%B, %eth %Y %l:%M %P") %></div>
+    <div content="<%= data.page.ends%>" itemprop="startDate">Ends <%= Time.parse(data.page.ends).strftime("%B, %eth %Y %l:%M %P") %></div>
+    <br>
+
+    <strong class="show-for-medium-up">Location:</strong>
+    <div itemtype="http://schema.org/PostalAddress" itemscope="" itemprop="location">
+      <div><span itemprop="name">Matthias@Home</span> </div>
+      <div itemprop="streetAddress">Neue Straße 6</div>
+      <div>
+        <span itemprop="postalCode">12103</span>
+        <span itemprop="addressLocality">Berlin</span>
+      </div>
+      <meta content="Germany" itemprop="addressCountry">
+      (<a href="http://bit.ly/To0yMf">map</a>)
+    </div>
+  </div>
+<% elsif location == 'intimes' %>
+<% end %>
