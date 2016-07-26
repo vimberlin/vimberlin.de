@@ -1,0 +1,17 @@
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2">
+        <%= link_to_if(!current?("home"), image_tag("https://pbs.twimg.com/profile_images/1761428936/vim10_200x200.JPG"), "/") %>
+      </div>
+      <div class="col-md-10 hidden-sm">
+        <h1 style="margin-left: 15px">Vimberlin<br><small>the gathering for Vim-enthusiasts in Berlin</small></h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <%= partial "layouts/shared/primary-nav" %>
+      </div>
+    </div>
+  </div>
+</header>

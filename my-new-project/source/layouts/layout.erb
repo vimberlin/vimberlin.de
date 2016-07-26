@@ -1,82 +1,17 @@
 <!DOCTYPE html>
 
 <html>
-<head>
-  <meta charset="utf-8" />
-  <title><%= page_title %></title>
-  <%= page_description %>
-  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-  <%= stylesheet_link_tag 'application' %>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <%= yield_content :head %>
-  <!--[if lt IE 9]>
-    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-  <![endif]-->
-</head>
+<%= partial "layouts/shared/head" %>
 <body class="<%= page_classes %>">
 
-  <header>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-2">
-          <%= link_to_if(!current?("home"), image_tag("https://pbs.twimg.com/profile_images/1761428936/vim10_200x200.JPG"), "/") %>
-        </div>
-        <div class="col-md-10 hidden-sm">
-          <h1 style="margin-left: 15px">Vimberlin<br><small>the gathering for Vim-enthusiasts in Berlin</small></h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <%= partial "layouts/shared/primary-nav" %>
-        </div>
-      </div>
-    </div>
-  </header>
+  <%= partial "layouts/shared/header" %>
 
   <main role="main">
     <%= yield :layout %>
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-2 col-md-offset-4">
-          <h4>About Us</h4>
-          <ul class="list-unstyled">
-            <li><a href="/legal.html">Legal notice</a></li>
-            <li><a href="mailto:&#118;&#105;&#109;&#098;&#101;&#114;&#108;&#105;&#110;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109">Contact</a></li>
-          </ul>
-        </div>
-        <div class="col-md-2">
-          <h4>Follow Us</h4>
-          <ul class="list-unstyled">
-            <li><a href="https://twitter.com/vimberlin">Twitter</a></li>
-            <li><a href="http://eepurl.com/3M3LH">Newsletter</a></li>
-            <li><a href="http://feeds.feedburner.com/vimberlin">RSS</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <div class="footer--colophon">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <p class="footer--colophon__copyright">&copy;<%= Date.today.year %> All rights reserved.</p>
-        </div>
-        <div class="col-md-4 text-center">
-          <%= project_setting(:title) %>
-        </div>
-        <div class="col-md-4">
-          <p class="footer--colophon__poweredby">Powered by <a href="https://github.com/timknight/middleman-ethos" target="_blank">Ethos</a></p>
-        </div>
-      </div>
-    </div>
-  </div>
+  <%= partial "layouts/shared/footer" %>
+  <%= partial "layouts/shared/colophon" %>
 
   <%= javascript_include_tag 'application' %>
   <%= yield_content :bottom %>
