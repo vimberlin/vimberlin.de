@@ -25,7 +25,8 @@ module SiteHelpers
 
   # Creates a description meta tag based on the presence of a description value within the page frontmatter.
   def page_description
-    content_tag :meta, "", {name: "description", value: data.page.description } if data.page.description
+    description = data.page.description ? data.page.description : data.page.title + ' - ' + project_setting(:title)
+    "<meta name=\"description\" content=\"#{description}\">"
   end
 
   # Creates a link only if the condition returns true, otherwise returns only the element.
