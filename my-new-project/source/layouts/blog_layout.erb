@@ -2,18 +2,31 @@
 
 <html>
 <%= partial "layouts/shared/head" %>
-<body class="<%= page_classes %>">
-
+<body>
 
   <%= partial "layouts/shared/header" %>
   <main role="main">
     <div class="container">
       <div class="row">
           <div class="col-md-12">
-
             <h2><%= title %></h2>
             <%= partial("layouts/locations") %>
             <%= yield :layout %>
+
+            <% prev_article = current_article.previous_article %>
+            <% next_article = current_article.next_article %>
+            <ul>
+              <% if prev_article %>
+                <li>
+                  <a href="<%= prev_article.url%>" rel="prev" title="Previous article: <%= prev_article.title%>"> Previous article</a>
+                </li>
+              <% end %>
+              <% if next_article %>
+                <li>
+                  <a href="<%= next_article.url%>" rel="next" title="Next article: <%= next_article.title%>"> Next article</a>
+                </li>
+              <% end %>
+            </ul>
           </div>
       </div>
     </div>
