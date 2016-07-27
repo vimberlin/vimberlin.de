@@ -1,31 +1,26 @@
 module SiteHelpers
-  require 'net/smtp'
 
   # Used to check if a link goes to the current page by passing in a nav and
   # subnav string to check against the frontmatter within data.page.
-  def current?(nav, subnav = "")
-    if subnav.empty?
-      nav == data.page.nav
-    else
-      nav == data.page.nav && subnav == data.page.subnav
-    end
+  def current?(nav)
+    nav == current_resource.data.nav
   end
 
   def location
-    data.page.where
+    current_resource.data.where
   end
 
   def title
-    data.page.title
+    current_resource.data.title
   end
 
   def page_title
-    (data.page.title.blank? ? '' : "#{data.page.title} - ") + project_setting(:title)
+    (current_resource.data.title.blank? ? '' : "#{current_resource.data.title} - ") + project_setting(:title)
   end
 
   # Creates a description meta tag based on the presence of a description value within the page frontmatter.
   def page_description
-    description = data.page.description ? data.page.description : data.page.title + ' - ' + project_setting(:title)
+    description = current_resource.data.description ? current_resource.data.description : current_resource.data.title + ' - ' + project_setting(:title)
     "<meta name=\"description\" content=\"#{description}\">"
   end
 
