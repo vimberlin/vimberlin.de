@@ -5,11 +5,16 @@ subnav:
 description: This is a page description.
 ---
 
-<div class="jumbotron text-center">
+<div class="jumbotron">
   <div class="container">
-    <h1>Welcome to Vimberlin</h1>
-    <p>Our goal is to bring new and trained people using Vim together to talk about their practices, tools, and their habits working with Vim. If you want to <strong>give a talk</strong> (either a short 5 minute presentation or a longer one), please post your proposal on our <a href="https://groups.google.com/group/vimberlin/">mailing list</a> or ping us on <a href="https://twitter.com/vimberlin">twitter</a>.
-</p>
+    <h1 class="text-center">Welcome to Vimberlin</h1>
+    <p class="text-center">
+      Our goal is to bring new and trained people using Vim together to talk about their practices, tools, and their habits working with Vim.
+      If you want to <strong>give a talk</strong> (either a short 5 minute presentation or a longer one), please post your proposal on our
+      <a href="https://groups.google.com/group/vimberlin/">mailing list</a> or ping us on <a href="https://twitter.com/vimberlin">twitter</a>.
+    </p>
+    <br>
+    <%= next_event %>
   </div>
 </div>
 
@@ -17,7 +22,7 @@ description: This is a page description.
   <div class="row">
     <div class="col-md-12">
       <h2>Latest posts</h2>
-      <% blog.articles[0...5].each do |article| %>
+      <% blog.articles.each do |article| %>
         <article>
           <h4>
             <a href="<%= article.url %>"><%= article.title %></a>
@@ -26,15 +31,5 @@ description: This is a page description.
         </article>
       <% end %>
     </div>
-  </div>
-
-  <div class="row">
-    <% 3.times do %>
-      <div class="col-md-4">
-        <h4>Section Title</h4>
-        <p><%= greek 200 %></p>
-        <p><a href="" class="btn btn-default">Read More</a></p>
-      </div>
-    <% end %>
   </div>
 </div>

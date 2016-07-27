@@ -45,4 +45,19 @@ module SiteHelpers
   def project_setting(key)
     data.config[config[:environment]][key]
   end
+
+  def next_event
+    announcement = "<h2>Our next meetup: "
+    latest_blog_entry = blog.articles.first
+
+    if Time.parse(latest_blog_entry.data['when']) >= Time.now
+     location = latest_blog_entry.data['where']
+     time = Time.parse(latest_blog_entry.data['when']).strftime("%B %eth, %Y %l:%M %P")
+     announcement << "on the <a href='#{latest_blog_entry.url}'>#{time}</a>"
+     announcement << " at <a href='#{data.config[config[:environment]][:locations][location]['url']}'>#{location.capitalize}</a></h2>"
+     return announcement
+    end
+
+    return announcement << 'TBA</h2>'
+  end
 end
