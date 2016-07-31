@@ -1,8 +1,6 @@
 ---
-title:
 nav: home
-subnav:
-description: This is a page description.
+description: Vimberlin - the gathering for Vim-enthusiasts in Berlin
 ---
 
 <div class="jumbotron">
@@ -18,18 +16,3 @@ description: This is a page description.
   </div>
 </div>
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <h2>Latest posts</h2>
-      <% blog.articles.each do |article| %>
-        <article>
-          <h4>
-            <a href="<%= article.url %>"><%= article.title %></a>
-            <time><%= article.date.strftime('%b %e %Y') %></time>
-          </h4>
-        </article>
-      <% end %>
-    </div>
-  </div>
-</div>
