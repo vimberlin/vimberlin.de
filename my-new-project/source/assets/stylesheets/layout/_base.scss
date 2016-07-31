@@ -1,5 +1,6 @@
 body {
-  font-family: "Voltaire",sans-serif;
+  font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+  font-size: 16px;
   line-height: 26px;
   padding-top: 8px;
 }
@@ -32,6 +33,17 @@ h4 {
   line-height: 1em;
 }
 
+a {
+  color: #2199e8;
+}
+
+a:focus, a:hover {
+    color: #1585cf;
+}
+
+.jumbotron-vimberlin {
+  padding: 2.25rem !important;
+}
 
 .headline {
   color: $headlinegrey;
