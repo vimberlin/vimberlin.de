@@ -32,6 +32,8 @@ set :js_dir, 'assets/javascripts'
 set :images_dir, 'assets/images'
 set :url_root, 'http://vimberlin.de'
 
+proxy '/blog', '/blog.html'
+proxy '/legal', '/legal.html'
 
 page '/*.xml', layout: false
 
