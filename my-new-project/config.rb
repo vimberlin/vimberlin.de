@@ -46,6 +46,13 @@ activate :search_engine_sitemap,
   default_priority: 0.5,
   default_change_frequency: "monthly"
 
+
+set :markdown_engine, :redcarpet
+set :markdown, :tables => true, :autolink => true, :gh_blockcode => true,
+    :fenced_code_blocks => true
+
+activate :syntax
+
 configure :development do
   activate :livereload          # Reload the browser automatically whenever files change
   activate :disqus do |d|
