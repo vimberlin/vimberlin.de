@@ -1,2 +1,44 @@
-body { padding-top: 8px; }
+body {
+  font-family: "Voltaire",sans-serif;
+  line-height: 26px;
+  padding-top: 8px;
+}
+
+h1 {
+  font-size: 70px;
+  margin-bottom: .15em;
+  margin-top: 18px;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+
+h3 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  padding-bottom: 5px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Voltaire', sans-serif;
+  font-weight: 400;
+  line-height: 1em;
+}
+
+
+.headline {
+  color: $headlinegrey;
+  font-size: 23.4px;
+  font-weight: 400;
+  line-height: 1;
+  margin-left: 15px;
+}
+
 .text-footer { font-size: 90%; }
