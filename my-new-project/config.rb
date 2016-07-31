@@ -48,10 +48,16 @@ activate :search_engine_sitemap,
 
 configure :development do
   activate :livereload          # Reload the browser automatically whenever files change
+  activate :disqus do |d|
+    d.shortname = nil
+  end
 end
 
 configure :build do
   activate :minify_css
   activate :minify_javascript
+  activate :disqus do |d|
+    d.shortname = 'vimberlin'
+  end
 end
 

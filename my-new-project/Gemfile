@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
-gem "middleman", "~>3.3.12"
+gem "middleman", "~> 3.3.12"
 gem "middleman-livereload", "~> 3.1.0"
 gem 'middleman-search_engine_sitemap', '~> 1.1'
-gem "middleman-deploy"
+gem 'middleman-disqus', '~> 1.0'
 
 gem "middleman-blog"
 gem "nokogiri"
