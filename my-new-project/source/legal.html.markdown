@@ -1,6 +1,7 @@
 ---
 title: Legal notice
 nav: legal
+hide_from_sitemap: true
 description: This is a page description.
 ---
 

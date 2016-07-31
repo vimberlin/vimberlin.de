@@ -30,8 +30,19 @@
 set :css_dir, 'assets/stylesheets'
 set :js_dir, 'assets/javascripts'
 set :images_dir, 'assets/images'
+set :url_root, 'http://vimberlin.de'
+
 
 page '/*.xml', layout: false
+
+activate :blog do |blog|
+  blog.permalink = "/{title}"
+  blog.layout = "blog_layout"
+end
+
+activate :search_engine_sitemap,
+  default_priority: 0.5,
+  default_change_frequency: "monthly"
 
 configure :development do
   activate :livereload          # Reload the browser automatically whenever files change
@@ -42,7 +53,3 @@ configure :build do
   activate :minify_javascript
 end
 
-activate :blog do |blog|
-  blog.permalink = "/{title}"
-  blog.layout = "blog_layout"
-end
