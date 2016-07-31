@@ -31,6 +31,8 @@ set :css_dir, 'assets/stylesheets'
 set :js_dir, 'assets/javascripts'
 set :images_dir, 'assets/images'
 
+page '/*.xml', layout: false
+
 configure :development do
   activate :livereload          # Reload the browser automatically whenever files change
 end
@@ -43,5 +45,4 @@ end
 activate :blog do |blog|
   blog.permalink = "/{title}"
   blog.layout = "blog_layout"
-  # set options on blog
 end
