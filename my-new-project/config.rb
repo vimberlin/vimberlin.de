@@ -53,6 +53,12 @@ set :markdown, :tables => true, :autolink => true, :gh_blockcode => true,
 
 activate :syntax
 
+activate :piwik do |p|
+    p.id = 1
+    p.domain = 'vimberlin.de'
+    p.url = '/piwik'
+end
+
 configure :development do
   activate :livereload          # Reload the browser automatically whenever files change
   activate :disqus do |d|
