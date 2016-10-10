@@ -40,6 +40,7 @@ page '/*.xml', layout: false
 activate :blog do |blog|
   blog.permalink = "/{title}"
   blog.layout = "blog_layout"
+  blog.publish_future_dated = true
 end
 
 activate :search_engine_sitemap,
