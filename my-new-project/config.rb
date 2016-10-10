@@ -32,8 +32,6 @@ set :js_dir, 'assets/javascripts'
 set :images_dir, 'assets/images'
 set :url_root, 'http://vimberlin.de'
 
-proxy '/blog', '/blog.html'
-proxy '/legal', '/legal.html'
 
 page '/*.xml', layout: false
 
@@ -42,6 +40,9 @@ activate :blog do |blog|
   blog.layout = "blog_layout"
   blog.publish_future_dated = true
 end
+
+activate :directory_indexes
+
 
 activate :search_engine_sitemap,
   default_priority: 0.5,
