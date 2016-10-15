@@ -1,14 +1,14 @@
 ---
-title: Legal notice
-nav: legal
+title: Imprint
+nav: imprint
 hide_from_sitemap: true
-description: This is a page description.
+description: The imprint of vimberlin
 ---
 
 <div class="container">
   <div class="row">
       <div class="col-md-12">
-      <h2>Legal notice</h2>
+      <h2>Imprint</h2>
 
       This site is maintained by:
 
