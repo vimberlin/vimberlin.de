@@ -6,6 +6,10 @@ module SiteHelpers
     nav == current_resource.data.nav
   end
 
+  def blog_entry?()
+    ['absolventa', 'berlinonline', 'bitcrowd', 'buero20', 'inberlin', 'intimes', 'launchco', 'launchco_new', 'matthias', 'thoughtworks', 'travis', 'wooga', 'wunderlist'].include? current_resource.data.where
+  end
+
   def location
     current_resource.data.where
   end

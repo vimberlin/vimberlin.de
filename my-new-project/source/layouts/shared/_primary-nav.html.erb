@@ -11,8 +11,8 @@
   <div class="collapse navbar-collapse nav-primary">
     <ul class="nav navbar-nav navbar-right">
       <li class="<%= "active" if current?("home") %>"><a href="/">Home</a></li>
-      <li class="<%= "active" if current?("blog") %>"><a href="/blog">Blog</a></li>
       <li><a target="_blank" href="https://groups.google.com/group/vimberlin/#">Mailing list</a></li>
+      <li class="<%= "active" if current?("blog") || blog_entry? %>"><a href="/blog">Blog</a></li>
       <li class="<%= "active" if current?("imprint") %>"><a href="/imprint">Imprint</a></li>
       <li><a target="_blank" href="http://eepurl.com/3M3LH">Newsletter</a></li>
       <li><a target="_blank" href="http://feeds.feedburner.com/vimberlin">RSS</a></li>
