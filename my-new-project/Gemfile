@@ -6,6 +6,7 @@ gem 'middleman-search_engine_sitemap', '~> 1.1'
 gem 'middleman-disqus', '~> 1.0'
 gem 'middleman-syntax', '~> 1.2'
 gem 'middleman-piwik'
+gem 'font-awesome-middleman'
 
 
 gem "middleman-blog"
