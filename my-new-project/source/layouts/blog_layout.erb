@@ -27,7 +27,11 @@
                 </li>
               <% end %>
             </ul>
-            <%= disqus %>
+            <% if !development? %>
+              <a href="#comments"><span id="cmtcount"></span> Comments</a>
+              <div id="hashover"></div>
+              <script type="text/javascript" src="/hashover.php" defer="defer"></script>
+            <% end %>
           </div>
       </div>
     </div>
