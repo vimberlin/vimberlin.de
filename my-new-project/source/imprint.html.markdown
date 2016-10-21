@@ -1,6 +1,5 @@
 ---
 title: Imprint
-nav: imprint
 hide_from_sitemap: true
 description: The imprint of vimberlin
 ---

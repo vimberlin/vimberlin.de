@@ -33,3 +33,29 @@
 // $Modules
 // ==========================================================================
 @import 'modules/index';
+
+// Custom
+
+.footer--colophon {
+  font-size: 12px;
+}
+
+.headline-link {
+  margin-left: 15px
+}
+
+.headline-link a {
+  color: black;
+}
+
+.headline a {
+  color: #777;
+}
+
+.headline-link a:hover, .headline a:hover {
+  text-decoration: none;
+}
+
+article code {
+  font-size: 14px;
+}

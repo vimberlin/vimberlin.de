@@ -7,14 +7,17 @@ description: Latest posts
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <% blog.articles.each do |article| %>
+      <% blog.articles.each_with_index do |article, index| %>
         <article>
           <h2>
             <a href="<%= article.url %>"><%= article.title %></a>
           </h2>
-          <%= article.summary(100) %>
-
-          <a href="<%= article.url %>">Read more</a>
+          <% if index == 0 %>
+            <%= article.body %>
+          <% else %>
+            <%= article.summary(100) %>
+            <a href="<%= article.url %>">Read more</a>
+          <% end %>
         </article>
       <% end %>
     </div>

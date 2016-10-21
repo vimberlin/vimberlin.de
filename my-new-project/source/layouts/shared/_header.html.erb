@@ -2,11 +2,11 @@
   <div class="container">
     <div class="row">
       <div class="col-md-2 hidden-xs">
-        <%= link_to_if(!current?("home"), image_tag("https://pbs.twimg.com/profile_images/1761428936/vim10_200x200.JPG", :class => 'headline-image'), "/") %>
+        <%= link_to_if("home", image_tag("https://pbs.twimg.com/profile_images/1761428936/vim10_200x200.JPG", :class => 'headline-image'), "/") %>
       </div>
       <div class="col-md-10 hidden-xs">
-        <h1 style="margin-left: 15px">Vimberlin</h1><br>
-        <span class="headline" style="">the gathering for Vim-enthusiasts in Berlin</span>
+        <h1 class="headline-link"> <%= link_to "Vimberlin", "/" %></h1><br>
+        <span class="headline"><%= link_to "the gathering for Vim-enthusiasts in Berlin", "/" %></span>
       </div>
     </div>
     <div class="row">
