@@ -31,7 +31,7 @@ module Jekyll
             location = "#{loc["name"]}, #{loc["street"]}, #{loc["postalcode"]} #{loc["city"]}, #{loc["country"]}"
 
             cal.event do |event|
-              event.summary     = post.title
+              event.summary     = post.data['title']
               event.description = Nokogiri::HTML(content).text # ugly hack to textify html
               event.dtstart     = Time.parse post.data['when']
               event.dtend       = Time.parse post.data['ends']
