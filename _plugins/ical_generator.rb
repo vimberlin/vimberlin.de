@@ -21,7 +21,7 @@ module Jekyll
         cal.default_tzid = "Europe/Berlin"
         #cal.x_wr_calname = "VimBerlin"
         site.site_payload['site']['posts'].each do |post|
-          if post.data['layout'] == "event" then
+          if %w(event meetup).include?(post.data['layout']) then
             # XXX: is there no fucking way to get the rendered content of a site?
             payload = {'page' => post.to_liquid }
             info = { :filters => [Jekyll::Filters], :registers => { :site => site, :page => payload['page'] } }
