@@ -8,9 +8,12 @@
   <main role="main">
     <div class="container">
       <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-10 col-md-offset-1">
             <h2><%= title %></h2>
-            <%= partial("layouts/locations") %>
+            <% if current_article.data.when %>
+            <%= partial("layouts/shared/locations", locals: {start: current_article.data.when, ends: current_article.data.ends, name: current_article.data.where}) %>
+            <% end %>
+
             <% if !development? %>
             <div class="pull-right">
               <a href="#comments"><span id="cmtcount"></span> Comments</a>

@@ -1,0 +1,27 @@
+<br>
+<strong class="show-for-medium-up">Time: </strong><span content="<%= start %>" itemprop="startDate">Starts <%= Time.parse(start).strftime("%e %B %l:%M %P") %></span>
+<br>
+<strong class="show-for-medium-up">Location: </strong>
+<span itemtype="http://schema.org/PostalAddress" itemscope="" itemprop="location">
+  <% if data.config[config[:environment]][:locations][name]['url'] %>
+    <span>
+      <a href="<%= data.config[config[:environment]][:locations][name]['url'] %>">
+        <span itemprop="name"><%= data.config[config[:environment]][:locations][name]['name'] %></span>
+      </a>
+        <%= data.config[config[:environment]][:locations][name]['addition'] %>
+    </span>
+  <% else %>
+    <span><span itemprop="name"><%= data.config[config[:environment]][:locations][name]['name'] %></span>
+      <%= data.config[config[:environment]][:locations][name]['addition'] %>
+    </span>
+  <% end %>
+  <span itemprop="streetAddress">, <%= data.config[config[:environment]][:locations][name]['street'] %></span>
+  <span>
+    <span itemprop="postalCode">, <%= data.config[config[:environment]][:locations][name]['postalcode'] %></span>
+    <span itemprop="addressLocality"><%= data.config[config[:environment]][:locations][name]['city'] %></span>
+  </span>
+  <meta content="Germany" itemprop="addressCountry">
+  (<a href="<%= data.config[config[:environment]][:locations][name]['map'] %>">map</a>)
+</span>
+<br>
+<br>
