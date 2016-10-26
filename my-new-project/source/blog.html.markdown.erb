@@ -6,17 +6,19 @@ description: Latest posts
 
 <div class="container">
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-10 ">
       <% blog.articles.each_with_index do |article, index| %>
         <article>
           <h2>
+          <% if article.data.when %>
+            <a href="<%= article.url %>"><%= Time.parse(article.data.when).strftime("%B %Y") %> Meetup - <%= Time.parse(article.data.when).strftime("%eth %l:%M %P") %></a>
+          <% else %>
             <a href="<%= article.url %>"><%= article.title %></a>
+          <% end %>
           </h2>
           <% if index == 0 %>
+            <%= partial("layouts/shared/locations", locals: {start: article.data.when, ends: article.data.ends, name: article.data.where}) %>
             <%= article.body %>
-          <% else %>
-            <%= article.summary(100) %>
-            <a href="<%= article.url %>">Read more</a>
           <% end %>
         </article>
       <% end %>
