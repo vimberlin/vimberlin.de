@@ -1,16 +1,16 @@
 <header>
   <div class="container">
     <div class="row">
-      <div class="col-md-2 hidden-xs">
+      <div class="col-md-2 col-md-offset-1 hidden-xs">
         <%= link_to_if("home", image_tag("https://pbs.twimg.com/profile_images/1761428936/vim10_200x200.JPG", :class => 'headline-image'), "/") %>
       </div>
-      <div class="col-md-10 hidden-xs">
+      <div class="col-md-7 hidden-xs">
         <h1 class="headline-link"> <%= link_to "Vimberlin", "/" %></h1><br>
         <span class="headline"><%= link_to "the gathering for Vim-enthusiasts in Berlin", "/" %></span>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-10 col-md-offset-1">
         <%= partial "layouts/shared/primary-nav" %>
       </div>
     </div>

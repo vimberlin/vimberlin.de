@@ -11,7 +11,7 @@
           <div class="col-md-10 col-md-offset-1">
             <h2><%= title %></h2>
             <% if current_article.data.when %>
-            <%= partial("layouts/shared/locations", locals: {start: current_article.data.when, ends: current_article.data.ends, name: current_article.data.where}) %>
+            <%= partial("layouts/shared/location", locals: {start: current_article.data.when, ends: current_article.data.ends, name: current_article.data.where}) %>
             <% end %>
 
             <% if !development? %>
