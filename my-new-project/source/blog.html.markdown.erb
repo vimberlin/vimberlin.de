@@ -17,7 +17,7 @@ description: Latest posts
           <% end %>
           </h2>
           <% if index == 0 %>
-            <%= partial("layouts/shared/locations", locals: {start: article.data.when, ends: article.data.ends, name: article.data.where}) %>
+            <%= partial("layouts/shared/location", locals: {start: article.data.when, ends: article.data.ends, name: article.data.where}) %>
             <%= article.body %>
           <% end %>
         </article>
