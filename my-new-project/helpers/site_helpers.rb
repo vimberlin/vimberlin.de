@@ -46,18 +46,34 @@ module SiteHelpers
     data.config[config[:environment]][key]
   end
 
+  def count_comments(article_name)
+    name = article_name.downcase.gsub("\s", "-")
+    %x[ls hashover/pages/#{name}-/ | wc -l]
+  end
+
+
   def next_event
-    announcement = "<h2>Our next meetup: "
+    announcement = "<h3>Next meetup "
     latest_blog_entry = blog.articles.first
 
     if Time.parse(latest_blog_entry.data['when']) >= Time.now
-     location = latest_blog_entry.data['where']
-     time = Time.parse(latest_blog_entry.data['when']).strftime("%B %eth, %Y %l:%M %P")
-     announcement << "on the <a href='#{latest_blog_entry.url}'>#{time}</a>"
-     announcement << " at <a href='#{data.config[config[:environment]][:locations][location]['url']}'>#{location.capitalize}</a></h2>"
-     return announcement
+      location = latest_blog_entry.data['where']
+      time = Time.parse(latest_blog_entry.data['when']).strftime("%B %eth, %Y %l:%M %P")
+      announcement << "<a href='#{latest_blog_entry.url}'>#{time}</a> "
+      announcement << "at <a href='#{data.config[config[:environment]][:locations][location]['url']}'>#{location.capitalize}</a> "
+      announcement << "("
+      announcement << link_to("#{count_comments(latest_blog_entry.title)} #{count_comments(latest_blog_entry.title).to_i <= 1? "Comment": "Comments"}", latest_blog_entry.url + "#comments")
+      announcement << ")</h3>"
+      if latest_blog_entry.data['topics']
+        announcement << "<h3>Topics</h3>"
+        announcement << "<ul>"
+        latest_blog_entry.data['topics'].each do |topic|
+          announcement << "<li>#{topic}</li>"
+        end
+      end
+      return announcement
     end
 
-    return announcement << 'TBA</h2>'
+    return announcement << 'TBA</h3>'
   end
 end
