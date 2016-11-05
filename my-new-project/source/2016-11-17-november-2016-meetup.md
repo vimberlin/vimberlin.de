@@ -14,7 +14,7 @@ topics:
 
 Hi vimmers,
 
-the next meetup It will be on 2nd Thursday in October, on October 13th at IN-Berlin in Moabit/Tiergarten/Mitte,
+the next meetup will be on 19th Thursday in November 13th at IN-Berlin in Moabit/Tiergarten/Mitte,
 just north of Hauptbahnhof between the bus stops `"Quitzowstraße"` (Bus 123, M27) and `"Kruppstraße"` (Bus 123).
 
 
