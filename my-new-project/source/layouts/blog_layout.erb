@@ -16,7 +16,7 @@
 
             <% if !development? %>
             <div class="pull-right">
-              <a href="#comments"><span id="cmtcount"></span> Comments</a>
+              <a href="#comments">Comments</a>
             </div>
             <% end %>
             <%= yield :layout %>
@@ -45,7 +45,6 @@
     </div>
   </main>
 
-  <%= partial "layouts/shared/footer" %>
   <%= partial "layouts/shared/colophon" %>
 
   <%= javascript_include_tag 'application' %>
