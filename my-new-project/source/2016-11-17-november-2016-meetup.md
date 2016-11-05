@@ -1,0 +1,55 @@
+---
+title: November 2016 Meetup
+when: 2016-11-17T19:00
+ends: 2016-11-17T22:30
+where: inberlin
+topics:
+  - vim intro for beginners
+  - vim Q&A - questions+answers
+  - vim NEWS
+  - vim installation from source (git repository)
+  - vim installation config with support for lua+perl+python+ruby
+  - vimgolf challenge
+---
+
+Hi vimmers,
+
+the next meetup It will be on 2nd Thursday in October, on October 13th at IN-Berlin in Moabit/Tiergarten/Mitte,
+just north of Hauptbahnhof between the bus stops `"Quitzowstraße"` (Bus 123, M27) and `"Kruppstraße"` (Bus 123).
+
+
+Interested? We are always interested in short-talks, longer talks as well as presentations about what you've learned.
+
+
+We can do the following
+
+- vim intro for beginners
+- vim Q&A - questions+answers
+- vim NEWS
+- vim installation from source (git repository)
+- vim installation config with support for lua+perl+python+ruby
+- vimgolf challenge
+
+
+Feel free to join us and we will help to setup vim
+
+
+## The venue
+
+- internet: yes. cable+wifi
+- projector: 2 projectors. (VGA+HDMI), if you have a Mac, don't forget your adapters and/or install
+  [teamviewer.com/](http://www.teamviewer.com/de/)
+  - room: 15 people
+  - drinks: fridge with drinks. 1€ each.
+
+
+Bring your laptops - and join the fun! And show us *your* use with Vim! Be brief.. 5min for each presentation. We are
+open to any kind of questions and suggestions.
+
+
+Your host will be [Sven Guckes (@guckes)](http://www.guckes.net "Sven Guckes") & [Matthias Guenther
+(@wikimatze)](http://wikimatze.de/ "Matthias Guenther (@wikimatze)")
+
+
+See you there!
+
