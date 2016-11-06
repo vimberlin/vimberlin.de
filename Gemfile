@@ -7,6 +7,7 @@ gem 'middleman-syntax', '~> 1.2'
 gem 'middleman-piwik'
 gem 'font-awesome-middleman'
 
+gem 'stringex', '2.5.2'
 
 gem "middleman-blog"
 gem "nokogiri"
