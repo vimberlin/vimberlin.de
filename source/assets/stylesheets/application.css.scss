@@ -70,3 +70,16 @@ input {
   text-decoration: none;
 }
 
+a.prev {
+  width: 50%;
+  float: left;
+  margin: 1em 0;
+}
+
+a.next {
+  text-align: right;
+  width: 50%;
+  float: right;
+  margin: 1em 0;
+}
+

@@ -23,18 +23,12 @@
 
             <% prev_article = current_article.previous_article %>
             <% next_article = current_article.next_article %>
-            <ul>
-              <% if prev_article %>
-                <li>
-                  <a href="<%= prev_article.url%>" rel="prev" title="Previous article: <%= prev_article.title%>"> Previous article</a>
-                </li>
-              <% end %>
-              <% if next_article %>
-                <li>
-                  <a href="<%= next_article.url%>" rel="next" title="Next article: <%= next_article.title%>"> Next article</a>
-                </li>
-              <% end %>
-            </ul>
+            <% if prev_article %>
+              <a class="prev" href="<%= prev_article.url%>" rel="prev" title="Previous article: <%= prev_article.title%>">&laquo; <%= prev_article.title%></a>
+            <% end %>
+            <% if next_article %>
+              <a class="next" href="<%= next_article.url%>" rel="next" title="Next article: <%= next_article.title%>"><%= next_article.title%> &raquo; </a>
+            <% end %>
             <% if !development? %>
               <a href="#comments"><span id="cmtcount"></span> Comments</a>
               <div id="hashover"></div>
