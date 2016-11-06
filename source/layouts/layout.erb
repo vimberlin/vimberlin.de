@@ -8,6 +8,7 @@
     <%= yield :layout %>
   </main>
   <%= partial "layouts/shared/colophon" %>
+  <%= javascript_include_tag 'application' %>
   <%= yield_content :bottom %>
 </body>
 </html>
