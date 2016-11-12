@@ -1,0 +1,12 @@
+/* TEAM */
+
+Persons: Matthias Günther
+Site: http://wikimatze.de
+
+
+/* SITE */
+
+Standards: HTML5, CSS3,
+Components: jQuery, piwik, hashover
+Software: middleman, git
+

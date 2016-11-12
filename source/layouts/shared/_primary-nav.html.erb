@@ -1,0 +1,22 @@
+<nav class="navbar navbar-default navbar-primary">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-primary">
+      <span class="sr-only">Toggle navigation</span>
+      <i class="fa fa-navicon"></i>
+    </button>
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse nav-primary">
+    <ul class="nav navbar-nav navbar-right">
+      <li class="<%= "active" if current?("home") %>"><a href="/">Intro</a></li>
+      <li class="<%= "active" if current?("blog") || blog_entry? %>"><a href="/blog">Blog</a></li>
+      <li class="<%= "active" if current?("newsletter") %>"><a href="/newsletter">Newsletter</a></li>
+      <li><a target="_blank" rel="noopener noreferrer" href="https://groups.google.com/group/vimberlin/#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+      <li><a target="_blank" rel="noopener noreferrer" href="http://feeds.feedburner.com/vimberlin"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+      <li><a target="_blank" rel="noopener noreferrer" href="https://twitter.com/vimberlin"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+      <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/vimberlin/vimberlin.de"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+    </ul>
+  </div><!-- /.navbar-collapse -->
+</nav>

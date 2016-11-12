@@ -1,0 +1,35 @@
+.footer {
+  background-color: #333;
+  color: white;
+  font-weight: 300;
+  padding: 40px 0 20px;
+  margin-top: 20px;
+
+  h4 {
+    font-size: 0.85em;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+
+  a, p, address {
+    font-size: 0.9em;
+    line-height: 1.5em;
+  }
+
+  a:not(.btn) { color: white; }
+
+  &--colophon {
+    background-color: #111;
+    color: white;
+    font-weight: 300;
+    padding: 10px 0;
+
+    &__copyright { margin: 0; }
+
+    &__poweredby {
+      float: right;
+      margin: 0;
+      a { color: white; text-decoration: underline; }
+    }
+  }
+}

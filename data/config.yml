@@ -1,0 +1,241 @@
+# Project configuration
+
+development:
+  title:   "Vimberlin"
+  address: "http://localhost:4567/"
+  locations:
+    absolventa:
+      street: Greifswalder Str. 212,
+      city: Berlin
+      postalcode: 10405
+      country: Germany
+      url: http://www.absolventa.de/
+      map: http://www.openstreetmap.org/search?query=Greifswalder%20Str.%20212#map=19/52.53200/13.42776
+      name: kitchen/leisure zone
+      addition: ABSOLVENTA Office
+    berlinonline:
+      street: Karl-Liebkecht-Str. 29
+      city: Berlin
+      postalcode: 10178
+      country: Germany
+      url: http://www.berlinonline.net/
+      map: https://maps.google.de/maps?client=ubuntu&channel=fs&q=Karl-Liebknecht-Str.+29+10178+Berlin&ie=UTF-8&hq=&hnear=0x47a84e1e5db65933:0xc167fbd0f56722bf,Karl-Liebknecht-Stra%C3%9Fe+29,+10178+Berlin&gl=de&ei=-6ZYU9O6EcTTPIGlgZAP&ved=0CCsQ8gEwAA
+      name: BerlinOnline
+      addition: 16th floor
+    bitcrowd:
+      street: Sanderstrasse 28
+      city: Berlin
+      postalcode: 12047
+      country: Germany
+      url: http://bitcrowd.net/en
+      map: https://maps.google.de/maps?client=ubuntu&channel=fs&q=google+maps+Sanderstr+28+12047+Berlin&ie=UTF-8&hq=&hnear=0x47a84fb5f8582b01:0xb2381828bd8f3a12,Sanderstra%C3%9Fe+28,+12047+Berlin&gl=de&ei=VSxfU7yXDcGBPfjngPAL&ved=0CC0Q8gEwAA
+      name: bitcrowd GmbH
+    buero20:
+      street: Weigandufer 45
+      city: Berlin
+      postalcode: 12059
+      country: Germany
+      url: http://www.buero20.org/
+      map: http://www.openstreetmap.org/?lat=52.4794285&lon=13.4542985&zoom=17&layers=T&mlat=52.47952&mlon=13.45428
+      name:  Büro 2.0
+      addition: Conference room
+    inberlin:
+      street: Lehrter Str. 53
+      city: Berlin
+      postalcode: 10557
+      country: Germany
+      url: https://www.in-berlin.de/space
+      map: http://www.openstreetmap.org/node/412766878#map=19/52.53428/13.35880
+      name: Individual Network Berlin e.V.
+      addition:
+    intimes:
+      street: Boxhagener Str. 107
+      city: Berlin
+      postalcode: 10245
+      country: Germany
+      url:
+      map: http://goo.gl/maps/a4oqk
+      name: the bar Intimes
+      addition:
+    launchco:
+      street: Warschauer Str. 70A
+      city: Berlin
+      postalcode: 10243
+      country: Germany
+      url: https://launchco.com/etc/#coworking
+      map: http://g.co/maps/k62eb
+      name: LAUNCH/CO
+      addition: 3rd floor
+    launchco_new:
+      street: Rudolfstraße 14
+      city: Berlin
+      postalcode: 10245
+      country: Germany
+      url: https://launchco.com/etc/#coworking
+      map: http://bit.ly/1wbCYmD
+      name: LAUNCH/CO
+    matthias:
+      street: Neue Straße 6
+      city: Berlin Tempelhof
+      postalcode: 12103
+      country: Germany
+      url:
+      map: http://bit.ly/To0yMf
+      name: Matthias@Home
+      addition:
+    thoughtworks:
+      street: Mülhauser Str. 6
+      city: Berlin, Prenzlauer Berg
+      postalcode: 10405
+      country: Germany
+      url: http://www.thoughtworks.com/locations/berlin
+      map: http://bit.ly/1nPCRdt
+      name: ThoughtWorks Werkstatt Berlin
+      addition: U2 Senefelder Platz / M2 Knaackstr. HH (Remise) 1. OG
+    travis:
+      street: Prinzessinnenstr. 20
+      city: Berlin, Kreuzberg
+      postalcode: 10969
+      country: Germany
+      url: https://travis-ci.org/
+      map: http://bit.ly/1dqOIZk
+      name: GanzOben Office at Betahaus (Travis CI office, 5Apps, Avarteq, Cileos)
+      addition: 5th floor (<a href="https://gist.github.com/svenfuchs/5364262">detailed information how to get there</a>)
+    wooga:
+      street: Saarbrücker Straße 38
+      city: Berlin
+      postalcode: 10405
+      country: Germany
+      url: http://www.wooga.com/
+      map: http://g.co/maps/g7tx6
+      name: Wooga GmbH
+      addition:
+    wunderlist:
+      street: Karl-Liebknecht-Straße 32
+      city: Berlin
+      postalcode: 10178
+      country: Germany
+      url: https://www.wunderlist.com/
+      map: http://www.openstreetmap.org/node/2840695202#map=18/52.52515/13.41411&layers=T
+      name: Wunderlist
+      addition:
+
+build:
+  title:   "Vimberlin"
+  address: "http://localhost:4567/"
+  locations:
+    absolventa:
+      street: Greifswalder Str. 212,
+      city: Berlin
+      postalcode: 10405
+      country: Germany
+      url: http://www.absolventa.de/
+      map: http://www.openstreetmap.org/search?query=Greifswalder%20Str.%20212#map=19/52.53200/13.42776
+      name: kitchen/leisure zone
+      addition: ABSOLVENTA Office
+    berlinonline:
+      street: Karl-Liebkecht-Str. 29
+      city: Berlin
+      postalcode: 10178
+      country: Germany
+      url: http://www.berlinonline.net/
+      map: https://maps.google.de/maps?client=ubuntu&channel=fs&q=Karl-Liebknecht-Str.+29+10178+Berlin&ie=UTF-8&hq=&hnear=0x47a84e1e5db65933:0xc167fbd0f56722bf,Karl-Liebknecht-Stra%C3%9Fe+29,+10178+Berlin&gl=de&ei=-6ZYU9O6EcTTPIGlgZAP&ved=0CCsQ8gEwAA
+      name: BerlinOnline
+      addition: 16th floor
+    bitcrowd:
+      street: Sanderstrasse 28
+      city: Berlin
+      postalcode: 12047
+      country: Germany
+      url: http://bitcrowd.net/en
+      map: https://maps.google.de/maps?client=ubuntu&channel=fs&q=google+maps+Sanderstr+28+12047+Berlin&ie=UTF-8&hq=&hnear=0x47a84fb5f8582b01:0xb2381828bd8f3a12,Sanderstra%C3%9Fe+28,+12047+Berlin&gl=de&ei=VSxfU7yXDcGBPfjngPAL&ved=0CC0Q8gEwAA
+      name: bitcrowd GmbH
+    buero20:
+      street: Weigandufer 45
+      city: Berlin
+      postalcode: 12059
+      country: Germany
+      url: http://www.buero20.org/
+      map: http://www.openstreetmap.org/?lat=52.4794285&lon=13.4542985&zoom=17&layers=T&mlat=52.47952&mlon=13.45428
+      name:  Büro 2.0
+      addition: Conference room
+    inberlin:
+      street: Lehrter Str. 53
+      city: Berlin
+      postalcode: 10557
+      country: Germany
+      url: https://www.in-berlin.de/space
+      map: http://www.openstreetmap.org/node/412766878#map=19/52.53428/13.35880
+      name: Individual Network Berlin e.V.
+      addition:
+    intimes:
+      street: Boxhagener Str. 107
+      city: Berlin
+      postalcode: 10245
+      country: Germany
+      url:
+      map: http://goo.gl/maps/a4oqk
+      name: the bar Intimes
+      addition:
+    launchco:
+      street: Warschauer Str. 70A
+      city: Berlin
+      postalcode: 10243
+      country: Germany
+      url: https://launchco.com/etc/#coworking
+      map: http://g.co/maps/k62eb
+      name: LAUNCH/CO
+      addition: 3rd floor
+    launchco_new:
+      street: Rudolfstraße 14
+      city: Berlin
+      postalcode: 10245
+      country: Germany
+      url: https://launchco.com/etc/#coworking
+      map: http://bit.ly/1wbCYmD
+      name: LAUNCH/CO
+    matthias:
+      street: Neue Straße 6
+      city: Berlin Tempelhof
+      postalcode: 12103
+      country: Germany
+      url:
+      map: http://bit.ly/To0yMf
+      name: Matthias@Home
+      addition:
+    thoughtworks:
+      street: Mülhauser Str. 6
+      city: Berlin, Prenzlauer Berg
+      postalcode: 10405
+      country: Germany
+      url: http://www.thoughtworks.com/locations/berlin
+      map: http://bit.ly/1nPCRdt
+      name: ThoughtWorks Werkstatt Berlin
+      addition: U2 Senefelder Platz / M2 Knaackstr. HH (Remise) 1. OG
+    travis:
+      street: Prinzessinnenstr. 20
+      city: Berlin, Kreuzberg
+      postalcode: 10969
+      country: Germany
+      url: https://travis-ci.org/
+      map: http://bit.ly/1dqOIZk
+      name: GanzOben Office at Betahaus (Travis CI office, 5Apps, Avarteq, Cileos)
+      addition: 5th floor (<a href="https://gist.github.com/svenfuchs/5364262">detailed information how to get there</a>)
+    wooga:
+      street: Saarbrücker Straße 38
+      city: Berlin
+      postalcode: 10405
+      country: Germany
+      url: http://www.wooga.com/
+      map: http://g.co/maps/g7tx6
+      name: Wooga GmbH
+      addition:
+    wunderlist:
+      street: Karl-Liebknecht-Straße 32
+      city: Berlin
+      postalcode: 10178
+      country: Germany
+      url: https://www.wunderlist.com/
+      map: http://www.openstreetmap.org/node/2840695202#map=18/52.52515/13.41411&layers=T
+      name: Wunderlist
+      addition:

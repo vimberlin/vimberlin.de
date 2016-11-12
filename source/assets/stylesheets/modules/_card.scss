@@ -1,0 +1,93 @@
+/**
+ * Card Pattern
+ * Layouts a basic card pattern design
+ */
+
+.card {
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  margin-bottom: 1.5em;
+  position: relative;
+
+  .card-image {
+    max-height: 200px;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+  }
+
+  .card-title {
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0.5em 0.75em;
+  }
+
+  .card-datetime {
+    color: #999;
+    font-size: 0.8em;
+    padding: 0.5em 0.75em 0.25em;
+    text-transform: uppercase;
+  }
+
+  .card-copy {
+    font-size: .9em;
+    line-height: 1.5em;
+    padding: 0.75em;
+  }
+
+  .card-stats {
+    padding: 0.75em;
+    overflow: auto;
+    ul, ol {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      border-right: 1px solid rgba(51, 51, 51, 0.2);
+      color: #008cba;
+      display: inline;
+      float: left;
+      font-size: 1.2em;
+      font-weight: bold;
+      line-height: 1.1em;
+      padding: 0 .7em;
+      &:first-child { padding-left: 0; }
+      &:last-child  { border-right: 0; }
+      // Optional stat label
+      span {
+        color: #333;
+        display: block;
+        font-size: .7em;
+        font-weight: normal;
+      }
+    }
+  }
+
+  // An optional ribbon can be added on the top right of the card
+  .ribbon-wrapper {
+    height: 85px;
+    overflow: hidden;
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    width: 85px;
+    .ribbon {
+      @include box-shadow(0 0 3px rbga(0, 0, 0, 0.3));
+      @include rotate(45deg);
+      background-color: #008cba;
+      color: white;
+      font-size: .8em;
+      font-weight: 800;
+      left: -5px;
+      padding: 2px 7px;
+      position: relative;
+      text-align: center;
+      top: 15px;
+      width: 120px;
+    }
+  }
+}

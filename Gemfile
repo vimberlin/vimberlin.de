@@ -1,17 +1,20 @@
 source 'https://rubygems.org'
 
-gem 'colorator'   , '0.1.0'
-gem 'fileutils'   , '0.7'
-gem 'rouge'       , '1.10.1'
-gem 'highline'    , '1.6.21'
-gem 'jekyll'      , '3.1.3'
-gem 'rake'        , '10.4.2'
-gem 'stringex'    , '2.5.2'
-gem 'sweetie'     , '1.0.1'
-gem 'redcarpet'   , '3.3.4'
+gem "middleman", "~> 3.3.12"
+gem "middleman-livereload", "~> 3.1.0"
+gem 'middleman-search_engine_sitemap', '~> 1.1'
+gem 'middleman-syntax', '~> 1.2'
+gem 'middleman-piwik'
+gem 'font-awesome-middleman'
 
-gem 'ri_cal'   , '0.8.8'
-gem 'tzinfo'   , '1.2.2'
-gem 'jemoji'   , '0.5.1'
-gem 'jekyll-sitemap', '0.10.0'
+gem 'stringex', '2.5.2'
+
+gem "middleman-blog"
+gem "nokogiri"
+
+gem 'redcarpet'
+
+gem "builder" # used for feed.xml
+gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw] # For faster file watcher updates on Windows:
+gem "tzinfo-data",     :platforms => [:mswin, :mingw] # Windows does not come with time zone data
 

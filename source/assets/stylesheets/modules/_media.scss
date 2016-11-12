@@ -1,0 +1,36 @@
+.media {
+
+  // Determine floating position based on breakpoint
+  .media-image {
+    @include breakpoint($xs) {
+      margin-bottom: 10px;
+    }
+    @include breakpoint($sm) {
+      float: left;
+      margin-right: 1em;
+    }
+  }
+
+  .media-content {
+    overflow: hidden;
+    zoom: 1;
+  }
+
+  .media-title h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 .25em 0;
+  }
+
+  .media-datetime {
+    color: #999;
+    font-size: 0.8em;
+    margin: 0 0.75em 0.5em 0;
+    text-transform: uppercase;
+  }
+
+  .media-copy {
+    font-size: 14px;
+  }
+
+}

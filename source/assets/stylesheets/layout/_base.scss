@@ -1,0 +1,61 @@
+body {
+  font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  padding-top: 8px;
+}
+
+h1 {
+  font-size: 70px;
+  margin-bottom: .15em;
+  margin-top: 18px;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+
+h3 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  padding-bottom: 5px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Voltaire', sans-serif;
+  font-weight: 400;
+  line-height: 1em;
+}
+
+a {
+  color: #2199e8;
+}
+
+a:focus, a:hover {
+    color: #1585cf;
+}
+
+.jumbotron-vimberlin {
+  padding: 2.25rem !important;
+}
+
+.headline {
+  color: $headlinegrey;
+  font-size: 23.4px;
+  font-weight: 400;
+  line-height: 1;
+  margin-left: 15px;
+}
+
+.headline-image {
+  weight: 150px;
+  height: 150px;
+}
+
+.text-footer { font-size: 90%; }
