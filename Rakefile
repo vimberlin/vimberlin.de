@@ -40,11 +40,11 @@ end
 
 desc "Syncing comments"
 task :sync_comments do
+  system "rm -rf hashover/"
   puts "Updating comments ..."
-  system "rsync -vru -e ssh xa6195@xa6.serverdomain.org:/home/www/stagingvimberlin/hashover/ hashover"
+  system "rsync -vru -e ssh xa6195@xa6.serverdomain.org:/home/www/vimberlin/hashover/ hashover"
   puts "... done"
 end
-
 
 posts_dir = 'source'
 
@@ -82,7 +82,8 @@ task :staging do
 end
 
 desc "Deploy"
-task :deploy do
+task :deploy => :sync_comments do
+  system "middleman b"
   system "rsync -vru -e \"ssh\" --del build/* xa6195@xa6.serverdomain.org:/home/www/vimberlin"
   puts '# Please refer to http://vimberlin.de'
 end
