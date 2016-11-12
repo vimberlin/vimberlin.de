@@ -71,6 +71,7 @@ module SiteHelpers
           announcement << "<li>#{topic}</li>"
         end
       end
+      announcement << "</ul>"
       return announcement
     end
 
