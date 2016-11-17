@@ -79,7 +79,7 @@ desc "Staging"
 task :staging do
   system "middleman b"
   system "rsync -vru -e \"ssh\" --del build/* xa6195@xa6.serverdomain.org:/home/www/stagingvimberlin"
-  puts '# Please refer to http://vimberlin.wikimatze.de to visit the staging system'
+  puts '# Please refer to https://vimberlin.wikimatze.de to visit the staging system'
 end
 
 desc "Deploy"
