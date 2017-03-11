@@ -62,7 +62,7 @@ module SiteHelpers
       announcement << "<a href='#{latest_blog_entry.url}'>#{time}</a> "
       announcement << "at <a href='#{data.config[config[:environment]][:locations][location]['url']}'>#{location.capitalize == 'Inberlin' ? 'IN-Berlin' :  location.capitalize}</a> "
       announcement << "("
-      announcement << link_to("#{count_comments(latest_blog_entry.title)} #{count_comments(latest_blog_entry.title).to_i <= 1? "Comment": "Comments"}", latest_blog_entry.url + "#comments")
+      announcement << link_to("#{count_comments(latest_blog_entry.title)} #{count_comments(latest_blog_entry.title).to_i == 1? "Comment": "Comments"}", latest_blog_entry.url + "#comments")
       announcement << ")</h3>"
       if latest_blog_entry.data['topics']
         announcement << "<h3>Topics</h3>"
