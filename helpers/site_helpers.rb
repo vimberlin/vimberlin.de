@@ -68,7 +68,7 @@ module SiteHelpers
         announcement << "<h3>Topics</h3>"
         announcement << "<ul>"
         latest_blog_entry.data['topics'].each do |topic|
-          announcement << "<li>#{topic}</li>"
+          announcement << "<li><a href='#{latest_blog_entry.url}'>#{topic}</a></li>"
         end
       end
       announcement << "</ul>"
