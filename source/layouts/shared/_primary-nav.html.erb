@@ -10,7 +10,6 @@
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse nav-primary">
     <ul class="nav navbar-nav navbar-right">
-      <li class="<%= "active" if current?("home") %>"><a href="/">Intro</a></li>
       <li class="<%= "active" if current?("blog") || blog_entry? %>"><a href="/blog">Blog</a></li>
       <li class="<%= "active" if current?("newsletter") %>"><a href="/newsletter">Newsletter</a></li>
       <li><a target="_blank" rel="noopener noreferrer" href="https://groups.google.com/group/vimberlin/#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
