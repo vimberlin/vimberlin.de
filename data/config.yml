@@ -83,6 +83,15 @@ development:
       map: http://bit.ly/To0yMf
       name: Matthias@Home
       addition:
+    mallofberlin:
+      street: Leipziger Pl. 12
+      city: Berlin
+      postalcode: 10117
+      country: German
+      url: https://www.mallofberlin.de/
+      map: http://www.openstreetmap.org/node/3987047648
+      name: Foodcout @mallofberlin
+      addition: part of the food court where the Edeka store is located
     thoughtworks:
       street: Mülhauser Str. 6
       city: Berlin, Prenzlauer Berg
