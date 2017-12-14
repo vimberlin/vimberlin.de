@@ -21,8 +21,8 @@
             <% end %>
             <%= yield :layout %>
 
-            <% prev_article = current_article.previous_article %>
-            <% next_article = current_article.next_article %>
+            <% prev_article = current_article.article_previous %>
+            <% next_article = current_article.article_next %>
             <% if prev_article %>
               <a class="prev" href="<%= prev_article.url%>" rel="prev" title="Previous article: <%= prev_article.title%>">&laquo; <%= prev_article.title%></a>
             <% end %>
