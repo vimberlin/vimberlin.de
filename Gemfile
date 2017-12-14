@@ -5,7 +5,6 @@ gem "middleman-livereload", "~> 3.4.6"
 
 gem 'middleman-search_engine_sitemap', '~> 1.1'
 gem 'middleman-syntax', '~> 3.0.0'
-gem 'middleman-piwik'
 gem 'font-awesome-middleman', '~> 4.2.0'
 
 gem 'stringex', '2.5.2'
@@ -17,4 +16,5 @@ gem 'redcarpet'
 
 gem 'builder', '~> 3.2.0' # used for feed.xml
 
+gem 'piwik-middleman', path: "/home/wm/git/piwik-middleman/"
 
