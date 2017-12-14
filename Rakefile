@@ -77,14 +77,14 @@ end
 
 desc "Staging"
 task :staging do
-  system "middleman b"
+  system 'middleman b -e development'
   system "rsync -vru -e \"ssh\" --del build/* xa6195@xa6.serverdomain.org:/home/www/stagingvimberlin"
   puts '# Please refer to https://vimberlin.wikimatze.de to visit the staging system'
 end
 
 desc "Deploy"
 task :deploy => :sync_comments do
-  system "middleman b"
+  system 'middleman b'
   system "rsync -vru -e \"ssh\" --del build/* xa6195@xa6.serverdomain.org:/home/www/vimberlin"
   puts '# Please refer to http://vimberlin.de'
 end
