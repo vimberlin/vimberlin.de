@@ -55,10 +55,10 @@ set :markdown, :tables => true, :autolink => true, :gh_blockcode => true,
 
 activate :syntax
 
-activate :piwik_middleman do |p|
+activate :piwikmiddleman do |p|
   p.domain = 'vimberlin.de'
   p.url = 'piwik'
-  p.id = 3
+  p.id = 1
 end
 
 configure :development do
