@@ -90,8 +90,8 @@ development:
       country: German
       url: https://www.mallofberlin.de/
       map: http://www.openstreetmap.org/node/3987047648
-      name: Foodcout @mallofberlin
-      addition: part of the food court where the Edeka store is located
+      name: Food court @mallofberlin
+      addition: on the second floor in front of the Subway store
     thoughtworks:
       street: Mülhauser Str. 6
       city: Berlin, Prenzlauer Berg
@@ -338,8 +338,8 @@ production:
       country: German
       url: https://www.mallofberlin.de/
       map: http://www.openstreetmap.org/node/3987047648
-      name: Foodcout @mallofberlin
-      addition: part of the food court where the Edeka store is located
+      name: Food court @mallofberlin
+      addition: on the second floor in front of the Subway store
     thoughtworks:
       street: Mülhauser Str. 6
       city: Berlin, Prenzlauer Berg
