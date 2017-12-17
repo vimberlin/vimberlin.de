@@ -91,7 +91,7 @@ development:
       url: https://www.mallofberlin.de/
       map: http://www.openstreetmap.org/node/3987047648
       name: Food court @mallofberlin
-      addition: on the second floor in front of the Subway store
+      addition: on the second floor in front of the Subway store in the food court
     thoughtworks:
       street: Mülhauser Str. 6
       city: Berlin, Prenzlauer Berg
@@ -339,7 +339,7 @@ production:
       url: https://www.mallofberlin.de/
       map: http://www.openstreetmap.org/node/3987047648
       name: Food court @mallofberlin
-      addition: on the second floor in front of the Subway store
+      addition: on the second floor in front of the Subway store in the food court
     thoughtworks:
       street: Mülhauser Str. 6
       city: Berlin, Prenzlauer Berg
