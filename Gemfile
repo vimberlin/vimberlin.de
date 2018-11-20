@@ -16,5 +16,5 @@ gem 'redcarpet'
 
 gem 'builder', '~> 3.2.0' # used for feed.xml
 
-gem 'piwik-middleman', path: "/home/wm/git/piwik-middleman/"
+gem 'motomo-middleman', path: "/home/wm/git/motomo-middleman/"
 

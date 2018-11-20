@@ -32,7 +32,6 @@ set :js_dir, 'assets/javascripts'
 set :images_dir, 'assets/images'
 set :url_root, 'http://vimberlin.de'
 
-
 page '/*.xml', layout: false
 
 activate :blog do |blog|
@@ -55,7 +54,7 @@ set :markdown, :tables => true, :autolink => true, :gh_blockcode => true,
 
 activate :syntax
 
-activate :piwikmiddleman do |p|
+activate :motomomiddleman do |p|
   p.domain = 'vimberlin.de'
   p.url = 'piwik'
   p.id = 1
