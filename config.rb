@@ -54,9 +54,9 @@ set :markdown, :tables => true, :autolink => true, :gh_blockcode => true,
 
 activate :syntax
 
-activate :motomomiddleman do |p|
+activate :matomomiddleman do |p|
   p.domain = 'vimberlin.de'
-  p.url = 'piwik'
+  p.url = 'matomo'
   p.id = 1
 end
 

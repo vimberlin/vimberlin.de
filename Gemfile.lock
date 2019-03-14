@@ -1,9 +1,3 @@
-PATH
-  remote: /home/wm/git/motomo-middleman
-  specs:
-    motomo-middleman (0.0.1)
-      middleman-core (~> 4.2)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -48,6 +42,8 @@ GEM
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
+    matomo-middleman (0.0.3)
+      middleman-core (~> 4)
     memoist (0.16.0)
     middleman (4.2.1)
       coffee-script (~> 2.2)
@@ -134,15 +130,15 @@ PLATFORMS
 DEPENDENCIES
   builder (~> 3.2.0)
   font-awesome-middleman (~> 4.2.0)
+  matomo-middleman
   middleman (~> 4.2.1)
   middleman-blog (~> 4.0.2)
   middleman-livereload (~> 3.4.6)
   middleman-search_engine_sitemap (~> 1.1)
   middleman-syntax (~> 3.0.0)
-  motomo-middleman!
   nokogiri
   redcarpet
   stringex (= 2.5.2)
 
 BUNDLED WITH
-   1.16.1
+   1.17.2
