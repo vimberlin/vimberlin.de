@@ -136,7 +136,7 @@ development:
       url: https://inviqa.com/
       map: https://www.openstreetmap.org/node/2824980623#map=19/52.51461/13.46783
       name: Inviqa
-      addition:
+      addition: The entrance is on Voigtstraße, so just round the corner
 
 build:
   title:   "Vimberlin"
@@ -265,7 +265,7 @@ build:
       url: https://inviqa.com/
       map: https://www.openstreetmap.org/node/2824980623#map=19/52.51461/13.46783
       name: Inviqa
-      addition:
+      addition: The entrance is on Voigtstraße, so just round the corner
 production:
   title:   "Vimberlin"
   address: "http://localhost:4567/"
@@ -394,6 +394,15 @@ production:
       map: http://www.openstreetmap.org/node/2840695202#map=18/52.52515/13.41411&layers=T
       name: Wunderlist
       addition:
+    inviqa:
+      street: Frankfurter Allee 69
+      city: Berlin
+      postalcode: 10247
+      country: Germany
+      url: https://inviqa.com/
+      map: https://www.openstreetmap.org/node/2824980623#map=19/52.51461/13.46783
+      name: Inviqa
+      addition: The entrance is on Voigtstraße, so just round the corner
 
 build:
   title:   "Vimberlin"
@@ -522,4 +531,5 @@ build:
       url: https://inviqa.com/
       map: https://www.openstreetmap.org/node/2824980623#map=19/52.51461/13.46783
       name: Inviqa
-      addition:
+      addition: The entrance is on Voigtstraße, so just round the corner
+
