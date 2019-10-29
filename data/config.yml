@@ -137,6 +137,16 @@ development:
       map: https://www.openstreetmap.org/node/2824980623#map=19/52.51461/13.46783
       name: Inviqa
       addition: The entrance is on Voigtstraße, so just round the corner
+    bitcrowd:
+      street: Oranienstr. 6
+      city: Berlin
+      postalcode: 10997
+      country: Germany
+      url: https://bitcrowd.net
+      map: https://www.google.de/maps/place/Oranienstra%C3%9Fe+6,+10997+Berlin/@52.4998919,13.4244531,18z/data=!3m1!4b1!4m5!3m4!1s0x47a84e350a669333:0x3dc79e96d74bd57b!8m2!3d52.4998919!4d13.425056
+      name: bitcrowd GmbH
+      addition: The entrance is just a few footsteps from the Görlitzer Bahnhof
+
 
 build:
   title:   "Vimberlin"
@@ -532,4 +542,13 @@ build:
       map: https://www.openstreetmap.org/node/2824980623#map=19/52.51461/13.46783
       name: Inviqa
       addition: The entrance is on Voigtstraße, so just round the corner
+    bitcrowd:
+      street: Oranienstr. 6
+      city: Berlin
+      postalcode: 10997
+      country: Germany
+      url: https://bitcrowd.net
+      map: https://www.google.de/maps/place/Oranienstra%C3%9Fe+6,+10997+Berlin/@52.4998919,13.4244531,18z/data=!3m1!4b1!4m5!3m4!1s0x47a84e350a669333:0x3dc79e96d74bd57b!8m2!3d52.4998919!4d13.425056
+      name: bitcrowd GmbH
+      addition: The entrance is just a few footsteps from the Görlitzer Bahnhof
 
