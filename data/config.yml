@@ -22,14 +22,6 @@ development:
       map: https://maps.google.de/maps?client=ubuntu&channel=fs&q=Karl-Liebknecht-Str.+29+10178+Berlin&ie=UTF-8&hq=&hnear=0x47a84e1e5db65933:0xc167fbd0f56722bf,Karl-Liebknecht-Stra%C3%9Fe+29,+10178+Berlin&gl=de&ei=-6ZYU9O6EcTTPIGlgZAP&ved=0CCsQ8gEwAA
       name: BerlinOnline
       addition: 16th floor
-    bitcrowd:
-      street: Sanderstrasse 28
-      city: Berlin
-      postalcode: 12047
-      country: Germany
-      url: http://bitcrowd.net/en
-      map: https://maps.google.de/maps?client=ubuntu&channel=fs&q=google+maps+Sanderstr+28+12047+Berlin&ie=UTF-8&hq=&hnear=0x47a84fb5f8582b01:0xb2381828bd8f3a12,Sanderstra%C3%9Fe+28,+12047+Berlin&gl=de&ei=VSxfU7yXDcGBPfjngPAL&ved=0CC0Q8gEwAA
-      name: bitcrowd GmbH
     buero20:
       street: Weigandufer 45
       city: Berlin
@@ -145,7 +137,7 @@ development:
       url: https://bitcrowd.net
       map: https://www.google.de/maps/place/Oranienstra%C3%9Fe+6,+10997+Berlin/@52.4998919,13.4244531,18z/data=!3m1!4b1!4m5!3m4!1s0x47a84e350a669333:0x3dc79e96d74bd57b!8m2!3d52.4998919!4d13.425056
       name: bitcrowd GmbH
-      addition: The entrance is just a few footsteps from the Görlitzer Bahnhof
+      addition: The entrance is just a few footsteps from the Goerlitzer Bahnhof
 
 
 build:
@@ -170,14 +162,6 @@ build:
       map: https://maps.google.de/maps?client=ubuntu&channel=fs&q=Karl-Liebknecht-Str.+29+10178+Berlin&ie=UTF-8&hq=&hnear=0x47a84e1e5db65933:0xc167fbd0f56722bf,Karl-Liebknecht-Stra%C3%9Fe+29,+10178+Berlin&gl=de&ei=-6ZYU9O6EcTTPIGlgZAP&ved=0CCsQ8gEwAA
       name: BerlinOnline
       addition: 16th floor
-    bitcrowd:
-      street: Sanderstrasse 28
-      city: Berlin
-      postalcode: 12047
-      country: Germany
-      url: http://bitcrowd.net/en
-      map: https://maps.google.de/maps?client=ubuntu&channel=fs&q=google+maps+Sanderstr+28+12047+Berlin&ie=UTF-8&hq=&hnear=0x47a84fb5f8582b01:0xb2381828bd8f3a12,Sanderstra%C3%9Fe+28,+12047+Berlin&gl=de&ei=VSxfU7yXDcGBPfjngPAL&ved=0CC0Q8gEwAA
-      name: bitcrowd GmbH
     buero20:
       street: Weigandufer 45
       city: Berlin
@@ -298,14 +282,6 @@ production:
       map: https://maps.google.de/maps?client=ubuntu&channel=fs&q=Karl-Liebknecht-Str.+29+10178+Berlin&ie=UTF-8&hq=&hnear=0x47a84e1e5db65933:0xc167fbd0f56722bf,Karl-Liebknecht-Stra%C3%9Fe+29,+10178+Berlin&gl=de&ei=-6ZYU9O6EcTTPIGlgZAP&ved=0CCsQ8gEwAA
       name: BerlinOnline
       addition: 16th floor
-    bitcrowd:
-      street: Sanderstrasse 28
-      city: Berlin
-      postalcode: 12047
-      country: Germany
-      url: http://bitcrowd.net/en
-      map: https://maps.google.de/maps?client=ubuntu&channel=fs&q=google+maps+Sanderstr+28+12047+Berlin&ie=UTF-8&hq=&hnear=0x47a84fb5f8582b01:0xb2381828bd8f3a12,Sanderstra%C3%9Fe+28,+12047+Berlin&gl=de&ei=VSxfU7yXDcGBPfjngPAL&ved=0CC0Q8gEwAA
-      name: bitcrowd GmbH
     buero20:
       street: Weigandufer 45
       city: Berlin
@@ -436,14 +412,6 @@ build:
       map: https://maps.google.de/maps?client=ubuntu&channel=fs&q=Karl-Liebknecht-Str.+29+10178+Berlin&ie=UTF-8&hq=&hnear=0x47a84e1e5db65933:0xc167fbd0f56722bf,Karl-Liebknecht-Stra%C3%9Fe+29,+10178+Berlin&gl=de&ei=-6ZYU9O6EcTTPIGlgZAP&ved=0CCsQ8gEwAA
       name: BerlinOnline
       addition: 16th floor
-    bitcrowd:
-      street: Sanderstrasse 28
-      city: Berlin
-      postalcode: 12047
-      country: Germany
-      url: http://bitcrowd.net/en
-      map: https://maps.google.de/maps?client=ubuntu&channel=fs&q=google+maps+Sanderstr+28+12047+Berlin&ie=UTF-8&hq=&hnear=0x47a84fb5f8582b01:0xb2381828bd8f3a12,Sanderstra%C3%9Fe+28,+12047+Berlin&gl=de&ei=VSxfU7yXDcGBPfjngPAL&ved=0CC0Q8gEwAA
-      name: bitcrowd GmbH
     buero20:
       street: Weigandufer 45
       city: Berlin
@@ -550,5 +518,5 @@ build:
       url: https://bitcrowd.net
       map: https://www.google.de/maps/place/Oranienstra%C3%9Fe+6,+10997+Berlin/@52.4998919,13.4244531,18z/data=!3m1!4b1!4m5!3m4!1s0x47a84e350a669333:0x3dc79e96d74bd57b!8m2!3d52.4998919!4d13.425056
       name: bitcrowd GmbH
-      addition: The entrance is just a few footsteps from the Görlitzer Bahnhof
+      addition: The entrance is just a few footsteps from the Goerlitzer Bahnhof
 
