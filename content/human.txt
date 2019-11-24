@@ -1,0 +1,13 @@
+/* TEAM */
+
+Persons: Matthias Günther
+Site: https://wikimatze.de
+
+
+/* SITE */
+
+Standards: HTML5, CSS3
+Components: matomo
+Software: hugo, hyde-hyde, git
+
+

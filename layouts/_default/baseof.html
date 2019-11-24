@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+    {{ block "header" . }}{{ end }}
+    <style>
+        span.site__title {
+            font-size: 2rem;
+        }
+        img.img--circle {
+            margin-top: 2rem;
+            border-radius: 1%;
+        }
+        .sidebar {
+            background-color: #002f48;
+        }
+        div.builtwith {
+            text-align: center;
+        }
+        .video-responsive{
+            overflow:hidden;
+            padding-bottom:56.25%;
+            position:relative;
+            height:0;
+        }
+        .video-responsive iframe{
+            left:0;
+            top:0;
+            height:100%;
+            width:100%;
+            position:absolute;
+        }
+    </style>
+    <body class="{{ .Site.Params.themeColor }} {{if .Site.Params.layoutReverse}}layout-reverse{{end}}">
+    {{ partial "sidebar.html" . }}
+        <div class="content container">
+            {{ block "content" . }}{{ end }}
+        </div>
+        {{ block "footer" . }}{{ end }}
+    </body>
+</html>

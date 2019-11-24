@@ -1,0 +1,6 @@
+User-Agent: *
+Disallow: /*.js
+Disallow: /*.css
+Allow: /
+
+Sitemap: https://vimberlin.com/sitemap.xml

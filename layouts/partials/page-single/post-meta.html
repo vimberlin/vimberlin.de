@@ -1,0 +1,112 @@
+{{ with .Params.date }}
+  {{ $date := .}}
+  <strong>Time: </strong>
+  <span itemprop="startDate">{{ dateFormat "Monday, Jan 2, 2006, 3 PM" $date }}</span>
+{{ end }}
+
+{{ with .Params.where }}
+  <br>
+  <strong>Location: </strong>
+  {{ $location := .}}
+  {{ if eq $location "bitcrowd" }}
+    <span itemtype="http://schema.org/PostalAddress" itemscope="" itemprop="location">
+      <span>
+        <a href="https://bitcrowd.net/">
+          <span itemprop="name">bitcrowd GmbH</span>
+        </a>
+          The entrance is just a few footsteps from the Görlitzer Bahnhof
+      </span>
+    <span itemprop="streetAddress">, Oranienstr. 6</span>
+    <span>
+      <span itemprop="postalCode">, 10997</span>
+      <span itemprop="addressLocality">Berlin</span>
+    </span>
+    <meta content="Germany" itemprop="addressCountry">
+    (<a href="https://www.google.de/maps/place/Oranienstra%C3%9Fe+6,+10997+Berlin/@52.4998919,13.4244531,18z/data=!3m1!4b1!4m5!3m4!1s0x47a84e350a669333:0x3dc79e96d74bd57b!8m2!3d52.4998919!4d13.425056">map</a>)
+    </span>
+  {{ end }}
+  {{ if eq $location "invqia" }}
+    <span itemtype="http://schema.org/PostalAddress" itemscope="" itemprop="location">
+      <span>
+        <a href="https://inviqa.com/">
+          <span itemprop="name">Inviqa</span>
+        </a>
+          The entrance is on Voigtstraße, so just round the corner
+      </span>
+    <span itemprop="streetAddress">, Frankfurter Allee 69</span>
+    <span>
+      <span itemprop="postalCode">, 10247</span>
+      <span itemprop="addressLocality">Berlin</span>
+    </span>
+    <meta content="Germany" itemprop="addressCountry">
+    (<a href="https://www.openstreetmap.org/node/2824980623#map=19/52.51461/13.46783">map</a>)
+    </span>
+  {{ end }}
+  {{ if eq $location "launchco" }}
+    <span itemtype="http://schema.org/PostalAddress" itemscope="" itemprop="location">
+        <span>
+          <a href="https://launchco.com/etc/#coworking">
+            <span itemprop="name">LAUNCH/CO</span>
+          </a>
+            3rd floor
+        </span>
+      <span itemprop="streetAddress">, Warschauer Str. 70A</span>
+      <span>
+        <span itemprop="postalCode">, 10243</span>
+        <span itemprop="addressLocality">Berlin</span>
+      </span>
+      <meta content="Germany" itemprop="addressCountry">
+      (<a href="http://g.co/maps/k62eb">map</a>)
+    </span>
+  {{ end }}
+  {{ if eq $location "inberlin" }}
+    <span itemtype="http://schema.org/PostalAddress" itemscope="" itemprop="location">
+        <span>
+          <a href="https://www.in-berlin.de/space">
+            <span itemprop="name">Individual Network Berlin e.V.</span>
+          </a>
+
+        </span>
+      <span itemprop="streetAddress">, Lehrter Str. 53</span>
+      <span>
+        <span itemprop="postalCode">, 10557</span>
+        <span itemprop="addressLocality">Berlin</span>
+      </span>
+      <meta content="Germany" itemprop="addressCountry">
+      (<a href="http://www.openstreetmap.org/node/412766878#map=19/52.53428/13.35880">map</a>)
+    </span>
+  {{ end }}
+  {{ if eq $location "wooga" }}
+    <span itemtype="http://schema.org/PostalAddress" itemscope="" itemprop="location">
+        <span>
+          <a href="https://www.wooga.com/">
+            <span itemprop="name">Wooga GmbH</span>
+          </a>
+        </span>
+      <span itemprop="streetAddress">, Saarbrücker Straße 38</span>
+      <span>
+        <span itemprop="postalCode">, 10405</span>
+        <span itemprop="addressLocality">Berlin</span>
+      </span>
+      <meta content="Germany" itemprop="addressCountry">
+      (<a href="http://g.co/maps/g7tx6">map</a>)
+    </span>
+  {{ end }}
+  {{ if eq $location "travis" }}
+    <span itemtype="http://schema.org/PostalAddress" itemscope="" itemprop="location">
+       <span>
+         <a href="https://travis-ci.org/">
+         <span itemprop="name">GanzOben Office at Betahaus (Travis CI office, 5Apps, Avarteq, Cileos)</span>
+         </a>
+       </span>
+        5th floor (<a href="https://gist.github.com/svenfuchs/5364262">detailed information how to get there</a>)
+      <span itemprop="streetAddress">, Prinzessinnenstr. 20</span>
+      <span>
+        <span itemprop="postalCode">, 10969</span>
+        <span itemprop="addressLocality">Berlin, Kreuzberg</span>
+      </span>
+      <meta content="Germany" itemprop="addressCountry">
+      (<a href="http://bit.ly/1dqOIZk">map</a>)
+    </span>
+  {{ end }}
+{{ end }}

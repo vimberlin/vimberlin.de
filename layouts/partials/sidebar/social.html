@@ -1,0 +1,17 @@
+<section class="social">
+  {{ with .Site.Params.social.twitter }}
+  <a href="https://twitter.com/{{.}}" rel="me"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a>
+  {{ end }}
+  {{ with .Site.Params.social.facebook }}
+  <a href="https://facebook.com/{{.}}" rel="me"><i class="fab fa-facebook-f"></i></a>
+  {{ end }}
+  {{ with .Site.Params.social.github }}
+  <a href="https://github.com/{{.}}" rel="me"><i class="fab fa-github fa-lg" aria-hidden="true"></i></a>
+  {{ end }}
+  {{ with .Site.Params.social.youtube }}
+  <a href="https://www.youtube.com/channel/{{.}}" rel="me"><i class="fab fa-youtube fa-lg" aria-hidden="true"></i></a>
+  {{ end }}
+  {{ with .Site.Params.social.groups }}
+  <a href="https://groups.google.com/forum/#!forum/{{.}}" rel="me"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a>
+  {{ end }}
+</section>
