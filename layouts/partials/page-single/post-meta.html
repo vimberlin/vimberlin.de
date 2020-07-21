@@ -3,6 +3,11 @@
   <strong>Time: </strong>
   <span itemprop="startDate">{{ dateFormat "Monday, Jan 2, 2006, 3 PM" $date }}</span>
 {{ end }}
+{{ with .Params.dateEnd }}
+  {{ $dateEnd := .}}
+  -
+  <span itemprop="endDate">{{ dateFormat "3 PM" $dateEnd }}</span>
+{{ end }}
 
 {{ with .Params.where }}
   <br>
