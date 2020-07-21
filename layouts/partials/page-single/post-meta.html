@@ -81,6 +81,15 @@
       (<a href="http://www.openstreetmap.org/node/412766878#map=19/52.53428/13.35880">map</a>)
     </span>
   {{ end }}
+  {{ if eq $location "jitsi" }}
+    <span itemtype="http://schema.org/PostalAddress" itemscope="" itemprop="location">
+        <span>
+          <a href="https://meet.in-berlin.de/vimberlin">
+            <span itemprop="name">jitsi vimberlin</span>
+          </a>
+        </span>
+    </span>
+  {{ end }}
   {{ if eq $location "wooga" }}
     <span itemtype="http://schema.org/PostalAddress" itemscope="" itemprop="location">
         <span>
