@@ -2,10 +2,10 @@
   {{ partial "header.html" . }}
 {{ end }}
 
+
 {{ define "content" }}
   <div class="post-list">
-    {{ $paginator := .Paginate (where .Data.Pages "Type" "posts") }}
-    {{ range $paginator.Pages }}
+    {{ range where .Paginator.Pages "Section" "ne" "" }}
       {{ if .Draft }}
         {{ .Scratch.Set "draftPage" true }}
       {{ else }}
