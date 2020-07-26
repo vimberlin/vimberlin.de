@@ -8,9 +8,9 @@ theme = "hyde-hyde"
 ## Hugo Built-in Features
 enableRobotsTXT = true
 
-# summarylength = 30
+summarylength = 30
 
-#paginate = 5
+# paginate = 6
 
 ## Site Settings
 [params]
