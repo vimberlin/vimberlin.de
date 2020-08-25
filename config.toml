@@ -1,0 +1,76 @@
+## Basic Configuration
+baseurl = "https://vimberlin.de/"
+languageCode = "en"
+
+title = "Vimberlin"
+theme = "hyde-hyde"
+
+## Hugo Built-in Features
+enableRobotsTXT = true
+
+summarylength = 30
+
+# paginate = 6
+
+## Site Settings
+[params]
+    themeColor = "theme-base-07"
+    author = "MyHammerTech"
+    title = "Vimberlin"
+    description = "the gathering for Vim-enthusiasts in Berlin"
+    authorimage = "img/logo.jpg"
+    dateformat = "Jan 2, 2006"
+
+    # sidebar, copyright & license
+    showBuiltWith = true
+
+    # https://highlightjs.org
+    highlightjs = true
+    highlightjsstyle = "github"
+
+    # please choose either GraphComment or Disqus or Utterances
+    #GraphCommentId = "..."
+    #UtterancesRepo = "..." # https://utteranc.es/
+    #UtterancesIssueTerm = "..." # pathname, url, title, og:title
+    #UtterancesTheme = "..." # github-light or github-dark
+
+    # Table of contents
+    #toc = none, "hugo", or "tocbot"
+
+## Social Accounts
+[params.social]
+    facebook = "vimberlin"
+    twitter = "vimberlin"
+    mastodon = "@vimberlin"
+    github = "vimberlin"
+    youtube = "vimfest"
+    groups = "vimberlin"
+
+
+[params.meta]
+    keywords = "vim, vimberlin, nvim, nevim, unix, linux, tools"
+
+## Main Menu
+[[menu.main]]
+    name = "Posts"
+    weight = 100
+    identifier = "posts"
+    url = "/posts/"
+[[menu.main]]
+    name = "About"
+    identifier = "about"
+    weight = 200
+    url = "/about/"
+[[menu.main]]
+    name = "Newsletter"
+    identifier = "newsletter"
+    weight = 200
+    url = "/newsletter/"
+[[menu.main]]
+    name = "Imprint"
+    identifier = "imprint"
+    weight = 300
+    url = "/imprint/"
+
+[permalinks]
+  posts = "/:title/"
