@@ -4,9 +4,11 @@ title = "Imprint"
 
 This site is maintained by:
 
+{{< safehtml >}}
 <pre>
     <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#97;&#116;&#116;&#104;&#105;&#97;&#115;&#64;&#119;&#105;&#107;&#105;&#109;&#97;&#116;&#122;&#101;&#46;&#100;&#101;">&#109;&#97;&#116;&#116;&#104;&#105;&#97;&#115;&#64;&#119;&#105;&#107;&#105;&#109;&#97;&#116;&#122;&#101;&#46;&#100;&#101;</a>
 </pre>
+{{< /safehtml >}}
 
 <p>This site is hosted via <a href="http://www.webhostone.de/">WebhostOne </a> in Germany and deployed via rsync. If you're finding errors or want to add some information, feel free to <a href="https://github.com/vimberlin/vimberlin.de">fork it</a> and send in a pull request.</p>
 
