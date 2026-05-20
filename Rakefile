@@ -8,7 +8,8 @@ task :staging do
 
   puts 'Deploying site with lovely rsync ..'.bold.green
 
-  system "rsync -vru -e \"ssh\" --del public/* xa6195@xa6.serverdomain.org:/home/www/stagingvimfest/"
+  system "rsync -vru -e \"ssh -o IdentitiesOnly=yes -i ~/.ssh/id_rsa\" --del public/* xa6195@xa6.serverdomain.org:/home/www/stagingvimfest/"
+
   puts '# Please refer to https://vimfest.wikimatze.de to visit the staging system'.green
   system "sed -i 's/vimfest.wikimatze.de/vimberlin.de/g' config.toml"
 end
@@ -27,7 +28,7 @@ end
 
 desc 'Startup hugo'
 task :s do
-  puts 'hugo is finished with building..'.bold.green
+  puts 'hugo finished the building process..'.bold.green
   system 'hugo server -F'
 end
 
