@@ -74,3 +74,7 @@ summarylength = 30
 
 [permalinks]
   posts = "/:title/"
+
+## Markup
+[markup.goldmark.renderer]
+ unsafe = true
