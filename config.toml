@@ -45,7 +45,6 @@ summarylength = 30
   mastodon = "@vimberlin"
   github = "vimberlin"
   youtube = "vimfest"
-  groups = "vimberlin"
 
 
 [params.meta]
