@@ -63,11 +63,6 @@ summarylength = 30
   weight = 200
   url = "/about/"
 [[menu.main]]
-  name = "Newsletter"
-  identifier = "newsletter"
-  weight = 200
-  url = "/newsletter/"
-[[menu.main]]
   name = "Imprint"
   identifier = "imprint"
   weight = 300
