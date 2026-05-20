@@ -1,5 +1,7 @@
 [![Join the chat at https://gitter.im/vimberlin/vimberlin.de](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/vimberlin/vimberlin.de?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
+**Vimberlin is the gathering for Vim-enthusiasts in Berlin.**
+
 This repository is mainly maintained by [@wikimatze](http://wikimatze.de/ "@wikimatze").
 
 The site is manually deployed with SSH on a German hoster called [Webhostone](https://www.webhostone.de/de/).
